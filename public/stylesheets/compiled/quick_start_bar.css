@@ -1,0 +1,81 @@
+/* line 6, ../../../app/stylesheets/quick_start_bar.scss */
+.quickStartBar {
+  margin-top: -1em;
+  font-size: 14px;
+  min-height: 118px;
+  color: inherit;
+  /* hide box-shadow */
+  overflow: hidden;
+  /* kill bootstrap stuff */
+  /* override default datetime_suggest styles */ }
+  /* line 14, ../../../app/stylesheets/quick_start_bar.scss */
+  .quickStartBar textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  /* line 17, ../../../app/stylesheets/quick_start_bar.scss */
+  .quickStartBar input[type=text] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 28px; }
+  /* line 21, ../../../app/stylesheets/quick_start_bar.scss */
+  .quickStartBar .pick-an-item {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: #fff;
+    font-weight: bold; }
+  /* line 30, ../../../app/stylesheets/quick_start_bar.scss */
+  .quickStartBar .nav {
+    margin: 0;
+    margin-left: 20px;
+    border: none;
+    /* kill bootstrap stuff */ }
+    /* line 36, ../../../app/stylesheets/quick_start_bar.scss */
+    .quickStartBar .nav > li > a {
+      line-height: 22px;
+      font-size: 12px;
+      color: #8d8d8d;
+      border: none;
+      /* kill bootstrap stuff */ }
+      /* line 44, ../../../app/stylesheets/quick_start_bar.scss */
+      .quickStartBar .nav > li > a:hover, .quickStartBar .nav > li > a.active {
+        border: none;
+        background: inherit;
+        color: black; }
+  /* line 52, ../../../app/stylesheets/quick_start_bar.scss */
+  .quickStartBar .new-text {
+    font-size: 16px;
+    display: block;
+    padding: 9px 4px 4px 22px;
+    color: #000; }
+  /* line 60, ../../../app/stylesheets/quick_start_bar.scss */
+  .quickStartBar .datetime_suggest {
+    display: inline;
+    margin-left: 10px;
+    font-weight: normal; }
+  /* line 67, ../../../app/stylesheets/quick_start_bar.scss */
+  .quickStartBar [class*=icon-], .quickStartBar [class^=icon-] {
+    margin-right: 5px; }
+  /* line 71, ../../../app/stylesheets/quick_start_bar.scss */
+  .quickStartBar.not-expanded input, .quickStartBar.not-expanded textarea {
+    margin-bottom: 0; }
+  /* line 76, ../../../app/stylesheets/quick_start_bar.scss */
+  .quickStartBar .contextSearch {
+    width: 100%; }
+
+/* line 83, ../../../app/stylesheets/quick_start_bar.scss */
+.newItemForm {
+  margin-bottom: 0; }
+
+/* line 87, ../../../app/stylesheets/quick_start_bar.scss */
+.not-expanded .expander textarea {
+  height: 28px;
+  overflow: hidden; }
+
+/* line 92, ../../../app/stylesheets/quick_start_bar.scss */
+.expandee {
+  display: none; }
+  /* line 94, ../../../app/stylesheets/quick_start_bar.scss */
+  .expanded .expandee {
+    display: block; }

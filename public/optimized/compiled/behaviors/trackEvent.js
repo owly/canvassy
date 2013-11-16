@@ -1,0 +1,1 @@
+(function(){define(["jquery","jquery.google-analytics"],function(a){return a("body").on("click","[data-track-category]",function(b){var c,d,e,f,g;return g=a(this).data(),d=g.trackCategory,e=g.trackLabel,c=g.trackAction,f=g.trackValue,a.trackEvent(d,c,e,f),null})})}).call(this)

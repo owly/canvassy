@@ -1,0 +1,1 @@
+(function(){define([],function(){var a;return a=function(a,b){var c;return c=Math.pow(10,b),Math.round(a*c)/c}})}).call(this)

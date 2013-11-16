@@ -1,0 +1,129 @@
+/* line 3, ../../../app/stylesheets/account_settings.sass */
+.admins_list {
+  list-style-type: none;
+  padding-left: 10px; }
+
+/* line 7, ../../../app/stylesheets/account_settings.sass */
+.admins_list li {
+  width: 300px;
+  padding: 2px 5px;
+  margin-bottom: 5px; }
+
+/* line 12, ../../../app/stylesheets/account_settings.sass */
+.admins_list li:hover {
+  background-color: #eeeeee;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 16, ../../../app/stylesheets/account_settings.sass */
+.admins_list .user_name {
+  font-weight: bold;
+  float: left; }
+
+/* line 20, ../../../app/stylesheets/account_settings.sass */
+.admins_list .email {
+  clear: left;
+  display: block;
+  font-size: 0.8em;
+  color: #888888;
+  padding-left: 10px; }
+
+/* line 27, ../../../app/stylesheets/account_settings.sass */
+.admins_list .membership_type {
+  clear: left;
+  display: block;
+  font-size: 0.8em;
+  padding-left: 10px; }
+
+/* line 33, ../../../app/stylesheets/account_settings.sass */
+.admins_list .remove_account_user_link {
+  float: right;
+  opacity: 0.5; }
+
+/* line 37, ../../../app/stylesheets/account_settings.sass */
+.admins_list li:hover .remove_account_user_link {
+  opacity: 1; }
+
+/* line 41, ../../../app/stylesheets/account_settings.sass */
+#account_notification_icon option {
+  padding: 3px 0 3px 25px;
+  background: url(/images/warning.png) no-repeat 5px center; }
+  /* line 44, ../../../app/stylesheets/account_settings.sass */
+  #account_notification_icon option.calendar {
+    background-image: url(/images/calendar_icon.png); }
+  /* line 46, ../../../app/stylesheets/account_settings.sass */
+  #account_notification_icon option.people {
+    background-image: url(/images/group.png); }
+  /* line 48, ../../../app/stylesheets/account_settings.sass */
+  #account_notification_icon option.help {
+    background-image: url(/images/help.png); }
+  /* line 50, ../../../app/stylesheets/account_settings.sass */
+  #account_notification_icon option.file {
+    background-image: url(/images/file.png); }
+
+/* line 52, ../../../app/stylesheets/account_settings.sass */
+.custom_help_link {
+  border-top: 1px solid #cccccc; }
+  /* line 54, ../../../app/stylesheets/account_settings.sass */
+  .custom_help_link .delete {
+    float: right; }
+
+/* line 58, ../../../app/stylesheets/account_settings.sass */
+.announcements_list .alert {
+  color: #666666; }
+/* line 60, ../../../app/stylesheets/account_settings.sass */
+.announcements_list .subject {
+  font-size: 13px;
+  font-weight: bold; }
+  /* line 63, ../../../app/stylesheets/account_settings.sass */
+  .announcements_list .subject img {
+    padding-right: 5px; }
+/* line 65, ../../../app/stylesheets/account_settings.sass */
+.announcements_list .message {
+  border-top: 1px dotted #cccccc;
+  margin-top: 5px;
+  padding-top: 5px;
+  font-size: 11px; }
+
+/* line 71, ../../../app/stylesheets/account_settings.sass */
+#show_scheduler_checkbox {
+  margin-left: 1.5em; }
+
+/* line 75, ../../../app/stylesheets/account_settings.sass */
+#account_settings .unbreakable, .account_settings .unbreakable {
+  white-space: nowrap; }
+/* line 78, ../../../app/stylesheets/account_settings.sass */
+#account_settings .formtable input, #account_settings .formtable select, #account_settings .formtable td, .account_settings .formtable input, .account_settings .formtable select, .account_settings .formtable td {
+  vertical-align: baseline; }
+/* line 80, ../../../app/stylesheets/account_settings.sass */
+#account_settings .formtable p, .account_settings .formtable p {
+  line-height: 100%; }
+/* line 82, ../../../app/stylesheets/account_settings.sass */
+#account_settings .formtable select, .account_settings .formtable select {
+  width: 280px; }
+/* line 84, ../../../app/stylesheets/account_settings.sass */
+#account_settings .formtable input[type="checkbox"], .account_settings .formtable input[type="checkbox"] {
+  vertical-align: -3px; }
+/* line 87, ../../../app/stylesheets/account_settings.sass */
+#account_settings fieldset select, #account_settings fieldset input[type="text"], .account_settings fieldset select, .account_settings fieldset input[type="text"] {
+  vertical-align: baseline; }
+/* line 89, ../../../app/stylesheets/account_settings.sass */
+#account_settings fieldset .remove_domain_link img, .account_settings fieldset .remove_domain_link img {
+  vertical-align: -3px; }
+
+/* line 93, ../../../app/stylesheets/account_settings.sass */
+#account_settings_tabs legend {
+  font-size: 15px;
+  font-weight: bold; }
+
+/* line 97, ../../../app/stylesheets/account_settings.sass */
+#survey_announcement_field {
+  line-height: 30px; }
+  /* line 99, ../../../app/stylesheets/account_settings.sass */
+  #survey_announcement_field input#account_notification_months_in_display_cycle {
+    width: 25px;
+    padding: 0;
+    margin-top: 6px; }

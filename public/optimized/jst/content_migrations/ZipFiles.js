@@ -1,0 +1,1 @@
+define("jst/content_migrations/ZipFiles",["compiled/handlebars_helpers"],function(a){var b=a.template,c=a.templates=a.templates||{};return c["content_migrations/ZipFiles"]=b(function(a,b,c,d,e){c=c||a.helpers;var f,g=this;return'<div class="control-group chooseMigrationFile"></div>\n<div class="control-group folderPicker"></div>\n'}),c["content_migrations/ZipFiles"]})

@@ -1,0 +1,28 @@
+/* line 3, ../../../app/stylesheets/content_imports.sass */
+.root_asset_list {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 30px; }
+
+/* line 7, ../../../app/stylesheets/content_imports.sass */
+.root_asset_list > li {
+  margin-bottom: 10px; }
+
+/* line 9, ../../../app/stylesheets/content_imports.sass */
+.root_asset_list h4, .root_asset_list .h4 {
+  margin: 0; }
+
+/* line 11, ../../../app/stylesheets/content_imports.sass */
+.asset_list {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 30px; }
+
+/* line 15, ../../../app/stylesheets/content_imports.sass */
+#copy_context_form h3, #copy_context_form .h3 {
+  color: #444444; }
+
+/* line 17, ../../../app/stylesheets/content_imports.sass */
+#copy_context_form input[type='checkbox'] {
+  margin-right: 6px;
+  margin-top: 0; }

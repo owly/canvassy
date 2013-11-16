@@ -1,0 +1,77 @@
+/* line 2, ../../../app/stylesheets/developer_keys.sass */
+#keys {
+  border-collapse: collapse;
+  width: 100%; }
+  /* line 6, ../../../app/stylesheets/developer_keys.sass */
+  #keys tr:hover td {
+    background-color: #eeeeee; }
+    /* line 8, ../../../app/stylesheets/developer_keys.sass */
+    #keys tr:hover td.links {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+      opacity: 1; }
+    /* line 10, ../../../app/stylesheets/developer_keys.sass */
+    #keys tr:hover td .api_key {
+      visibility: visible; }
+  /* line 12, ../../../app/stylesheets/developer_keys.sass */
+  #keys td, #keys th {
+    padding: 3px 5px; }
+  /* line 14, ../../../app/stylesheets/developer_keys.sass */
+  #keys th {
+    border-bottom: 1px dotted #888888;
+    font-weight: bold; }
+  /* line 17, ../../../app/stylesheets/developer_keys.sass */
+  #keys td {
+    border-bottom: 1px dotted #cccccc;
+    vertical-align: middle; }
+    /* line 20, ../../../app/stylesheets/developer_keys.sass */
+    #keys td.name {
+      font-weight: bold;
+      font-size: 14px; }
+    /* line 23, ../../../app/stylesheets/developer_keys.sass */
+    #keys td.links {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+      opacity: 0.4; }
+    /* line 25, ../../../app/stylesheets/developer_keys.sass */
+    #keys td .api_key {
+      visibility: hidden; }
+    /* line 27, ../../../app/stylesheets/developer_keys.sass */
+    #keys td .icon {
+      width: 36px;
+      height: 36px;
+      border: 1px solid #cccccc;
+      padding: 2px;
+      margin-right: 5px;
+      vertical-align: middle;
+      float: left; }
+    /* line 35, ../../../app/stylesheets/developer_keys.sass */
+    #keys td .details {
+      max-width: 200px;
+      overflow: auto; }
+      /* line 38, ../../../app/stylesheets/developer_keys.sass */
+      #keys td .details > div {
+        white-space: nowrap; }
+
+/* line 40, ../../../app/stylesheets/developer_keys.sass */
+#loading {
+  text-align: center;
+  margin-top: 10px; }
+  /* line 43, ../../../app/stylesheets/developer_keys.sass */
+  #loading .show_all, #loading .loader {
+    display: none; }
+  /* line 46, ../../../app/stylesheets/developer_keys.sass */
+  #loading.loading .loader {
+    display: inline; }
+  /* line 48, ../../../app/stylesheets/developer_keys.sass */
+  #loading.loading .show_all {
+    display: none; }
+  /* line 51, ../../../app/stylesheets/developer_keys.sass */
+  #loading.show_more .loader {
+    display: none; }
+  /* line 53, ../../../app/stylesheets/developer_keys.sass */
+  #loading.show_more .show_all {
+    display: inline; }
+
+/* line 56, ../../../app/stylesheets/developer_keys.sass */
+.key_form td {
+  white-space: nowrap;
+  padding: 3px 2px; }

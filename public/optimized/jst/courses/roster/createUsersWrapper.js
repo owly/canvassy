@@ -1,0 +1,1 @@
+define("jst/courses/roster/createUsersWrapper",["compiled/handlebars_helpers"],function(a){var b=a.template,c=a.templates=a.templates||{};return c["courses/roster/createUsersWrapper"]=b(function(a,b,c,d,e){c=c||a.helpers;var f,g=this;return'<div class="outlet"></div>\n\n'}),c["courses/roster/createUsersWrapper"]})

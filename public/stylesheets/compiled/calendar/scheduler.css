@@ -1,0 +1,364 @@
+/* line 3, ../../../../app/stylesheets/calendar/scheduler.sass */
+#wrapper-container {
+  min-width: 1150px; }
+
+/* line 7, ../../../../app/stylesheets/calendar/scheduler.sass */
+.scheduler-mode .fc-event {
+  opacity: 0.7; }
+/* line 10, ../../../../app/stylesheets/calendar/scheduler.sass */
+.scheduler-mode .fc-event.current-appointment-group {
+  opacity: 1; }
+
+/* line 13, ../../../../app/stylesheets/calendar/scheduler.sass */
+.scheduler-content {
+  padding: 1em;
+  background-color: white;
+  border: 1px solid #b6babf;
+  margin-left: 0px; }
+  /* line 18, ../../../../app/stylesheets/calendar/scheduler.sass */
+  .scheduler-content h3, .scheduler-content .h3 {
+    margin-top: 0px; }
+
+/* line 21, ../../../../app/stylesheets/calendar/scheduler.sass */
+.scheduler-header {
+  min-height: 27px;
+  margin-bottom: 10px; }
+
+/* line 25, ../../../../app/stylesheets/calendar/scheduler.sass */
+.scheduler-wrapper {
+  /* extra padding stops final dropdown from getting cut off */
+  padding-bottom: 25px; }
+
+/* the 'button' part is to beat g_util_button's specificity */
+/* line 30, ../../../../app/stylesheets/calendar/scheduler.sass */
+button.single_item_done_button {
+  display: none; }
+
+/* line 33, ../../../../app/stylesheets/calendar/scheduler.sass */
+.showing-single .appointment-group-item,
+.showing-single #appointment-group-list-header {
+  display: none; }
+/* line 36, ../../../../app/stylesheets/calendar/scheduler.sass */
+.showing-single .appointment-group-item.active,
+.showing-single .single_item_done_button {
+  display: block; }
+/* line 39, ../../../../app/stylesheets/calendar/scheduler.sass */
+.showing-single .appointment-group-item {
+  border-top: none; }
+
+/* line 42, ../../../../app/stylesheets/calendar/scheduler.sass */
+#scheduler-loading {
+  position: relative;
+  min-height: 400px; }
+
+/* line 46, ../../../../app/stylesheets/calendar/scheduler.sass */
+#appointment-group-list {
+  list-style: none; }
+
+/* line 48, ../../../../app/stylesheets/calendar/scheduler.sass */
+#appointment-group-list-header {
+  font-size: 18px;
+  line-height: 32px;
+  margin-top: 0px; }
+
+/* line 52, ../../../../app/stylesheets/calendar/scheduler.sass */
+.appointment-group-item {
+  border-top: 1px solid #cccccc;
+  min-height: 68px;
+  padding: 6px 0 26px;
+  clear: both; }
+  /* line 57, ../../../../app/stylesheets/calendar/scheduler.sass */
+  .appointment-group-item h3, .appointment-group-item .h3 {
+    margin-bottom: 0; }
+  /* line 59, ../../../../app/stylesheets/calendar/scheduler.sass */
+  .appointment-group-item .alert {
+    float: right;
+    width: auto;
+    padding: 4px 10px;
+    margin-right: 5px; }
+    /* line 64, ../../../../app/stylesheets/calendar/scheduler.sass */
+    .appointment-group-item .alert a {
+      text-decoration: underline; }
+  /* line 66, ../../../../app/stylesheets/calendar/scheduler.sass */
+  .appointment-group-item:first-child {
+    border-top: none; }
+
+/* line 68, ../../../../app/stylesheets/calendar/scheduler.sass */
+.unpublished-ag {
+  background-color: #f2f2f2; }
+
+/* line 70, ../../../../app/stylesheets/calendar/scheduler.sass */
+.ag-context {
+  margin-bottom: 10px;
+  color: #666666; }
+
+/* line 73, ../../../../app/stylesheets/calendar/scheduler.sass */
+.ag-context a {
+  color: #666666; }
+
+/* line 75, ../../../../app/stylesheets/calendar/scheduler.sass */
+.ag-x-of-x-signed-up {
+  font-size: 11px; }
+
+/* line 78, ../../../../app/stylesheets/calendar/scheduler.sass */
+.time-block-list-body-wrapper {
+  overflow: auto;
+  max-height: 150px;
+  overflow-x: hidden;
+  margin-bottom: 10px;
+  padding-top: 10px; }
+
+/* line 85, ../../../../app/stylesheets/calendar/scheduler.sass */
+.time-block-list-header, .time-block-list-body-wrapper {
+  width: 100%;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 10px; }
+
+/* line 89, ../../../../app/stylesheets/calendar/scheduler.sass */
+.time-block-list-body {
+  width: 100%; }
+
+/* line 92, ../../../../app/stylesheets/calendar/scheduler.sass */
+.time-block-list th {
+  text-align: center;
+  font-weight: bold; }
+/* line 95, ../../../../app/stylesheets/calendar/scheduler.sass */
+.time-block-list td {
+  vertical-align: top; }
+/* line 97, ../../../../app/stylesheets/calendar/scheduler.sass */
+.time-block-list .time-range-column {
+  width: 130px; }
+/* line 103, ../../../../app/stylesheets/calendar/scheduler.sass */
+.time-block-list .date-column {
+  width: 200px; }
+/* line 105, ../../../../app/stylesheets/calendar/scheduler.sass */
+.time-block-list .start-time-column {
+  width: 95px;
+  text-align: center; }
+/* line 108, ../../../../app/stylesheets/calendar/scheduler.sass */
+.time-block-list .separator-column {
+  width: 6px;
+  text-align: center;
+  line-height: 28px; }
+/* line 112, ../../../../app/stylesheets/calendar/scheduler.sass */
+.time-block-list .end-time-column {
+  width: 95px;
+  text-align: center; }
+/* line 116, ../../../../app/stylesheets/calendar/scheduler.sass */
+.time-block-list .date_field {
+  width: 120px; }
+/* line 118, ../../../../app/stylesheets/calendar/scheduler.sass */
+.time-block-list .time_field {
+  text-align: right;
+  width: 65px; }
+/* line 122, ../../../../app/stylesheets/calendar/scheduler.sass */
+.time-block-list .error {
+  border: 1px solid #ee5f5b;
+  padding: 2px;
+  box-shadow: 0 0 4px #f8b9b7; }
+/* line 126, ../../../../app/stylesheets/calendar/scheduler.sass */
+.time-block-list .invalid_datetime, .time-block-list .error {
+  color: #b94a48; }
+/* line 128, ../../../../app/stylesheets/calendar/scheduler.sass */
+.time-block-list .datetime_suggest {
+  display: none; }
+/* line 130, ../../../../app/stylesheets/calendar/scheduler.sass */
+.time-block-list .ui-datepicker-trigger {
+  display: inline; }
+/* line 133, ../../../../app/stylesheets/calendar/scheduler.sass */
+.time-block-list tr.focused .datetime_suggest {
+  display: block;
+  min-height: 15px; }
+
+/* line 138, ../../../../app/stylesheets/calendar/scheduler.sass */
+#edit_appointment_form td {
+  vertical-align: top; }
+/* line 141, ../../../../app/stylesheets/calendar/scheduler.sass */
+#edit_appointment_form .context_id, #edit_appointment_form .group_select select {
+  width: 150px; }
+/* line 144, ../../../../app/stylesheets/calendar/scheduler.sass */
+#edit_appointment_form .section_select ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+/* line 149, ../../../../app/stylesheets/calendar/scheduler.sass */
+#edit_appointment_form .section_select li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+/* line 154, ../../../../app/stylesheets/calendar/scheduler.sass */
+#edit_appointment_form .right-column-wrapper {
+  width: 380px; }
+
+/* line 157, ../../../../app/stylesheets/calendar/scheduler.sass */
+.ag_contexts_selector {
+  width: 225px; }
+
+/* line 159, ../../../../app/stylesheets/calendar/scheduler.sass */
+.ag-menu-container {
+  position: relative; }
+
+/* line 161, ../../../../app/stylesheets/calendar/scheduler.sass */
+.ag_contexts_menu {
+  position: absolute;
+  width: 223px;
+  background: white;
+  border: 1px solid #b6b6b6;
+  margin-top: -3px;
+  padding-bottom: 5px; }
+
+/* line 168, ../../../../app/stylesheets/calendar/scheduler.sass */
+.ag-contexts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-height: 150px;
+  overflow-y: auto; }
+  /* line 6, ../../../../app/stylesheets/mixins/_misc.sass */
+  .ag-contexts li {
+    margin: 0;
+    padding: 0; }
+  /* line 172, ../../../../app/stylesheets/calendar/scheduler.sass */
+  .ag-contexts label {
+    margin-bottom: 0; }
+
+/* line 174, ../../../../app/stylesheets/calendar/scheduler.sass */
+.ag_sections {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 35px; }
+  /* line 6, ../../../../app/stylesheets/mixins/_misc.sass */
+  .ag_sections li {
+    margin: 0;
+    padding: 0; }
+
+/* line 177, ../../../../app/stylesheets/calendar/scheduler.sass */
+.ag_sections_toggle {
+  display: block;
+  width: 16px;
+  height: 16px;
+  float: left;
+  background-image: url(/images/jqueryui/icon_sprite.png);
+  background-position: -16px -80px; }
+
+/* line 184, ../../../../app/stylesheets/calendar/scheduler.sass */
+.ag-sections-expanded {
+  background-position: 0px -64px; }
+
+/* line 187, ../../../../app/stylesheets/calendar/scheduler.sass */
+.ag_contexts_done {
+  float: right;
+  margin: 5px 5px 0 0; }
+
+/* line 191, ../../../../app/stylesheets/calendar/scheduler.sass */
+.delete-block-link {
+  display: block;
+  float: right;
+  color: black;
+  line-height: 28px; }
+
+/* line 197, ../../../../app/stylesheets/calendar/scheduler.sass */
+.left-column-wrapper {
+  width: 250px;
+  float: left; }
+
+/* line 201, ../../../../app/stylesheets/calendar/scheduler.sass */
+.right-column-wrapper {
+  width: 325px;
+  float: left; }
+
+/* line 205, ../../../../app/stylesheets/calendar/scheduler.sass */
+.details-wrapper {
+  clear: both; }
+
+/* line 209, ../../../../app/stylesheets/calendar/scheduler.sass */
+.splitter input[type="number"], .splitter .split-link.btn {
+  vertical-align: baseline; }
+/* line 211, ../../../../app/stylesheets/calendar/scheduler.sass */
+.splitter .split-link {
+  margin-right: 3px; }
+
+/* line 213, ../../../../app/stylesheets/calendar/scheduler.sass */
+.ag-options {
+  margin: 0;
+  padding: 0; }
+  /* line 217, ../../../../app/stylesheets/calendar/scheduler.sass */
+  .ag-options input[type="checkbox"] {
+    vertical-align: 1px; }
+  /* line 219, ../../../../app/stylesheets/calendar/scheduler.sass */
+  .ag-options input[type="checkbox"] + label, .ag-options input[type="number"] {
+    vertical-align: baseline; }
+
+/* line 222, ../../../../app/stylesheets/calendar/scheduler.sass */
+.ag-options li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 0.5em; }
+
+/* line 227, ../../../../app/stylesheets/calendar/scheduler.sass */
+.context_id {
+  max-width: 200px; }
+
+/* line 230, ../../../../app/stylesheets/calendar/scheduler.sass */
+.select-calendar-container {
+  margin: 0 0 1.5em; }
+
+/* line 233, ../../../../app/stylesheets/calendar/scheduler.sass */
+.group-signup {
+  margin: 0 0 1.5em; }
+
+/* line 236, ../../../../app/stylesheets/calendar/scheduler.sass */
+#message_participants_form {
+  padding: 10px; }
+  /* line 238, ../../../../app/stylesheets/calendar/scheduler.sass */
+  #message_participants_form textarea {
+    width: 98%;
+    height: 100px; }
+  /* line 241, ../../../../app/stylesheets/calendar/scheduler.sass */
+  #message_participants_form label {
+    font-weight: bold; }
+  /* line 243, ../../../../app/stylesheets/calendar/scheduler.sass */
+  #message_participants_form .error {
+    font-weight: bold;
+    color: #aa0000; }
+  /* line 246, ../../../../app/stylesheets/calendar/scheduler.sass */
+  #message_participants_form ul {
+    font-size: 0.8em;
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    min-height: 60px;
+    max-height: 100px;
+    overflow: auto; }
+    /* line 254, ../../../../app/stylesheets/calendar/scheduler.sass */
+    #message_participants_form ul li {
+      overflow: hidden;
+      white-space: nowrap;
+      float: left;
+      margin: 1px 2px 1px 4px;
+      padding: 0 14px 0 11px;
+      color: black;
+      background-color: #dee7fa;
+      border: 1px solid #a5bcf0;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      border-radius: 10px;
+      cursor: default; }
+      /* line 265, ../../../../app/stylesheets/calendar/scheduler.sass */
+      #message_participants_form ul li.status {
+        text-align: center;
+        float: none;
+        padding: 0;
+        margin: 0;
+        height: 50px;
+        position: relative;
+        background: transparent;
+        border: 0;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+        border-radius: 0px; }

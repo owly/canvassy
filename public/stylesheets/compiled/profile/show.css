@@ -1,0 +1,302 @@
+/* line 2, ../../../../app/stylesheets/profile/edit.scss */
+.profile_table td {
+  padding: 2px 5px;
+  vertical-align: top; }
+/* line 7, ../../../../app/stylesheets/profile/edit.scss */
+.profile_table .edit_data {
+  display: none; }
+/* line 12, ../../../../app/stylesheets/profile/edit.scss */
+.profile_table.editing .edit_data {
+  display: inline; }
+/* line 16, ../../../../app/stylesheets/profile/edit.scss */
+.profile_table.editing .display_data {
+  display: none; }
+
+/* line 22, ../../../../app/stylesheets/profile/edit.scss */
+#user_bio {
+  height: 200px;
+  width: 100%; }
+
+/* line 28, ../../../../app/stylesheets/profile/edit.scss */
+#registered_services .service {
+  font-size: 1.2em;
+  padding: 2px; }
+  /* line 32, ../../../../app/stylesheets/profile/edit.scss */
+  #registered_services .service .delete_service_link {
+    display: none; }
+  /* line 36, ../../../../app/stylesheets/profile/edit.scss */
+  #registered_services .service.service-hover {
+    background-color: #eee;
+    border-radius: 3px; }
+  /* line 41, ../../../../app/stylesheets/profile/edit.scss */
+  #registered_services .service.service-hover .delete_service_link {
+    display: inline; }
+
+/* line 48, ../../../../app/stylesheets/profile/edit.scss */
+#unregistered_services .btn {
+  margin: 3px;
+  width: 150px; }
+  /* line 52, ../../../../app/stylesheets/profile/edit.scss */
+  #unregistered_services .btn img {
+    vertical-align: middle; }
+/* line 57, ../../../../app/stylesheets/profile/edit.scss */
+#unregistered_services .service a {
+  text-align: left; }
+
+/* line 62, ../../../../app/stylesheets/profile/edit.scss */
+.profile_pic_link {
+  position: relative; }
+  /* line 65, ../../../../app/stylesheets/profile/edit.scss */
+  .profile_pic_link img {
+    max-width: 50px; }
+  /* line 69, ../../../../app/stylesheets/profile/edit.scss */
+  .profile_pic_link .icon-edit {
+    background: rgba(0, 0, 0, 0.75);
+    bottom: 0;
+    color: #fff;
+    padding: 2px;
+    position: absolute;
+    right: 0;
+    visibility: hidden; }
+  /* line 79, ../../../../app/stylesheets/profile/edit.scss */
+  .profile_pic_link:hover .icon-edit {
+    visibility: visible; }
+
+/* line 85, ../../../../app/stylesheets/profile/edit.scss */
+.profile_pic_list .img {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  margin: 2px;
+  overflow: hidden;
+  padding: 4px;
+  width: 50px; }
+  /* line 94, ../../../../app/stylesheets/profile/edit.scss */
+  .profile_pic_list .img.selected {
+    border: 2px solid #444;
+    padding: 2px; }
+  /* line 99, ../../../../app/stylesheets/profile/edit.scss */
+  .profile_pic_list .img:hover {
+    border: 2px solid #888;
+    padding: 2px; }
+/* line 105, ../../../../app/stylesheets/profile/edit.scss */
+.profile_pic_list img {
+  max-height: 75px;
+  max-width: 50px;
+  min-height: 25px;
+  vertical-align: middle; }
+
+/* line 114, ../../../../app/stylesheets/profile/edit.scss */
+#token_details_dialog table {
+  border-collapse: collapse;
+  width: 100%; }
+  /* line 118, ../../../../app/stylesheets/profile/edit.scss */
+  #token_details_dialog table th {
+    font-weight: bold;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 5%; }
+  /* line 125, ../../../../app/stylesheets/profile/edit.scss */
+  #token_details_dialog table td, #token_details_dialog table th {
+    border-top: 1px dotted #ccc;
+    padding: 3px 8px; }
+  /* line 130, ../../../../app/stylesheets/profile/edit.scss */
+  #token_details_dialog table .full_token_warning {
+    font-size: 0.8em; }
+
+/* line 5, ../../../../app/stylesheets/profile/show.scss */
+.not-editing .show-if-editing {
+  display: none !important; }
+
+/* line 11, ../../../../app/stylesheets/profile/show.scss */
+.editing .hide-if-editing {
+  display: none !important; }
+
+/* line 16, ../../../../app/stylesheets/profile/show.scss */
+.profile-avatar-wrapper {
+  margin-right: 20px !important; }
+  /* line 19, ../../../../app/stylesheets/profile/show.scss */
+  .profile-avatar-wrapper .profile-link {
+    float: left;
+    position: relative; }
+  /* line 24, ../../../../app/stylesheets/profile/show.scss */
+  .profile-avatar-wrapper img {
+    padding: 1px;
+    border: solid 1px #888888;
+    box-shadow: 0 2 4 rgba(0, 0, 0, 0.5); }
+  /* line 30, ../../../../app/stylesheets/profile/show.scss */
+  .profile-avatar-wrapper .icon-edit {
+    background: rgba(0, 0, 0, 0.75);
+    bottom: 2px;
+    color: #fff;
+    height: 30px;
+    padding: 4px;
+    position: absolute;
+    right: 2px;
+    visibility: hidden;
+    width: 30px; }
+    /* line 41, ../../../../app/stylesheets/profile/show.scss */
+    .profile-avatar-wrapper .icon-edit:before {
+      font-size: 30px;
+      line-height: 30px; }
+  /* line 47, ../../../../app/stylesheets/profile/show.scss */
+  .profile-avatar-wrapper:hover .icon-edit {
+    visibility: visible; }
+
+/* line 52, ../../../../app/stylesheets/profile/show.scss */
+.report_picture {
+  margin: 0;
+  text-align: center;
+  font-size: 12px; }
+
+/* line 59, ../../../../app/stylesheets/profile/show.scss */
+.more_user_information fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+/* line 64, ../../../../app/stylesheets/profile/show.scss */
+.more_user_information legend {
+  margin: 0;
+  font-size: 14px;
+  margin: 1em 0 0.5em 0;
+  color: #555555;
+  border-bottom: solid 1px #a8adb3;
+  font-weight: normal !important;
+  display: block;
+  width: 100%; }
+/* line 74, ../../../../app/stylesheets/profile/show.scss */
+.more_user_information #login_information {
+  margin-top: 20px; }
+
+/* line 80, ../../../../app/stylesheets/profile/show.scss */
+#edit_profile_form textarea {
+  width: 97%;
+  height: 100px; }
+
+/* line 86, ../../../../app/stylesheets/profile/show.scss */
+#edit_links_table {
+  width: 100%; }
+  /* line 88, ../../../../app/stylesheets/profile/show.scss */
+  #edit_links_table input {
+    width: 95%; }
+  /* line 91, ../../../../app/stylesheets/profile/show.scss */
+  #edit_links_table td {
+    text-align: center; }
+
+/* line 96, ../../../../app/stylesheets/profile/show.scss */
+#right-side .right-side-h2-border {
+  color: #555555;
+  border-bottom: solid 1px #a8adb3;
+  box-shadow: 0 1px 0 white;
+  margin: 13px 0 0;
+  overflow: hidden; }
+
+/* line 105, ../../../../app/stylesheets/profile/show.scss */
+#content .h1, #content .h2 {
+  line-height: 21px; }
+
+/* line 110, ../../../../app/stylesheets/profile/show.scss */
+#content h1 {
+  margin: 0; }
+
+/* line 114, ../../../../app/stylesheets/profile/show.scss */
+#content h2 {
+  margin: 1em 0 0.5em 0;
+  color: #555555; }
+
+/* line 119, ../../../../app/stylesheets/profile/show.scss */
+.stats {
+  text-align: left;
+  width: 100%; }
+  /* line 122, ../../../../app/stylesheets/profile/show.scss */
+  .stats tr {
+    border-bottom: 1px solid #dfdfdf; }
+  /* line 125, ../../../../app/stylesheets/profile/show.scss */
+  .stats .stats-header {
+    border-bottom: 1px solid #a8adb3; }
+  /* line 128, ../../../../app/stylesheets/profile/show.scss */
+  .stats td {
+    text-align: right;
+    color: #0088cc;
+    font-weight: bold; }
+
+/* line 135, ../../../../app/stylesheets/profile/show.scss */
+.social-header {
+  font-weight: bold;
+  margin: 20px 0 5px; }
+
+/* line 140, ../../../../app/stylesheets/profile/show.scss */
+.social-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  /* line 144, ../../../../app/stylesheets/profile/show.scss */
+  .social-links li {
+    float: left;
+    margin-right: 10px;
+    text-align: center; }
+    /* line 148, ../../../../app/stylesheets/profile/show.scss */
+    .social-links li .social {
+      text-indent: -119988px;
+      overflow: hidden;
+      text-align: left;
+      width: 30px;
+      height: 30px;
+      background-image: url(/images/social-icons.png);
+      display: block; }
+
+/* line 158, ../../../../app/stylesheets/profile/show.scss */
+.message {
+  background-position: 0 0; }
+  /* line 160, ../../../../app/stylesheets/profile/show.scss */
+  .message:hover {
+    background-position: 0 -32px; }
+
+/* line 165, ../../../../app/stylesheets/profile/show.scss */
+.google_docs {
+  background-position: -296px 0; }
+  /* line 167, ../../../../app/stylesheets/profile/show.scss */
+  .google_docs:hover {
+    background-position: -296px -32px; }
+
+/* line 172, ../../../../app/stylesheets/profile/show.scss */
+.facebook {
+  background-position: -228px 0; }
+  /* line 174, ../../../../app/stylesheets/profile/show.scss */
+  .facebook:hover {
+    background-position: -228px -32px; }
+
+/* line 179, ../../../../app/stylesheets/profile/show.scss */
+.twitter {
+  background-position: -34px 0; }
+  /* line 181, ../../../../app/stylesheets/profile/show.scss */
+  .twitter:hover {
+    background-position: -34px -32px; }
+
+/* line 186, ../../../../app/stylesheets/profile/show.scss */
+.linked_in {
+  background-position: -97px 0; }
+  /* line 188, ../../../../app/stylesheets/profile/show.scss */
+  .linked_in:hover {
+    background-position: -97px -32px; }
+
+/* line 193, ../../../../app/stylesheets/profile/show.scss */
+.delicious {
+  background-position: -129px 0; }
+  /* line 195, ../../../../app/stylesheets/profile/show.scss */
+  .delicious:hover {
+    background-position: -129px -32px; }
+
+/* line 200, ../../../../app/stylesheets/profile/show.scss */
+.diigo {
+  background-position: -160px 0; }
+  /* line 202, ../../../../app/stylesheets/profile/show.scss */
+  .diigo:hover {
+    background-position: -160px -32px; }
+
+/* line 207, ../../../../app/stylesheets/profile/show.scss */
+.skype {
+  background-position: -193px 0; }
+  /* line 209, ../../../../app/stylesheets/profile/show.scss */
+  .skype:hover {
+    background-position: -193px -32px; }

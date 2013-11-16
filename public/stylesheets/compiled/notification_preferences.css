@@ -1,0 +1,184 @@
+/* normal table style overrides (make 6 tables look like one) */
+/* line 6, ../../../app/stylesheets/notification_preferences.sass */
+thead th {
+  background: white; }
+
+/* line 9, ../../../app/stylesheets/notification_preferences.sass */
+.table-bordered {
+  border-bottom: none;
+  border-radius: 0;
+  margin-bottom: 0; }
+  /* line 15, ../../../app/stylesheets/notification_preferences.sass */
+  .table-bordered thead tr:first-child th:first-child {
+    border-top-left-radius: 0 !important; }
+  /* line 17, ../../../app/stylesheets/notification_preferences.sass */
+  .table-bordered thead tr:first-child th:last-child {
+    border-top-right-radius: 0 !important; }
+  /* line 21, ../../../app/stylesheets/notification_preferences.sass */
+  .table-bordered tbody tr:last-child th {
+    border-bottom-left-radius: 0 !important; }
+  /* line 23, ../../../app/stylesheets/notification_preferences.sass */
+  .table-bordered tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 0 !important; }
+
+/* line 26, ../../../app/stylesheets/notification_preferences.sass */
+.table-bordered:first-of-type {
+  border-radius: 4px 4px 0 0; }
+  /* line 29, ../../../app/stylesheets/notification_preferences.sass */
+  .table-bordered:first-of-type thead tr:first-child th:first-child {
+    border-top-left-radius: 4px !important; }
+  /* line 31, ../../../app/stylesheets/notification_preferences.sass */
+  .table-bordered:first-of-type thead tr:first-child th:last-child {
+    border-top-right-radius: 4px !important; }
+  /* line 33, ../../../app/stylesheets/notification_preferences.sass */
+  .table-bordered:first-of-type .channel-name, .table-bordered:first-of-type .channel-addr {
+    text-indent: 0; }
+
+/* line 36, ../../../app/stylesheets/notification_preferences.sass */
+.table-bordered:last-of-type {
+  border-bottom: 1px solid #dddddd;
+  border-radius: 0 0 4px 4px; }
+  /* line 41, ../../../app/stylesheets/notification_preferences.sass */
+  .table-bordered:last-of-type tbody tr:last-child th {
+    border-bottom-left-radius: 4px !important; }
+  /* line 43, ../../../app/stylesheets/notification_preferences.sass */
+  .table-bordered:last-of-type tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 4px !important; }
+
+/* line 46, ../../../app/stylesheets/notification_preferences.sass */
+.comm-channel {
+  min-width: 125px; }
+
+/* line 49, ../../../app/stylesheets/notification_preferences.sass */
+.channel-name, .channel-addr {
+  text-indent: -9999px; }
+
+/* Column striping */
+/* line 54, ../../../app/stylesheets/notification_preferences.sass */
+.table-columns-striped tr td:nth-child(2n),
+.table-columns-striped tr th:nth-child(2n) {
+  background: none repeat scroll 0 0 #f3f4f8; }
+
+/* line 58, ../../../app/stylesheets/notification_preferences.sass */
+.notification-table-wrapper {
+  -webkit-transition: margin 0.3s ease;
+  -moz-transition: margin 0.3s ease;
+  -o-transition: margin 0.3s ease;
+  transition: margin 0.3s ease; }
+
+@media screen and (max-width: 1300px) {
+  /* line 62, ../../../app/stylesheets/notification_preferences.sass */
+  .notification-table-wrapper {
+    margin-right: 40px; } }
+/* line 67, ../../../app/stylesheets/notification_preferences.sass */
+.notification-prefs-table .ui-button {
+  padding: 1px; }
+/* line 70, ../../../app/stylesheets/notification_preferences.sass */
+.notification-prefs-table .ui-buttonset {
+  margin-right: 0; }
+/* line 73, ../../../app/stylesheets/notification_preferences.sass */
+.notification-prefs-table .grouping > td:first-child {
+  min-width: 205px; }
+/* line 76, ../../../app/stylesheets/notification_preferences.sass */
+.notification-prefs-table .group-name {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-top: 0.25em;
+  line-height: 1em; }
+/* line 83, ../../../app/stylesheets/notification_preferences.sass */
+.notification-prefs-table .category-name {
+  font-size: 1.2em;
+  font-weight: normal;
+  vertical-align: middle; }
+/* line 88, ../../../app/stylesheets/notification_preferences.sass */
+.notification-prefs-table tr:not(:first-child) .comm-channel > div {
+  display: none; }
+/* line 91, ../../../app/stylesheets/notification_preferences.sass */
+.notification-prefs-table .comm-channel {
+  text-align: center; }
+/* line 94, ../../../app/stylesheets/notification_preferences.sass */
+.notification-prefs-table .channel-addr {
+  font-weight: normal;
+  font-size: 0.8em; }
+/* line 98, ../../../app/stylesheets/notification_preferences.sass */
+.notification-prefs-table .comm-event {
+  position: relative; }
+  /* line 101, ../../../app/stylesheets/notification_preferences.sass */
+  .notification-prefs-table .comm-event .row-title-cell {
+    position: relative; }
+/* line 104, ../../../app/stylesheets/notification_preferences.sass */
+.notification-prefs-table td.comm-event-option {
+  text-align: left;
+  width: 110px;
+  min-width: 110px;
+  padding: 4px;
+  vertical-align: middle; }
+  /* line 112, ../../../app/stylesheets/notification_preferences.sass */
+  .notification-prefs-table td.comm-event-option .event-option-selection {
+    display: block; }
+  /* line 114, ../../../app/stylesheets/notification_preferences.sass */
+  .notification-prefs-table td.comm-event-option .event-option-buttons {
+    float: left;
+    display: none; }
+  /* line 118, ../../../app/stylesheets/notification_preferences.sass */
+  .notification-prefs-table td.comm-event-option .comm-event-option-contents {
+    position: relative;
+    min-height: 22px; }
+    /* line 122, ../../../app/stylesheets/notification_preferences.sass */
+    .notification-prefs-table td.comm-event-option .comm-event-option-contents .event-option-selection {
+      padding-top: 2px;
+      margin-left: 10px; }
+      /* line 126, ../../../app/stylesheets/notification_preferences.sass */
+      .notification-prefs-table td.comm-event-option .comm-event-option-contents .event-option-selection a {
+        color: #555555; }
+        /* line 127, ../../../app/stylesheets/notification_preferences.sass */
+        .notification-prefs-table td.comm-event-option .comm-event-option-contents .event-option-selection a:hover, .notification-prefs-table td.comm-event-option .comm-event-option-contents .event-option-selection a:focus, .notification-prefs-table td.comm-event-option .comm-event-option-contents .event-option-selection a:active {
+          text-decoration: none; }
+    /* line 131, ../../../app/stylesheets/notification_preferences.sass */
+    .notification-prefs-table td.comm-event-option .comm-event-option-contents select {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+      opacity: 0;
+      outline: 0;
+      position: absolute;
+      top: 0px;
+      left: 0px; }
+/* line 138, ../../../app/stylesheets/notification_preferences.sass */
+.notification-prefs-table .user-preference {
+  margin-left: 1.1em; }
+  /* line 140, ../../../app/stylesheets/notification_preferences.sass */
+  .notification-prefs-table .user-preference label {
+    display: block;
+    font-size: 13px; }
+/* line 145, ../../../app/stylesheets/notification_preferences.sass */
+.no-touch .notification-prefs-table td.comm-event-option[data-selection='never'] .event-option-selection a.change-selection {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0; }
+  /* line 147, ../../../app/stylesheets/notification_preferences.sass */
+  .no-touch .notification-prefs-table td.comm-event-option[data-selection='never'] .event-option-selection a.change-selection:hover, .no-touch .notification-prefs-table td.comm-event-option[data-selection='never'] .event-option-selection a.change-selection:focus {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=35);
+    opacity: 0.35; }
+/* line 152, ../../../app/stylesheets/notification_preferences.sass */
+.touch .notification-prefs-table td.comm-event-option .event-option-selection a.change-selection span.drop-arrow {
+  float: right; }
+/* line 155, ../../../app/stylesheets/notification_preferences.sass */
+.touch .notification-prefs-table td.comm-event-option[data-selection='never'] .event-option-selection a.change-selection span {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=35);
+  opacity: 0.35; }
+
+/* line 158, ../../../app/stylesheets/notification_preferences.sass */
+h2, .h2 {
+  position: relative; }
+  /* line 160, ../../../app/stylesheets/notification_preferences.sass */
+  h2 #notifications_save_status, .h2 #notifications_save_status {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px; }
+
+/* line 167, ../../../app/stylesheets/notification_preferences.sass */
+.weekly_notification_range {
+  color: gray;
+  font-style: italic;
+  padding-left: 1em; }

@@ -1,0 +1,1 @@
+(function(){define(["require"],function(a){return{init:function(){var b,c,d,e,f;if(!ENV.TOURS)return;e=ENV.TOURS,f=[];for(c=0,d=e.length;c<d;c++)b=e[c],f.push(a(["compiled/views/tours/"+b],function(a){return new a}));return f}}})}).call(this)

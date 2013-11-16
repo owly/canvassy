@@ -1,0 +1,1 @@
+(function(){define([],function(){var a;return a=["AccountMembership","StudentEnrollment","TeacherEnrollment","TaEnrollment","ObserverEnrollment","DesignerEnrollment"]})}).call(this)

@@ -1,0 +1,1 @@
+define({load:function(a,b,c,d){if(!d.translate){b(["i18nObj"],function(b){c(b.scoped(a))});return}b(["i18nObj","translations/"+a],function(b,e){c(d.isBuild?null:b.scoped(a))})}})

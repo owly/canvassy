@@ -1,0 +1,1 @@
+(function(){define(["i18nObj"],function(a){return{weekMode:"variable",allDayDefault:!1,ignoreTimezone:!0,lazyFetching:!1,monthNames:a.lookup("date.month_names").slice(1,13),monthNamesShort:a.lookup("date.abbr_month_names").slice(1,13),dayNames:a.lookup("date.day_names"),dayNamesShort:a.lookup("date.abbr_day_names")}})}).call(this)

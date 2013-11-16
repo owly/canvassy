@@ -1,0 +1,1 @@
+define(["i18nObj","jquery"],function(a,b){b.extend(!0,a,{translations:{ar:{},es:{},fr:{},ja:{discussions:{deleted_entry:{deleted:"このエントリは削除されました"}}},ko:{discussions:{deleted_entry:{deleted:"이 항목이 삭제됨"}}},nl:{},pt:{},ru:{},zh:{}}})})

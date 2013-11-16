@@ -1,0 +1,1 @@
+(function(){define(["i18n!enrollmentNames"],function(a){var b,c;return c={StudentEnrollment:a.t("student","Student"),TeacherEnrollment:a.t("teacher","Teacher"),TaEnrollment:a.t("teacher_assistant","TA"),ObserverEnrollment:a.t("observer","Observer"),DesignerEnrollment:a.t("course_designer","Course Designer")},b=function(a){return c[a]||a}})}).call(this)

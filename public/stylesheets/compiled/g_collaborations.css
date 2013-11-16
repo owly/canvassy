@@ -1,0 +1,127 @@
+/* line 7, ../../../app/stylesheets/g_collaborations.scss */
+.collaborations-header {
+  overflow: hidden; }
+  /* line 10, ../../../app/stylesheets/g_collaborations.scss */
+  .collaborations-header h1, .collaborations-header .h1 {
+    float: left; }
+  /* line 11, ../../../app/stylesheets/g_collaborations.scss */
+  .collaborations-header a.btn {
+    float: right; }
+
+/* line 14, ../../../app/stylesheets/g_collaborations.scss */
+.collaboration {
+  background: url(/images/google_docs.png) no-repeat;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin: 0 0 10px 0;
+  padding: 10px 10px 10px 60px; }
+  /* line 21, ../../../app/stylesheets/g_collaborations.scss */
+  .collaboration.etherpad {
+    background: url(/images/ether_pad.png) no-repeat 5px 20px;
+    padding: 10px 10px 10px 85px; }
+  /* line 26, ../../../app/stylesheets/g_collaborations.scss */
+  .collaboration .links {
+    float: right;
+    line-height: 0.8em; }
+  /* line 31, ../../../app/stylesheets/g_collaborations.scss */
+  .collaboration h3, .collaboration .h3 {
+    font-family: arial, sans-serif;
+    font-size: 1.2em;
+    border-bottom: 1px solid #cccccc; }
+
+/* line 39, ../../../app/stylesheets/g_collaborations.scss */
+.collaborator-picker .list-wrapper {
+  float: left;
+  height: 300px;
+  overflow-y: scroll;
+  width: 50%; }
+/* line 46, ../../../app/stylesheets/g_collaborations.scss */
+.collaborator-picker .list-wrapper li {
+  position: relative; }
+  /* line 49, ../../../app/stylesheets/g_collaborations.scss */
+  .collaborator-picker .list-wrapper li .icon-end, .collaborator-picker .list-wrapper li .icon-add {
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: 4px; }
+  /* line 57, ../../../app/stylesheets/g_collaborations.scss */
+  .collaborator-picker .list-wrapper li:hover .icon-end, .collaborator-picker .list-wrapper li:hover .icon-add,
+  .collaborator-picker .list-wrapper li a:focus .icon-end, .collaborator-picker .list-wrapper li a:focus .icon-add {
+    display: block; }
+/* line 62, ../../../app/stylesheets/g_collaborations.scss */
+.collaborator-picker .loading-wrapper {
+  text-align: center; }
+/* line 63, ../../../app/stylesheets/g_collaborations.scss */
+.collaborator-picker .loading-wrapper img {
+  margin: 16px auto; }
+/* line 65, ../../../app/stylesheets/g_collaborations.scss */
+.collaborator-picker .list-wrapper ul {
+  display: none; }
+/* line 66, ../../../app/stylesheets/g_collaborations.scss */
+.collaborator-picker .list-wrapper ul:first-child {
+  display: block; }
+/* line 67, ../../../app/stylesheets/g_collaborations.scss */
+.collaborator-picker .members-list-wrapper ul {
+  display: block; }
+/* line 69, ../../../app/stylesheets/g_collaborations.scss */
+.collaborator-picker .box-with-header .box-content {
+  overflow: hidden;
+  padding: 0; }
+/* line 74, ../../../app/stylesheets/g_collaborations.scss */
+.collaborator-picker .ui-state-active i {
+  color: #00b5fe !important; }
+
+/* line 79, ../../../app/stylesheets/g_collaborations.scss */
+.collaboration-actions.form-actions {
+  background: none;
+  border: none;
+  padding: 0; }
+
+/* line 85, ../../../app/stylesheets/g_collaborations.scss */
+.collaborator-list > ul > li {
+  background: none;
+  border-bottom: 1px solid #e4e5e7;
+  border-top: 1px solid white;
+  color: #555555;
+  display: block;
+  padding: 4px 12px; }
+  /* line 93, ../../../app/stylesheets/g_collaborations.scss */
+  .collaborator-list > ul > li:hover {
+    background: #edf4fc; }
+  /* line 97, ../../../app/stylesheets/g_collaborations.scss */
+  .collaborator-list > ul > li > a {
+    border: none;
+    padding: 0; }
+  /* line 102, ../../../app/stylesheets/g_collaborations.scss */
+  .collaborator-list > ul > li > a:hover {
+    background: none; }
+
+/* line 106, ../../../app/stylesheets/g_collaborations.scss */
+.members-list-wrapper li {
+  background: #f5fbf7; }
+  /* line 109, ../../../app/stylesheets/g_collaborations.scss */
+  .members-list-wrapper li:hover, .members-list-wrapper li:hover a, .members-list-wrapper li a:focus {
+    background: none;
+    color: #b72d1e;
+    outline: 0; }
+/* line 117, ../../../app/stylesheets/g_collaborations.scss */
+.members-list-wrapper a {
+  cursor: pointer; }
+/* line 119, ../../../app/stylesheets/g_collaborations.scss */
+.members-list-wrapper .remove-button {
+  display: none; }
+/* line 123, ../../../app/stylesheets/g_collaborations.scss */
+.members-list-wrapper .remove-button a {
+  color: #333;
+  cursor: pointer;
+  display: block;
+  text-align: center; }
+/* line 130, ../../../app/stylesheets/g_collaborations.scss */
+.members-list-wrapper .member-instructions {
+  border: 2px dashed #999;
+  border-radius: 10px;
+  color: #777;
+  font-size: 16px;
+  margin: 36px 8px 8px 8px;
+  padding: 4px;
+  text-align: center; }

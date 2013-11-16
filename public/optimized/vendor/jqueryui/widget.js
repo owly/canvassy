@@ -1,0 +1,1 @@
+define(["jquery","jqueryui/widget-unpatched"],function(a,b){return a.widget.extend=function(b){var c=Array.prototype.slice.call(arguments,1),d=0,e=c.length,f,g;for(;d<e;d++)for(f in c[d])g=c[d][f],c[d].hasOwnProperty(f)&&g!==undefined&&(b[f]=a.isPlainObject(g)&&a.isPlainObject(b[f])?a.widget.extend({},b[f],g):g);return b},b})

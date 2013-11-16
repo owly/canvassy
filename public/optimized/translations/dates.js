@@ -1,0 +1,1 @@
+define(["i18nObj","jquery"],function(a,b){b.extend(!0,a,{translations:{ar:{dates:{no_date:"بلا تاريخ"}},es:{dates:{no_date:"Sin Fecha"}},fr:{dates:{no_date:"Aucune date"}},ja:{dates:{no_date:"日付なし"}},ko:{dates:{no_date:"날짜 없음"}},nl:{dates:{no_date:"Geen datu"}},pt:{dates:{no_date:"Sem data"}},ru:{dates:{no_date:"Отсутствует дата"}},zh:{dates:{no_date:"无日期"}}}})})

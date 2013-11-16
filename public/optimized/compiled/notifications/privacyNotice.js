@@ -1,0 +1,1 @@
+(function(){define(["jst/profiles/notifications/privacyNotice","compiled/jquery/fixDialogButtons"],function(a){return function(){var b;if(ENV.READ_PRIVACY_INFO||!ENV.ACCOUNT_PRIVACY_NOTICE)return;return b=$(a()),b.appendTo("body").dialog({close:function(a,b){return $.post("/profile",{_method:"put",privacy_notice:1})},title:b.data("title")}).fixDialogButtons()}})}).call(this)

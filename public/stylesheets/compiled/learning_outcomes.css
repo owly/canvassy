@@ -1,0 +1,223 @@
+/* line 3, ../../../app/stylesheets/learning_outcomes.sass */
+.outcomes-browser {
+  min-width: 840px; }
+  /* line 5, ../../../app/stylesheets/learning_outcomes.sass */
+  .outcomes-browser .toolbar {
+    padding: 5px;
+    height: 28px; }
+    /* line 8, ../../../app/stylesheets/learning_outcomes.sass */
+    .outcomes-browser .toolbar .manage_rubrics {
+      float: right; }
+    /* line 10, ../../../app/stylesheets/learning_outcomes.sass */
+    .outcomes-browser .toolbar .search {
+      float: right; }
+    /* line 13, ../../../app/stylesheets/learning_outcomes.sass */
+    .outcomes-browser .toolbar .ui-button i {
+      margin-bottom: -3px; }
+  /* line 15, ../../../app/stylesheets/learning_outcomes.sass */
+  .outcomes-browser .outcomes-main {
+    height: 500px;
+    padding: 0;
+    overflow: hidden;
+    background-color: white; }
+    /* line 20, ../../../app/stylesheets/learning_outcomes.sass */
+    .outcomes-browser .outcomes-main::after {
+      clear: both; }
+  /* line 22, ../../../app/stylesheets/learning_outcomes.sass */
+  .outcomes-browser .outcomes-sidebar {
+    float: left;
+    height: 485px;
+    width: 201px;
+    background-color: #f8fafb;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 15px; }
+    /* line 30, ../../../app/stylesheets/learning_outcomes.sass */
+    .outcomes-browser .outcomes-sidebar .wrapper {
+      width: 201px; }
+  /* line 32, ../../../app/stylesheets/learning_outcomes.sass */
+  .outcomes-browser .outcomes-content {
+    height: 500px;
+    border-left: 1px solid #a8adb3;
+    overflow: scroll; }
+    /* line 36, ../../../app/stylesheets/learning_outcomes.sass */
+    .outcomes-browser .outcomes-content .wrapper {
+      padding: 15px;
+      width: 600px;
+      min-height: 300px; }
+    /* line 40, ../../../app/stylesheets/learning_outcomes.sass */
+    .outcomes-browser .outcomes-content label {
+      display: block;
+      padding: 5px 0 5px 0; }
+    /* line 43, ../../../app/stylesheets/learning_outcomes.sass */
+    .outcomes-browser .outcomes-content .outcome_information_link i {
+      margin-bottom: -3px; }
+    /* line 45, ../../../app/stylesheets/learning_outcomes.sass */
+    .outcomes-browser .outcomes-content .delete_button {
+      margin-right: 1em; }
+
+/* line 47, ../../../app/stylesheets/learning_outcomes.sass */
+ul.outcome-level {
+  padding: 0;
+  margin: 0;
+  border-right: 1px solid #cccccc;
+  float: left;
+  height: 485px;
+  width: 200px;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+  /* line 56, ../../../app/stylesheets/learning_outcomes.sass */
+  ul.outcome-level.outcome-level-hover, ul.outcome-level.outcome-level-hover li {
+    background: white; }
+  /* line 58, ../../../app/stylesheets/learning_outcomes.sass */
+  ul.outcome-level li {
+    padding: 0;
+    margin: 0;
+    background-color: #f8fafb;
+    overflow: hidden;
+    list-style: none;
+    width: 200px; }
+    /* line 65, ../../../app/stylesheets/learning_outcomes.sass */
+    ul.outcome-level li:hover, ul.outcome-level li:focus {
+      outline: none; }
+      /* line 67, ../../../app/stylesheets/learning_outcomes.sass */
+      ul.outcome-level li:hover a, ul.outcome-level li:focus a {
+        background: white; }
+      /* line 69, ../../../app/stylesheets/learning_outcomes.sass */
+      ul.outcome-level li:hover i[class*=icon-], ul.outcome-level li:focus i[class*=icon-] {
+        background-image: url(/images/blue/canvas-icons-16x16-blue.png); }
+    /* line 71, ../../../app/stylesheets/learning_outcomes.sass */
+    ul.outcome-level li a {
+      text-decoration: none;
+      display: block;
+      border-top: 1px solid white;
+      border-bottom: 1px solid #e4e5e7;
+      padding: 4px 12px;
+      color: #555555;
+      white-space: nowrap; }
+      /* line 79, ../../../app/stylesheets/learning_outcomes.sass */
+      ul.outcome-level li a:hover {
+        background: white; }
+      /* line 82, ../../../app/stylesheets/learning_outcomes.sass */
+      ul.outcome-level li a i[class*=icon-]:before, ul.outcome-level li a i[class^=icon-]:before {
+        vertical-align: baseline; }
+    /* line 86, ../../../app/stylesheets/learning_outcomes.sass */
+    ul.outcome-level li.selected a {
+      background-color: #e8f1f9;
+      border-bottom-color: #d1d3d7;
+      border-top-color: #e0f0fd; }
+      /* line 90, ../../../app/stylesheets/learning_outcomes.sass */
+      ul.outcome-level li.selected a:hover {
+        background-color: #d6ecfc; }
+    /* line 93, ../../../app/stylesheets/learning_outcomes.sass */
+    ul.outcome-level li.selected.droppable a {
+      background-color: #f8fafb;
+      color: #bbbbbb; }
+    /* line 97, ../../../app/stylesheets/learning_outcomes.sass */
+    ul.outcome-level li.droppable a {
+      background-color: #d6ecfc;
+      border-bottom-color: #d1d3d7;
+      border-top-color: #e0f0fd; }
+    /* line 101, ../../../app/stylesheets/learning_outcomes.sass */
+    ul.outcome-level li a.loading-more {
+      background-color: #eef3f5; }
+    /* line 103, ../../../app/stylesheets/learning_outcomes.sass */
+    ul.outcome-level li[aria-grabbed=true] a, ul.outcome-level li[aria-grabbed=true] i {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+      opacity: 0.75; }
+
+/* line 106, ../../../app/stylesheets/learning_outcomes.sass */
+#import_dialog {
+  padding: 0;
+  margin: 0; }
+  /* line 109, ../../../app/stylesheets/learning_outcomes.sass */
+  #import_dialog .ui-dialog-buttonpane {
+    margin-top: 0; }
+
+/* line 112, ../../../app/stylesheets/learning_outcomes.sass */
+table.criterion {
+  padding: 0;
+  min-width: 600px;
+  margin: 2em 0; }
+
+/* line 117, ../../../app/stylesheets/learning_outcomes.sass */
+table.criterion td {
+  border: 1px solid #a8adb3;
+  padding: 5px;
+  text-align: center;
+  vertical-align: top; }
+  /* line 122, ../../../app/stylesheets/learning_outcomes.sass */
+  table.criterion td.total {
+    background-color: #f8fafb; }
+
+/* line 125, ../../../app/stylesheets/learning_outcomes.sass */
+.rating-wrap {
+  position: relative; }
+
+/* line 128, ../../../app/stylesheets/learning_outcomes.sass */
+h5, .h5 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #0088cc;
+  font-weight: normal;
+  min-height: 1em; }
+  /* line 134, ../../../app/stylesheets/learning_outcomes.sass */
+  h5.total, .h5.total {
+    font-weight: bold; }
+
+/* line 137, ../../../app/stylesheets/learning_outcomes.sass */
+table.criterion .edit {
+  display: none;
+  height: 67px;
+  min-width: 180px; }
+  /* line 141, ../../../app/stylesheets/learning_outcomes.sass */
+  table.criterion .edit .row-fluid {
+    margin-bottom: 8px; }
+  /* line 143, ../../../app/stylesheets/learning_outcomes.sass */
+  table.criterion .edit .buttons button {
+    float: right;
+    margin-left: 4px; }
+
+/* line 147, ../../../app/stylesheets/learning_outcomes.sass */
+.edit_rating {
+  float: right; }
+
+/* line 150, ../../../app/stylesheets/learning_outcomes.sass */
+.outcome_rating_description {
+  width: 100%; }
+
+/* line 153, ../../../app/stylesheets/learning_outcomes.sass */
+table.criterion .insert {
+  position: absolute;
+  top: -33px;
+  right: -22px;
+  cursor: pointer; }
+  /* line 158, ../../../app/stylesheets/learning_outcomes.sass */
+  table.criterion .insert a {
+    color: #999999;
+    text-decoration: none; }
+  /* line 162, ../../../app/stylesheets/learning_outcomes.sass */
+  table.criterion .insert:hover a {
+    color: #0088cc; }
+  /* line 164, ../../../app/stylesheets/learning_outcomes.sass */
+  table.criterion .insert:hover span {
+    border-top-color: #0088cc; }
+
+/* line 167, ../../../app/stylesheets/learning_outcomes.sass */
+.arrow-icon {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0 11px;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-top: 5px solid #999999;
+  display: block; }
+
+/* line 177, ../../../app/stylesheets/learning_outcomes.sass */
+.outcomes-points-label {
+  font-size: 11px; }
+
+/* line 180, ../../../app/stylesheets/learning_outcomes.sass */
+.outcomes-edit-row {
+  text-align: left; }

@@ -1,0 +1,45 @@
+/* line 6, ../../../../app/stylesheets/jst/FileBrowserView.scss */
+.folderTree, .folderTree ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  /* line 6, ../../../../app/stylesheets/mixins/_misc.sass */
+  .folderTree li, .folderTree ul li {
+    margin: 0;
+    padding: 0; }
+/* line 9, ../../../../app/stylesheets/jst/FileBrowserView.scss */
+.folderTree ul {
+  margin-left: 8px; }
+/* line 10, ../../../../app/stylesheets/jst/FileBrowserView.scss */
+.folderTree li a {
+  padding: 1px 7px 1px 35px;
+  display: block;
+  background: url(/images/inst_tree/file_types/page_white.png) no-repeat 13px 3px;
+  position: relative; }
+  /* line 15, ../../../../app/stylesheets/jst/FileBrowserView.scss */
+  .folderTree li a.folderLabel {
+    background-image: url(/images/inst_tree/folder.png); }
+    /* line 17, ../../../../app/stylesheets/jst/FileBrowserView.scss */
+    .folderTree li a.folderLabel:before {
+      position: absolute;
+      top: 5px;
+      left: 4px;
+      border: solid transparent;
+      border-width: 5px;
+      border-left-color: #525252;
+      content: ''; }
+    /* line 26, ../../../../app/stylesheets/jst/FileBrowserView.scss */
+    .folderTree li a.folderLabel.expanded:before {
+      left: 0;
+      top: 7px;
+      border-left-color: transparent;
+      border-top-color: #525252; }
+  /* line 34, ../../../../app/stylesheets/jst/FileBrowserView.scss */
+  .folderTree li a.active {
+    background-color: #d6ecfc; }
+/* line 36, ../../../../app/stylesheets/jst/FileBrowserView.scss */
+.folderTree .preview-thumbnail {
+  margin-left: -23px;
+  max-width: 200px;
+  height: 30px;
+  vertical-align: middle; }

@@ -1,0 +1,1 @@
+define(["content_migration_deprecated"],function(a){return a})

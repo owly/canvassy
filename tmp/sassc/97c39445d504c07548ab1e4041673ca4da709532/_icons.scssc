@@ -1,0 +1,1493 @@
+3.2.3 (Media Mark)
+f8230f22cc96c9adbbe5dea26c9355314e9d875c
+o:Sass::Tree::RootNode
+:@children[΅o:Sass::Tree::CommentNode
+:@value[I"j//* @styleguide Icons
+
+### Icons in links
+
+```html
+<a class="icon-add" href="whatever">Add Stuff</a>
+```
+
+### Icons in buttons links
+
+```html
+<p>
+  <a class="icon-edit btn btn-primary">Edit</a>
+</p>
+<p>
+  <button class="btn"><i class="icon-trash"></i>Delete</button>
+</p>
+```
+
+Either use `<a>` with icon desired icon class added or insert `<i>` inside `<button>` and set to desired icon class
+
+### All icons
+
+<div class="row-fluid">
+  <span class="span3"><i class="icon-stats"></i> icon-stats</span>
+  <span class="span3"><i class="icon-paperclip"></i> icon-paperclip</span>
+  <span class="span3"><i class="icon-media"></i> icon-media</span>
+  <span class="span3"><i class="icon-address-book"></i> icon-address-book</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-reset"></i> icon-reset</span>
+  <span class="span3"><i class="icon-announcement"></i> icon-announcement</span>
+  <span class="span3"><i class="icon-analytics"></i> icon-analytics</span>
+  <span class="span3"><i class="icon-student-view"></i> icon-student-view</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-calendar-day"></i> icon-calendar-day</span>
+  <span class="span3"><i class="icon-trash"></i> icon-trash</span>
+  <span class="span3"><i class="icon-speed-grader"></i> icon-speed-grader</span>
+  <span class="span3"><i class="icon-copy-course"></i> icon-copy-course</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-export-content"></i> icon-export-content</span>
+  <span class="span3"><i class="icon-import-content"></i> icon-import-content</span>
+  <span class="span3"><i class="icon-discussion"></i> icon-discussion</span>
+  <span class="span3"><i class="icon-discussion-reply"></i> icon-discussion-reply</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-peer-review"></i> icon-peer-review</span>
+  <span class="span3"><i class="icon-discussion-new"></i> icon-discussion-new</span>
+  <span class="span3"><i class="icon-edit"></i> icon-edit</span>
+  <span class="span3"><i class="icon-home"></i> icon-home</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-settings"></i> icon-settings</span>
+  <span class="span3"><i class="icon-compose"></i> icon-compose</span>
+  <span class="span3"><i class="icon-flag"></i> icon-flag</span>
+  <span class="span3"><i class="icon-video"></i> icon-video</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-audio"></i> icon-audio</span>
+  <span class="span3"><i class="icon-outdent"></i> icon-outdent</span>
+  <span class="span3"><i class="icon-indent"></i> icon-indent</span>
+  <span class="span3"><i class="icon-outdent2"></i> icon-outdent2</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-indent2"></i> icon-indent2</span>
+  <span class="span3"><i class="icon-forward"></i> icon-forward</span>
+  <span class="span3"><i class="icon-warning"></i> icon-warning</span>
+  <span class="span3"><i class="icon-filmstrip"></i> icon-filmstrip</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-rubric"></i> icon-rubric</span>
+  <span class="span3"><i class="icon-rubric-dark"></i> icon-rubric-dark</span>
+  <span class="span3"><i class="icon-check-plus"></i> icon-check-plus</span>
+  <span class="span3"><i class="icon-rss"></i> icon-rss</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-rss-add"></i> icon-rss-add</span>
+  <span class="span3"><i class="icon-quiz"></i> icon-quiz</span>
+  <span class="span3"><i class="icon-question"></i> icon-question</span>
+  <span class="span3"><i class="icon-drop-down"></i> icon-drop-down</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-minimize"></i> icon-minimize</span>
+  <span class="span3"><i class="icon-end"></i> icon-end</span>
+  <span class="span3"><i class="icon-add"></i> icon-add</span>
+  <span class="span3"><i class="icon-info"></i> icon-info</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-check"></i> icon-check</span>
+  <span class="span3"><i class="icon-clock"></i> icon-clock</span>
+  <span class="span3"><i class="icon-calendar-month"></i> icon-calendar-month</span>
+  <span class="span3"><i class="icon-x"></i> icon-x</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-refresh"></i> icon-refresh</span>
+  <span class="span3"><i class="icon-off"></i> icon-off</span>
+  <span class="span3"><i class="icon-updown"></i> icon-updown</span>
+  <span class="span3"><i class="icon-user-add"></i> icon-user-add</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-group"></i> icon-group</span>
+  <span class="span3"><i class="icon-star"></i> icon-star</span>
+  <span class="span3"><i class="icon-replied"></i> icon-replied</span>
+  <span class="span3"><i class="icon-hour-glass"></i> icon-hour-glass</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-assignment"></i> icon-assignment</span>
+  <span class="span3"><i class="icon-message"></i> icon-message</span>
+  <span class="span3"><i class="icon-note-dark"></i> icon-note-dark</span>
+  <span class="span3"><i class="icon-note-light"></i> icon-note-light</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-tag"></i> icon-tag</span>
+  <span class="span3"><i class="icon-next-unread"></i> icon-next-unread</span>
+  <span class="span3"><i class="icon-search"></i> icon-search</span>
+  <span class="span3"><i class="icon-lock"></i> icon-lock</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-unlock"></i> icon-unlock</span>
+  <span class="span3"><i class="icon-folder"></i> icon-folder</span>
+  <span class="span3"><i class="icon-toggle-right"></i> icon-toggle-right</span>
+  <span class="span3"><i class="icon-toggle-left"></i> icon-toggle-left</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-link"></i> icon-link</span>
+  <span class="span3"><i class="icon-lti"></i> icon-lti</span>
+  <span class="span3"><i class="icon-text"></i> icon-text</span>
+  <span class="span3"><i class="icon-timer"></i> icon-timer</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-pin"></i> icon-pin</span>
+  <span class="span3"><i class="icon-like"></i> icon-like</span>
+  <span class="span3"><i class="icon-collection-save"></i> icon-collection-save</span>
+  <span class="span3"><i class="icon-collection"></i> icon-collection</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-group-new"></i> icon-group-new</span>
+  <span class="span3"><i class="icon-group-new-dark"></i> icon-group-new-dark</span>
+  <span class="span3"><i class="icon-user"></i> icon-user</span>
+  <span class="span3"><i class="icon-standards"></i> icon-standards</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-search-address-book"></i> icon-search-address-book</span>
+  <span class="span3"><i class="icon-facebook"></i> icon-facebook</span>
+  <span class="span3"><i class="icon-facebook-boxed"></i> icon-facebook-boxed</span>
+  <span class="span3"><i class="icon-linkedin"></i> icon-linkedin</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-twitter"></i> icon-twitter</span>
+  <span class="span3"><i class="icon-twitter-boxed"></i> icon-twitter-boxed</span>
+  <span class="span3"><i class="icon-github"></i> icon-github</span>
+  <span class="span3"><i class="icon-skype"></i> icon-skype</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-wordpress"></i> icon-wordpress</span>
+  <span class="span3"><i class="icon-pinterest"></i> icon-pinterest</span>
+  <span class="span3"><i class="icon-gradebook"></i> icon-gradebook</span>
+  <span class="span3"><i class="icon-document"></i> icon-document</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-module"></i> icon-module</span>
+  <span class="span3"><i class="icon-mini-arrow-up"></i> icon-mini-arrow-up</span>
+  <span class="span3"><i class="icon-mini-arrow-down"></i> icon-mini-arrow-down</span>
+  <span class="span3"><i class="icon-mini-arrow-left"></i> icon-mini-arrow-left</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-mini-arrow-right"></i> icon-mini-arrow-right</span>
+  <span class="span3"><i class="icon-arrow-up"></i> icon-arrow-up</span>
+  <span class="span3"><i class="icon-arrow-down"></i> icon-arrow-down</span>
+  <span class="span3"><i class="icon-arrow-left"></i> icon-arrow-left</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-arrow-right"></i> icon-arrow-right</span>
+  <span class="span3"><i class="icon-email"></i> icon-email</span>
+  <span class="span3"><i class="icon-instructure"></i> icon-instructure</span>
+  <span class="span3"><i class="icon-ms-word"></i> icon-ms-word</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-ms-excel"></i> icon-ms-excel</span>
+  <span class="span3"><i class="icon-ms-ppt"></i> icon-ms-ppt</span>
+  <span class="span3"><i class="icon-pdf"></i> icon-pdf</span>
+  <span class="span3"><i class="icon-apple"></i> icon-apple</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-windows"></i> icon-windows</span>
+  <span class="span3"><i class="icon-android"></i> icon-android</span>
+  <span class="span3"><i class="icon-heart"></i> icon-heart</span>
+  <span class="span3"><i class="icon-upload"></i> icon-upload</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-download"></i> icon-download</span>
+  <span class="span3"><i class="icon-text-left"></i> icon-text-left</span>
+  <span class="span3"><i class="icon-text-center"></i> icon-text-center</span>
+  <span class="span3"><i class="icon-text-right"></i> icon-text-right</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-mature"></i> icon-mature</span>
+  <span class="span3"><i class="icon-prerequisite"></i> icon-prerequisite</span>
+  <span class="span3"><i class="icon-educators"></i> icon-educators</span>
+  <span class="span3"><i class="icon-calendar-days"></i> icon-calendar-days</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-materials-required"></i> icon-materials-required</span>
+  <span class="span3"><i class="icon-not-graded"></i> icon-not-graded</span>
+  <span class="span3"><i class="icon-peer-graded"></i> icon-peer-graded</span>
+  <span class="span3"><i class="icon-bookmark"></i> icon-bookmark</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-printer"></i> icon-printer</span>
+  <span class="span3"><i class="icon-image"></i> icon-image</span>
+  <span class="span3"><i class="icon-expand"></i> icon-expand</span>
+  <span class="span3"><i class="icon-collapse"></i> icon-collapse</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-invitation"></i> icon-invitation</span>
+  <span class="span3"><i class="icon-muted"></i> icon-muted</span>
+  <span class="span3"><i class="icon-unmuted"></i> icon-unmuted</span>
+  <span class="span3"><i class="icon-plus"></i> icon-plus</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-zipped"></i> icon-zipped</span>
+  <span class="span3"><i class="icon-publish"></i> icon-publish</span>
+  <span class="span3"><i class="icon-unpublish"></i> icon-unpublish</span>
+  <span class="span3"><i class="icon-unpublished"></i> icon-unpublished</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-discussion-check"></i> icon-discussion-check</span>
+  <span class="span3"><i class="icon-discussion-reply-2"></i> icon-discussion-reply-2</span>
+  <span class="span3"><i class="icon-discussion-search"></i> icon-discussion-search</span>
+  <span class="span3"><i class="icon-discussion-x"></i> icon-discussion-x</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-mark-as-read"></i> icon-mark-as-read</span>
+  <span class="span3"><i class="icon-more"></i> icon-more</span>
+  <span class="span3"><i class="icon-syllabus"></i> icon-syllabus</span>
+  <span class="span3"><i class="icon-settings-2"></i> icon-settings-2</span>
+</div>
+*/:ET:
+@type:normal;[ :
+@linei:@options{ o;
+;[I"/* add icon font */;	T;
+:silent;[ ;iς;@o:Sass::Tree::DirectiveNode
+;[I"@font-face;	F;[
+o:Sass::Tree::PropNode:
+@name[I"font-family;	T;o:Sass::Script::String;I"'canvasregular';	T;
+:identifier;@:
+@tabsi :@prop_syntax:new;[ ;iτ;@o;;[I"src;	T;o:Sass::Script::Funcall;I"url;	T:
+@args[o;	;I"$/font/canvas/canvas-webfont.eot;	T;
+:string;iυ;@:@keywords{ :@splat0;iυ;@;i ;;;[ ;iυ;@o;;[I"src;	T;o:Sass::Script::List	;[	o;	;[o;;I"url;	T;[o;	;I"+/font/canvas/canvas-webfont.eot?#iefix;	T;
+;;iφ;@;{ ;0;iφ;@o;;I"format;	T;[o;	;I"embedded-opentype;	T;
+;;iφ;@;{ ;0;iφ;@:@separator:
+space;iφ;@o;	;[o;;I"url;	T;[o;	;I"%/font/canvas/canvas-webfont.woff;	T;
+;;iχ;@;{ ;0;iχ;@o;;I"format;	T;[o;	;I"	woff;	T;
+;;iχ;@;{ ;0;iχ;@;;;iχ;@o;	;[o;;I"url;	T;[o;	;I"$/font/canvas/canvas-webfont.ttf;	T;
+;;iψ;@;{ ;0;iψ;@o;;I"format;	T;[o;	;I"truetype;	T;
+;;iψ;@;{ ;0;iψ;@;;;iψ;@o;	;[o;;I"url;	T;[o;	;I"2/font/canvas/canvas-webfont.svg#canvasregular;	T;
+;;iω;@;{ ;0;iω;@o;;I"format;	T;[o;	;I"svg;	T;
+;;iω;@;{ ;0;iω;@;;;iω;@;:
+comma;iφ;@;i ;;;[ ;iω;@o;;[I"font-weight;	T;o;;I"normal;	T;
+;;@;i ;;;[ ;iϊ;@o;;[I"font-style;	T;o;;I"normal;	T;
+;;@;i ;;;[ ;iϋ;@;iσ:@has_childrenT;@o;
+;[I"ƒ/* styles to ensure icons can only be applied through the <i> element, but also allowing
+ * to be applied directly to text links */;	T;
+;;[ ;iώ;@o:Sass::Tree::RuleNode:
+@rule[I"Gi[class*=icon-], i[class^=icon-], a[class*=icon-], a[class^=icon-];	T;i :@parsed_ruleso:"Sass::Selector::CommaSequence:@members[	o:Sass::Selector::Sequence;%[o:#Sass::Selector::SimpleSequence
+;%[o:Sass::Selector::Element	;[I"i;	T:@namespace0;i:@filenameI" ;	Fo:Sass::Selector::Attribute;[I"
+class;	T;)0:@operatorI"*=;	T;[I"
+icon-;	T:@flags0;i;*@~:@subject0:@sourceso:Set:
+@hash{ ;i;*@~o;&;%[o;'
+;%[o;(	;[I"i;	T;)0;i;*@~o;+;[I"
+class;	T;)0;,I"^=;	T;[I"
+icon-;	T;-0;i;*@~;.0;/o;0;1{ ;i;*@~o;&;%[o;'
+;%[o;(	;[I"a;	T;)0;i;*@~o;+;[I"
+class;	T;)0;,I"*=;	T;[I"
+icon-;	T;-0;i;*@~;.0;/o;0;1{ ;i;*@~o;&;%[o;'
+;%[o;(	;[I"a;	T;)0;i;*@~o;+;[I"
+class;	T;)0;,I"^=;	T;[I"
+icon-;	T;-0;i;*@~;.0;/o;0;1{ ;i;*@~;i;*@~;[o;!;"[I"&:before;	F;i ;#o;$;%[o;&;%[o;'
+;%[o:Sass::Selector::Parent;i;*I" ;	Fo:Sass::Selector::Pseudo
+;
+:
+class;[I"before;	F:	@arg0;i;*@Ί;.0;/o;0;1{ ;i;*@Ί;i;*@Ί;[o;;[I"font-family;	T;o;;I"'canvasregular';	T;
+;;@;i ;;;[ ;i;@o;;[I"display;	T;o;;I"inline-block;	T;
+;;@;i ;;;[ ;i;@o;;[I"vertical-align;	T;o;;I"middle;	T;
+;;@;i ;;;[ ;i;@o;;[I"position;	T;o;;I"relative;	T;
+;;@;i ;;;[ ;i;@o;;[I"top;	T;o:Sass::Script::Number;iϊ:@numerator_units[I"px;	T:@denominator_units[ ;i:@originalI"	-1px;	F;@;i ;;;[ ;i;@o;;[I"text-rendering;	T;o;;I"optimizeLegibility;	T;
+;;@;i ;;;[ ;i	;@o;
+;[I"/* the specific reason for this being in the :before and not part of the <i> was to get
+ * .input-appends to work with .btns that had an <i> icon in them. */;	T;
+;;[ ;i;@o;;[I"font-size;	T;o;;I"	16px;	T;
+;;@;i ;;;[ ;i;@o;
+;[I"^/* override any properties in the cascade that might make the font display incorrectly */;	T;
+;;[ ;i;@o;;[I"text-transform;	T;o;;I"none !important;	T;
+;;@;i ;;;[ ;i;@o;;[I"font-weight;	T;o;;I"normal !important;	T;
+;;@;i ;;;[ ;i;@o;;[I"font-style;	T;o;;I"normal !important;	T;
+;;@;i ;;;[ ;i;@;i; T;@;i; T;@o;!;"[I"%i[class*=icon-], i[class^=icon-];	T;i ;#o;$;%[o;&;%[o;'
+;%[o;(	;[I"i;	T;)0;i;*I" ;	Fo;+;[I"
+class;	T;)0;,I"*=;	T;[I"
+icon-;	T;-0;i;*@;.0;/o;0;1{ ;i;*@o;&;%[o;'
+;%[o;(	;[I"i;	T;)0;i;*@o;+;[I"
+class;	T;)0;,I"^=;	T;[I"
+icon-;	T;-0;i;*@;.0;/o;0;1{ ;i;*@;i;*@;[o;;[I"display;	T;o;;I"inline-block;	T;
+;;@;i ;;;[ ;i;@o;;[I"font-style;	T;o;;I"normal !important;	T;
+;;@;i ;;;[ ;i;@o;;[I"
+width;	T;o;;I"	16px;	T;
+;;@;i ;;;[ ;i;@o;;[I"height;	T;o;;I"	16px;	T;
+;;@;i ;;;[ ;i;@o;;[I"line-height;	T;o;;I"	16px;	T;
+;;@;i ;;;[ ;i;@o;
+;[I"J/* adjust icon sizes to look good with our large-size button class */;	T;
+;;[ ;i;@o;!;"[I".btn-large &;	F;i ;#o;$;%[o;&;%[o;'
+;%[o:Sass::Selector::Class;[I"btn-large;	F;i;*I" ;	F;.0;/o;0;1{ ;i;*@[o;'
+;%[o;2;i;*@[;.0;/o;0;1{ ;i;*@[;i;*@[;[	o;;[I"
+width;	T;o;;I"	18px;	T;
+;;@;i ;;;[ ;i;@o;;[I"height;	T;o;;I"	18px;	T;
+;;@;i ;;;[ ;i;@o;;[I"line-height;	T;o;;I"	18px;	T;
+;;@;i ;;;[ ;i;@o;!;"[I"&:before;	F;i ;#o;$;%[o;&;%[o;'
+;%[o;2;i;*I" ;	Fo;3
+;
+;4;[I"before;	F;50;i;*@€;.0;/o;0;1{ ;i;*@€;i;*@€;[o;;[I"font-size;	T;o;;I"	18px;	T;
+;;@;i ;;;[ ;i;@;i; T;@;i; T;@o;
+;[I"“/* most icons do not look good this small, so use sparingly.
+ * this should only be used for things like: icon-settings and icon-mini-arrow-down */;	T;
+;;[ ;i";@o;!;"[I".btn-mini &;	F;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"btn-mini;	F;i$;*I" ;	F;.0;/o;0;1{ ;i$;*@o;'
+;%[o;2;i$;*@;.0;/o;0;1{ ;i$;*@;i$;*@;[	o;;[I"
+width;	T;o;;I"	12px;	T;
+;;@;i ;;;[ ;i%;@o;;[I"height;	T;o;;I"	12px;	T;
+;;@;i ;;;[ ;i%;@o;;[I"line-height;	T;o;;I"	12px;	T;
+;;@;i ;;;[ ;i%;@o;!;"[I"&:before;	F;i ;#o;$;%[o;&;%[o;'
+;%[o;2;i&;*I" ;	Fo;3
+;
+;4;[I"before;	F;50;i&;*@Β;.0;/o;0;1{ ;i&;*@Β;i&;*@Β;[o;;[I"font-size;	T;o;;I"	12px;	T;
+;;@;i ;;;[ ;i&;@;i&; T;@;i$; T;@;i; T;@o;
+;[I"l/* when an icon is applied directly to a link, add a little left margin to make
+ * things look nicer */;	T;
+;;[ ;i+;@o;!;"[I"%a[class*=icon-], a[class^=icon-];	T;i ;#o;$;%[o;&;%[o;'
+;%[o;(	;[I"a;	T;)0;i-;*I" ;	Fo;+;[I"
+class;	T;)0;,I"*=;	T;[I"
+icon-;	T;-0;i-;*@ί;.0;/o;0;1{ ;i-;*@ίo;&;%[o;'
+;%[o;(	;[I"a;	T;)0;i-;*@ίo;+;[I"
+class;	T;)0;,I"^=;	T;[I"
+icon-;	T;-0;i-;*@ί;.0;/o;0;1{ ;i-;*@ί;i-;*@ί;[o;!;"[I"&:before;	F;i ;#o;$;%[o;&;%[o;'
+;%[o;2;i.;*I" ;	Fo;3
+;
+;4;[I"before;	F;50;i.;*@;.0;/o;0;1{ ;i.;*@;i.;*@;[o;;[I"margin-right;	T;o;;I"4px;	T;
+;;@;i ;;;[ ;i.;@;i.; T;@;i-; T;@o;
+;[I"{/* icons should be a little lighter than the text in a .btn,
+ * we're aware and ok that this wont have any effect in ie8 */;	T;
+;;[ ;i2;@o;!;"[I"].btn:not(.btn-primary, .btn-warning, .btn-danger, .btn-success, .btn-info, .btn-inverse);	F;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"btn;	F;i4;*I" ;	Fo;3
+;
+;4;[I"not;	F;5[I"S.btn-primary, .btn-warning, .btn-danger, .btn-success, .btn-info, .btn-inverse;	F;i4;*@;.0;/o;0;1{ ;i4;*@;i4;*@;[o;!;"[I"%i[class*=icon-], i[class^=icon-];	T;i ;#o;$;%[o;&;%[o;'
+;%[o;(	;[I"i;	T;)0;i5;*I" ;	Fo;+;[I"
+class;	T;)0;,I"*=;	T;[I"
+icon-;	T;-0;i5;*@4;.0;/o;0;1{ ;i5;*@4o;&;%[o;'
+;%[o;(	;[I"i;	T;)0;i5;*@4o;+;[I"
+class;	T;)0;,I"^=;	T;[I"
+icon-;	T;-0;i5;*@4;.0;/o;0;1{ ;i5;*@4;i5;*@4;[o;;[I"
+color;	T;o;;I"lighten;	T;[o:Sass::Script::Variable	;I"grayDark;	T:@underscored_nameI"grayDark;	T;i6;@o;6;i;7[I"%;	T;8[ ;i6;9I"15%;	F;@;{ ;0;i6;@;i ;;;[ ;i6;@;i5; T;@;i4; T;@o;!;"[I".standalone-icon;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"standalone-icon;	T;i:;*I" ;	F;.0;/o;0;1{ ;i:;*@i;i:;*@i;[o;
+;[I"`/* use to make standalone icons within links display as dark gray, not default link blue */;	T;
+;;[ ;i;;@o;!;"[I"&:before;	F;i ;#o;$;%[o;&;%[o;'
+;%[o;2;i<;*I" ;	Fo;3
+;
+;4;[I"before;	F;50;i<;*@{;.0;/o;0;1{ ;i<;*@{;i<;*@{;[o;;[I"
+color;	T;o;;I"	#555;	T;
+;;@;i ;;;[ ;i<;@;i<; T;@;i:; T;@o;
+;[I"j/* change vertical alignment of icons used with common typographic elements to line them up better */;	T;
+;;[ ;i?;@o;!;"[I"*h1, h2, h3, h4, .h1, .h2, .h3, .h4, p;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;(	;[I"h1;	T;)0;i@;*I" ;	F;.0;/o;0;1{ ;i@;*@o;&;%[o;'
+;%[o;(	;[I"h2;	T;)0;i@;*@;.0;/o;0;1{ ;i@;*@o;&;%[o;'
+;%[o;(	;[I"h3;	T;)0;i@;*@;.0;/o;0;1{ ;i@;*@o;&;%[o;'
+;%[o;(	;[I"h4;	T;)0;i@;*@;.0;/o;0;1{ ;i@;*@o;&;%[o;'
+;%[o;:;[I"h1;	T;i@;*@;.0;/o;0;1{ ;i@;*@o;&;%[o;'
+;%[o;:;[I"h2;	T;i@;*@;.0;/o;0;1{ ;i@;*@o;&;%[o;'
+;%[o;:;[I"h3;	T;i@;*@;.0;/o;0;1{ ;i@;*@o;&;%[o;'
+;%[o;:;[I"h4;	T;i@;*@;.0;/o;0;1{ ;i@;*@o;&;%[o;'
+;%[o;(	;[I"p;	T;)0;i@;*@;.0;/o;0;1{ ;i@;*@;i@;*@;[o;!;"[I"3i[class*=icon-]:before, i[class^=icon-]:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;(	;[I"i;	T;)0;iB;*I" ;	Fo;+;[I"
+class;	T;)0;,I"*=;	T;[I"
+icon-;	T;-0;iB;*@πo;3
+;
+;4;[I"before;	T;50;iB;*@π;.0;/o;0;1{ ;iB;*@πo;&;%[o;'
+;%[o;(	;[I"i;	T;)0;iB;*@πo;+;[I"
+class;	T;)0;,I"^=;	T;[I"
+icon-;	T;-0;iB;*@πo;3
+;
+;4;[I"before;	T;50;iB;*@π;.0;/o;0;1{ ;iB;*@π;iB;*@π;[o;;[I"vertical-align;	T;o;;I"baseline;	T;
+;;@;i ;;;[ ;iC;@;iB; T;@;i@; T;@o;
+;[I"V/* define specific icon classes, mapped to the "canvasregular" icon font above */;	T;
+;;[ ;iI;@o;!;"[I".icon-stats:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-stats;	T;iK;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iK;*@%;.0;/o;0;1{ ;iK;*@%;iK;*@%;[o;;[I"content;	T;o;;I""\e06a";	T;
+;;@;i ;;;[ ;iK;@;iK; T;@o;!;"[I".icon-paperclip:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-paperclip;	T;iL;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iL;*@>;.0;/o;0;1{ ;iL;*@>;iL;*@>;[o;;[I"content;	T;o;;I""\e03d";	T;
+;;@;i ;;;[ ;iL;@;iL; T;@o;!;"[I".icon-media:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-media;	T;iM;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iM;*@W;.0;/o;0;1{ ;iM;*@W;iM;*@W;[o;;[I"content;	T;o;;I""\e062";	T;
+;;@;i ;;;[ ;iM;@;iM; T;@o;!;"[I".icon-address-book:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-address-book;	T;iN;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iN;*@p;.0;/o;0;1{ ;iN;*@p;iN;*@p;[o;;[I"content;	T;o;;I""\e064";	T;
+;;@;i ;;;[ ;iN;@;iN; T;@o;!;"[I".icon-reset:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-reset;	T;iO;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iO;*@‰;.0;/o;0;1{ ;iO;*@‰;iO;*@‰;[o;;[I"content;	T;o;;I""\e009";	T;
+;;@;i ;;;[ ;iO;@;iO; T;@o;!;"[I".icon-announcement:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-announcement;	T;iP;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iP;*@Ά;.0;/o;0;1{ ;iP;*@Ά;iP;*@Ά;[o;;[I"content;	T;o;;I""\e082";	T;
+;;@;i ;;;[ ;iP;@;iP; T;@o;!;"[I".icon-analytics:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-analytics;	T;iQ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iQ;*@»;.0;/o;0;1{ ;iQ;*@»;iQ;*@»;[o;;[I"content;	T;o;;I""\e041";	T;
+;;@;i ;;;[ ;iQ;@;iQ; T;@o;!;"[I".icon-student-view:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-student-view;	T;iR;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iR;*@Τ;.0;/o;0;1{ ;iR;*@Τ;iR;*@Τ;[o;;[I"content;	T;o;;I""\e005";	T;
+;;@;i ;;;[ ;iR;@;iR; T;@o;!;"[I".icon-calendar-day:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-calendar-day;	T;iS;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iS;*@ν;.0;/o;0;1{ ;iS;*@ν;iS;*@ν;[o;;[I"content;	T;o;;I""\e055";	T;
+;;@;i ;;;[ ;iS;@;iS; T;@o;!;"[I".icon-trash:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-trash;	T;iT;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iT;*@;.0;/o;0;1{ ;iT;*@;iT;*@;[o;;[I"content;	T;o;;I""\e04d";	T;
+;;@;i ;;;[ ;iT;@;iT; T;@o;!;"[I".icon-speed-grader:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-speed-grader;	T;iU;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iU;*@;.0;/o;0;1{ ;iU;*@;iU;*@;[o;;[I"content;	T;o;;I""\e079";	T;
+;;@;i ;;;[ ;iU;@;iU; T;@o;!;"[I".icon-copy-course:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-copy-course;	T;iV;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iV;*@8;.0;/o;0;1{ ;iV;*@8;iV;*@8;[o;;[I"content;	T;o;;I""\e056";	T;
+;;@;i ;;;[ ;iV;@;iV; T;@o;!;"[I" .icon-export-content:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-export-content;	T;iW;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iW;*@Q;.0;/o;0;1{ ;iW;*@Q;iW;*@Q;[o;;[I"content;	T;o;;I""\e083";	T;
+;;@;i ;;;[ ;iW;@;iW; T;@o;!;"[I" .icon-import-content:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-import-content;	T;iX;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iX;*@j;.0;/o;0;1{ ;iX;*@j;iX;*@j;[o;;[I"content;	T;o;;I""\e084";	T;
+;;@;i ;;;[ ;iX;@;iX; T;@o;!;"[I".icon-discussion:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-discussion;	T;iY;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iY;*@ƒ;.0;/o;0;1{ ;iY;*@ƒ;iY;*@ƒ;[o;;[I"content;	T;o;;I""\e072";	T;
+;;@;i ;;;[ ;iY;@;iY; T;@o;!;"[I"".icon-discussion-reply:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-discussion-reply;	T;iZ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iZ;*@;.0;/o;0;1{ ;iZ;*@;iZ;*@;[o;;[I"content;	T;o;;I""\e068";	T;
+;;@;i ;;;[ ;iZ;@;iZ; T;@o;!;"[I".icon-peer-review:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-peer-review;	T;i[;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i[;*@µ;.0;/o;0;1{ ;i[;*@µ;i[;*@µ;[o;;[I"content;	T;o;;I""\e034";	T;
+;;@;i ;;;[ ;i[;@;i[; T;@o;!;"[I" .icon-discussion-new:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-discussion-new;	T;i\;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i\;*@Ξ;.0;/o;0;1{ ;i\;*@Ξ;i\;*@Ξ;[o;;[I"content;	T;o;;I""\e067";	T;
+;;@;i ;;;[ ;i\;@;i\; T;@o;!;"[I".icon-edit:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-edit;	T;i];*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i];*@η;.0;/o;0;1{ ;i];*@η;i];*@η;[o;;[I"content;	T;o;;I""\e065";	T;
+;;@;i ;;;[ ;i];@;i]; T;@o;!;"[I".icon-home:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-home;	T;i^;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i^;*@ ;.0;/o;0;1{ ;i^;*@ ;i^;*@ ;[o;;[I"content;	T;o;;I""\e07b";	T;
+;;@;i ;;;[ ;i^;@;i^; T;@o;!;"[I".icon-settings:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-settings;	T;i_;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i_;*@;.0;/o;0;1{ ;i_;*@;i_;*@;[o;;[I"content;	T;o;;I""\e008";	T;
+;;@;i ;;;[ ;i_;@;i_; T;@o;!;"[I".icon-compose:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-compose;	T;i`;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i`;*@2;.0;/o;0;1{ ;i`;*@2;i`;*@2;[o;;[I"content;	T;o;;I""\e057";	T;
+;;@;i ;;;[ ;i`;@;i`; T;@o;!;"[I".icon-flag:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-flag;	T;ia;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;ia;*@K;.0;/o;0;1{ ;ia;*@K;ia;*@K;[o;;[I"content;	T;o;;I""\e011";	T;
+;;@;i ;;;[ ;ia;@;ia; T;@o;!;"[I".icon-video:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-video;	T;ib;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;ib;*@d;.0;/o;0;1{ ;ib;*@d;ib;*@d;[o;;[I"content;	T;o;;I""\e059";	T;
+;;@;i ;;;[ ;ib;@;ib; T;@o;!;"[I".icon-audio:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-audio;	T;ic;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;ic;*@};.0;/o;0;1{ ;ic;*@};ic;*@};[o;;[I"content;	T;o;;I""\e040";	T;
+;;@;i ;;;[ ;ic;@;ic; T;@o;!;"[I".icon-outdent:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-outdent;	T;id;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;id;*@–;.0;/o;0;1{ ;id;*@–;id;*@–;[o;;[I"content;	T;o;;I""\e02a";	T;
+;;@;i ;;;[ ;id;@;id; T;@o;!;"[I".icon-indent:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-indent;	T;ie;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;ie;*@―;.0;/o;0;1{ ;ie;*@―;ie;*@―;[o;;[I"content;	T;o;;I""\e029";	T;
+;;@;i ;;;[ ;ie;@;ie; T;@o;!;"[I".icon-outdent2:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-outdent2;	T;if;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;if;*@Θ;.0;/o;0;1{ ;if;*@Θ;if;*@Θ;[o;;[I"content;	T;o;;I""\e06d";	T;
+;;@;i ;;;[ ;if;@;if; T;@o;!;"[I".icon-indent2:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-indent2;	T;ig;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;ig;*@α;.0;/o;0;1{ ;ig;*@α;ig;*@α;[o;;[I"content;	T;o;;I""\e06e";	T;
+;;@;i ;;;[ ;ig;@;ig; T;@o;!;"[I".icon-forward:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-forward;	T;ih;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;ih;*@ϊ;.0;/o;0;1{ ;ih;*@ϊ;ih;*@ϊ;[o;;[I"content;	T;o;;I""\e087";	T;
+;;@;i ;;;[ ;ih;@;ih; T;@o;!;"[I".icon-warning:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-warning;	T;ii;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;ii;*@;.0;/o;0;1{ ;ii;*@;ii;*@;[o;;[I"content;	T;o;;I""\e070";	T;
+;;@;i ;;;[ ;ii;@;ii; T;@o;!;"[I".icon-filmstrip:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-filmstrip;	T;ij;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;ij;*@,;.0;/o;0;1{ ;ij;*@,;ij;*@,;[o;;[I"content;	T;o;;I""\e03e";	T;
+;;@;i ;;;[ ;ij;@;ij; T;@o;!;"[I".icon-rubric:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-rubric;	T;ik;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;ik;*@E;.0;/o;0;1{ ;ik;*@E;ik;*@E;[o;;[I"content;	T;o;;I""\e04c";	T;
+;;@;i ;;;[ ;ik;@;ik; T;@o;!;"[I".icon-rubric-dark:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-rubric-dark;	T;il;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;il;*@^;.0;/o;0;1{ ;il;*@^;il;*@^;[o;;[I"content;	T;o;;I""\e05c";	T;
+;;@;i ;;;[ ;il;@;il; T;@o;!;"[I".icon-check-plus:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-check-plus;	T;im;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;im;*@w;.0;/o;0;1{ ;im;*@w;im;*@w;[o;;[I"content;	T;o;;I""\e016";	T;
+;;@;i ;;;[ ;im;@;im; T;@o;!;"[I".icon-rss:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-rss;	T;in;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;in;*@;.0;/o;0;1{ ;in;*@;in;*@;[o;;[I"content;	T;o;;I""\e025";	T;
+;;@;i ;;;[ ;in;@;in; T;@o;!;"[I".icon-rss-add:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-rss-add;	T;io;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;io;*@©;.0;/o;0;1{ ;io;*@©;io;*@©;[o;;[I"content;	T;o;;I""\e07c";	T;
+;;@;i ;;;[ ;io;@;io; T;@o;!;"[I".icon-quiz:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-quiz;	T;ip;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;ip;*@Β;.0;/o;0;1{ ;ip;*@Β;ip;*@Β;[o;;[I"content;	T;o;;I""\e00c";	T;
+;;@;i ;;;[ ;ip;@;ip; T;@o;!;"[I".icon-question:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-question;	T;iq;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iq;*@Ϋ;.0;/o;0;1{ ;iq;*@Ϋ;iq;*@Ϋ;[o;;[I"content;	T;o;;I""\e013";	T;
+;;@;i ;;;[ ;iq;@;iq; T;@o;!;"[I".icon-drop-down:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-drop-down;	T;ir;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;ir;*@τ;.0;/o;0;1{ ;ir;*@τ;ir;*@τ;[o;;[I"content;	T;o;;I""\e012";	T;
+;;@;i ;;;[ ;ir;@;ir; T;@o;!;"[I".icon-minimize:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-minimize;	T;is;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;is;*@;.0;/o;0;1{ ;is;*@;is;*@;[o;;[I"content;	T;o;;I""\e080";	T;
+;;@;i ;;;[ ;is;@;is; T;@o;!;"[I".icon-end:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-end;	T;it;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;it;*@&;.0;/o;0;1{ ;it;*@&;it;*@&;[o;;[I"content;	T;o;;I""\e081";	T;
+;;@;i ;;;[ ;it;@;it; T;@o;!;"[I".icon-add:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-add;	T;iu;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iu;*@?;.0;/o;0;1{ ;iu;*@?;iu;*@?;[o;;[I"content;	T;o;;I""\e07f";	T;
+;;@;i ;;;[ ;iu;@;iu; T;@o;!;"[I".icon-info:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-info;	T;iv;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iv;*@X;.0;/o;0;1{ ;iv;*@X;iv;*@X;[o;;[I"content;	T;o;;I""\e00e";	T;
+;;@;i ;;;[ ;iv;@;iv; T;@o;!;"[I".icon-check:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-check;	T;iw;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iw;*@q;.0;/o;0;1{ ;iw;*@q;iw;*@q;[o;;[I"content;	T;o;;I""\e015";	T;
+;;@;i ;;;[ ;iw;@;iw; T;@o;!;"[I".icon-clock:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-clock;	T;ix;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;ix;*@;.0;/o;0;1{ ;ix;*@;ix;*@;[o;;[I"content;	T;o;;I""\e030";	T;
+;;@;i ;;;[ ;ix;@;ix; T;@o;!;"[I" .icon-calendar-month:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-calendar-month;	T;iy;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iy;*@£;.0;/o;0;1{ ;iy;*@£;iy;*@£;[o;;[I"content;	T;o;;I""\e054";	T;
+;;@;i ;;;[ ;iy;@;iy; T;@o;!;"[I".icon-x:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-x;	T;iz;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iz;*@Ό;.0;/o;0;1{ ;iz;*@Ό;iz;*@Ό;[o;;[I"content;	T;o;;I""\e058";	T;
+;;@;i ;;;[ ;iz;@;iz; T;@o;!;"[I".icon-refresh:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-refresh;	T;i{;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i{;*@Υ;.0;/o;0;1{ ;i{;*@Υ;i{;*@Υ;[o;;[I"content;	T;o;;I""\e00b";	T;
+;;@;i ;;;[ ;i{;@;i{; T;@o;!;"[I".icon-off:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-off;	T;i|;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i|;*@ξ;.0;/o;0;1{ ;i|;*@ξ;i|;*@ξ;[o;;[I"content;	T;o;;I""\e069";	T;
+;;@;i ;;;[ ;i|;@;i|; T;@o;!;"[I".icon-updown:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-updown;	T;i};*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i};*@;.0;/o;0;1{ ;i};*@;i};*@;[o;;[I"content;	T;o;;I""\e001";	T;
+;;@;i ;;;[ ;i};@;i}; T;@o;!;"[I".icon-user-add:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-user-add;	T;i~;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i~;*@ ;.0;/o;0;1{ ;i~;*@ ;i~;*@ ;[o;;[I"content;	T;o;;I""\e063";	T;
+;;@;i ;;;[ ;i~;@;i~; T;@o;!;"[I".icon-group:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-group;	T;i;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i;*@9;.0;/o;0;1{ ;i;*@9;i;*@9;[o;;[I"content;	T;o;;I""\e06b";	T;
+;;@;i ;;;[ ;i;@;i; T;@o;!;"[I".icon-star:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-star;	T;i€;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i€;*@R;.0;/o;0;1{ ;i€;*@R;i€;*@R;[o;;[I"content;	T;o;;I""\e006";	T;
+;;@;i ;;;[ ;i€;@;i€; T;@o;!;"[I".icon-replied:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-replied;	T;i;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i;*@k;.0;/o;0;1{ ;i;*@k;i;*@k;[o;;[I"content;	T;o;;I""\e00a";	T;
+;;@;i ;;;[ ;i;@;i; T;@o;!;"[I".icon-hour-glass:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-hour-glass;	T;i‚;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i‚;*@„;.0;/o;0;1{ ;i‚;*@„;i‚;*@„;[o;;[I"content;	T;o;;I""\e07d";	T;
+;;@;i ;;;[ ;i‚;@;i‚; T;@o;!;"[I".icon-assignment:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-assignment;	T;iƒ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iƒ;*@;.0;/o;0;1{ ;iƒ;*@;iƒ;*@;[o;;[I"content;	T;o;;I""\e066";	T;
+;;@;i ;;;[ ;iƒ;@;iƒ; T;@o;!;"[I".icon-message:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-message;	T;i„;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i„;*@¶;.0;/o;0;1{ ;i„;*@¶;i„;*@¶;[o;;[I"content;	T;o;;I""\e06c";	T;
+;;@;i ;;;[ ;i„;@;i„; T;@o;!;"[I".icon-note-dark:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-note-dark;	T;i…;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i…;*@Ο;.0;/o;0;1{ ;i…;*@Ο;i…;*@Ο;[o;;[I"content;	T;o;;I""\e077";	T;
+;;@;i ;;;[ ;i…;@;i…; T;@o;!;"[I".icon-note-light:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-note-light;	T;i†;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i†;*@θ;.0;/o;0;1{ ;i†;*@θ;i†;*@θ;[o;;[I"content;	T;o;;I""\e076";	T;
+;;@;i ;;;[ ;i†;@;i†; T;@o;!;"[I".icon-tag:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-tag;	T;i‡;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i‡;*@	;.0;/o;0;1{ ;i‡;*@	;i‡;*@	;[o;;[I"content;	T;o;;I""\e004";	T;
+;;@;i ;;;[ ;i‡;@;i‡; T;@o;!;"[I".icon-next-unread:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-next-unread;	T;i;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i;*@	;.0;/o;0;1{ ;i;*@	;i;*@	;[o;;[I"content;	T;o;;I""\e05f";	T;
+;;@;i ;;;[ ;i;@;i; T;@o;!;"[I".icon-search:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-search;	T;i‰;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i‰;*@3	;.0;/o;0;1{ ;i‰;*@3	;i‰;*@3	;[o;;[I"content;	T;o;;I""\e07a";	T;
+;;@;i ;;;[ ;i‰;@;i‰; T;@o;!;"[I".icon-lock:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-lock;	T;i;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i;*@L	;.0;/o;0;1{ ;i;*@L	;i;*@L	;[o;;[I"content;	T;o;;I""\e045";	T;
+;;@;i ;;;[ ;i;@;i; T;@o;!;"[I".icon-unlock:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-unlock;	T;i‹;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i‹;*@e	;.0;/o;0;1{ ;i‹;*@e	;i‹;*@e	;[o;;[I"content;	T;o;;I""\e044";	T;
+;;@;i ;;;[ ;i‹;@;i‹; T;@o;!;"[I".icon-folder:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-folder;	T;i;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i;*@~	;.0;/o;0;1{ ;i;*@~	;i;*@~	;[o;;[I"content;	T;o;;I""\e061";	T;
+;;@;i ;;;[ ;i;@;i; T;@o;!;"[I".icon-toggle-right:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-toggle-right;	T;i;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i;*@—	;.0;/o;0;1{ ;i;*@—	;i;*@—	;[o;;[I"content;	T;o;;I""\e05e";	T;
+;;@;i ;;;[ ;i;@;i; T;@o;!;"[I".icon-toggle-left:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-toggle-left;	T;i;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i;*@°	;.0;/o;0;1{ ;i;*@°	;i;*@°	;[o;;[I"content;	T;o;;I""\e05d";	T;
+;;@;i ;;;[ ;i;@;i; T;@o;!;"[I".icon-link:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-link;	T;i;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i;*@Ι	;.0;/o;0;1{ ;i;*@Ι	;i;*@Ι	;[o;;[I"content;	T;o;;I""\e03f";	T;
+;;@;i ;;;[ ;i;@;i; T;@o;!;"[I".icon-lti:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-lti;	T;i;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i;*@β	;.0;/o;0;1{ ;i;*@β	;i;*@β	;[o;;[I"content;	T;o;;I""\e06f";	T;
+;;@;i ;;;[ ;i;@;i; T;@o;!;"[I".icon-text:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-text;	T;i‘;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i‘;*@ϋ	;.0;/o;0;1{ ;i‘;*@ϋ	;i‘;*@ϋ	;[o;;[I"content;	T;o;;I""\e003";	T;
+;;@;i ;;;[ ;i‘;@;i‘; T;@o;!;"[I".icon-timer:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-timer;	T;i’;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i’;*@
+;.0;/o;0;1{ ;i’;*@
+;i’;*@
+;[o;;[I"content;	T;o;;I""\e07d";	T;
+;;@;i ;;;[ ;i’;@;i’; T;@o;!;"[I".icon-pin:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-pin;	T;i“;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i“;*@-
+;.0;/o;0;1{ ;i“;*@-
+;i“;*@-
+;[o;;[I"content;	T;o;;I""\e019";	T;
+;;@;i ;;;[ ;i“;@;i“; T;@o;!;"[I".icon-like:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-like;	T;i”;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i”;*@F
+;.0;/o;0;1{ ;i”;*@F
+;i”;*@F
+;[o;;[I"content;	T;o;;I""\e075";	T;
+;;@;i ;;;[ ;i”;@;i”; T;@o;!;"[I"!.icon-collection-save:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-collection-save;	T;i•;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i•;*@_
+;.0;/o;0;1{ ;i•;*@_
+;i•;*@_
+;[o;;[I"content;	T;o;;I""\e05b";	T;
+;;@;i ;;;[ ;i•;@;i•; T;@o;!;"[I".icon-collection:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-collection;	T;i–;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i–;*@x
+;.0;/o;0;1{ ;i–;*@x
+;i–;*@x
+;[o;;[I"content;	T;o;;I""\e073";	T;
+;;@;i ;;;[ ;i–;@;i–; T;@o;!;"[I".icon-group-new:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-group-new;	T;i—;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i—;*@‘
+;.0;/o;0;1{ ;i—;*@‘
+;i—;*@‘
+;[o;;[I"content;	T;o;;I""\e06b";	T;
+;;@;i ;;;[ ;i—;@;i—; T;@o;!;"[I" .icon-group-new-dark:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-group-new-dark;	T;i;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i;*@ª
+;.0;/o;0;1{ ;i;*@ª
+;i;*@ª
+;[o;;[I"content;	T;o;;I""\e06b";	T;
+;;@;i ;;;[ ;i;@;i; T;@o;!;"[I".icon-user:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-user;	T;i™;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i™;*@Γ
+;.0;/o;0;1{ ;i™;*@Γ
+;i™;*@Γ
+;[o;;[I"content;	T;o;;I""\e074";	T;
+;;@;i ;;;[ ;i™;@;i™; T;@o;!;"[I".icon-standards:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-standards;	T;i;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i;*@ά
+;.0;/o;0;1{ ;i;*@ά
+;i;*@ά
+;[o;;[I"content;	T;o;;I""\e007";	T;
+;;@;i ;;;[ ;i;@;i; T;@o;!;"[I"%.icon-search-address-book:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-search-address-book;	T;i›;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i›;*@υ
+;.0;/o;0;1{ ;i›;*@υ
+;i›;*@υ
+;[o;;[I"content;	T;o;;I""\e060";	T;
+;;@;i ;;;[ ;i›;@;i›; T;@o;!;"[I".icon-facebook:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-facebook;	T;i;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i;*@;.0;/o;0;1{ ;i;*@;i;*@;[o;;[I"content;	T;o;;I""\e00d";	T;
+;;@;i ;;;[ ;i;@;i; T;@o;!;"[I" .icon-facebook-boxed:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-facebook-boxed;	T;i;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i;*@';.0;/o;0;1{ ;i;*@';i;*@';[o;;[I"content;	T;o;;I""\e017";	T;
+;;@;i ;;;[ ;i;@;i; T;@o;!;"[I".icon-linkedin:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-linkedin;	T;i;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i;*@@;.0;/o;0;1{ ;i;*@@;i;*@@;[o;;[I"content;	T;o;;I""\e00f";	T;
+;;@;i ;;;[ ;i;@;i; T;@o;!;"[I".icon-twitter:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-twitter;	T;i;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i;*@Y;.0;/o;0;1{ ;i;*@Y;i;*@Y;[o;;[I"content;	T;o;;I""\e010";	T;
+;;@;i ;;;[ ;i;@;i; T;@o;!;"[I".icon-twitter-boxed:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-twitter-boxed;	T;i ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i ;*@r;.0;/o;0;1{ ;i ;*@r;i ;*@r;[o;;[I"content;	T;o;;I""\e01a";	T;
+;;@;i ;;;[ ;i ;@;i ; T;@o;!;"[I".icon-github:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-github;	T;i΅;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i΅;*@‹;.0;/o;0;1{ ;i΅;*@‹;i΅;*@‹;[o;;[I"content;	T;o;;I""\e01b";	T;
+;;@;i ;;;[ ;i΅;@;i΅; T;@o;!;"[I".icon-skype:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-skype;	T;iΆ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΆ;*@¤;.0;/o;0;1{ ;iΆ;*@¤;iΆ;*@¤;[o;;[I"content;	T;o;;I""\e01c";	T;
+;;@;i ;;;[ ;iΆ;@;iΆ; T;@o;!;"[I".icon-wordpress:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-wordpress;	T;i£;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i£;*@½;.0;/o;0;1{ ;i£;*@½;i£;*@½;[o;;[I"content;	T;o;;I""\e01d";	T;
+;;@;i ;;;[ ;i£;@;i£; T;@o;!;"[I".icon-pinterest:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-pinterest;	T;i¤;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i¤;*@Φ;.0;/o;0;1{ ;i¤;*@Φ;i¤;*@Φ;[o;;[I"content;	T;o;;I""\e022";	T;
+;;@;i ;;;[ ;i¤;@;i¤; T;@o;!;"[I".icon-gradebook:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-gradebook;	T;i¥;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i¥;*@ο;.0;/o;0;1{ ;i¥;*@ο;i¥;*@ο;[o;;[I"content;	T;o;;I""\e05a";	T;
+;;@;i ;;;[ ;i¥;@;i¥; T;@o;!;"[I".icon-document:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-document;	T;i¦;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i¦;*@;.0;/o;0;1{ ;i¦;*@;i¦;*@;[o;;[I"content;	T;o;;I""\e04e";	T;
+;;@;i ;;;[ ;i¦;@;i¦; T;@o;!;"[I".icon-module:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-module;	T;i§;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i§;*@!;.0;/o;0;1{ ;i§;*@!;i§;*@!;[o;;[I"content;	T;o;;I""\e014";	T;
+;;@;i ;;;[ ;i§;@;i§; T;@o;!;"[I".icon-mini-arrow-up:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-mini-arrow-up;	T;i¨;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i¨;*@:;.0;/o;0;1{ ;i¨;*@:;i¨;*@:;[o;;[I"content;	T;o;;I""\e047";	T;
+;;@;i ;;;[ ;i¨;@;i¨; T;@o;!;"[I"!.icon-mini-arrow-down:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-mini-arrow-down;	T;i©;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i©;*@S;.0;/o;0;1{ ;i©;*@S;i©;*@S;[o;;[I"content;	T;o;;I""\e048";	T;
+;;@;i ;;;[ ;i©;@;i©; T;@o;!;"[I"!.icon-mini-arrow-left:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-mini-arrow-left;	T;iª;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iª;*@l;.0;/o;0;1{ ;iª;*@l;iª;*@l;[o;;[I"content;	T;o;;I""\e049";	T;
+;;@;i ;;;[ ;iª;@;iª; T;@o;!;"[I"".icon-mini-arrow-right:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-mini-arrow-right;	T;i«;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i«;*@…;.0;/o;0;1{ ;i«;*@…;i«;*@…;[o;;[I"content;	T;o;;I""\e046";	T;
+;;@;i ;;;[ ;i«;@;i«; T;@o;!;"[I".icon-arrow-up:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-arrow-up;	T;i¬;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i¬;*@;.0;/o;0;1{ ;i¬;*@;i¬;*@;[o;;[I"content;	T;o;;I""\e086";	T;
+;;@;i ;;;[ ;i¬;@;i¬; T;@o;!;"[I".icon-arrow-down:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-arrow-down;	T;i­;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i­;*@·;.0;/o;0;1{ ;i­;*@·;i­;*@·;[o;;[I"content;	T;o;;I""\e085";	T;
+;;@;i ;;;[ ;i­;@;i­; T;@o;!;"[I".icon-arrow-left:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-arrow-left;	T;i®;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i®;*@Π;.0;/o;0;1{ ;i®;*@Π;i®;*@Π;[o;;[I"content;	T;o;;I""\e088";	T;
+;;@;i ;;;[ ;i®;@;i®; T;@o;!;"[I".icon-arrow-right:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-arrow-right;	T;i―;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i―;*@ι;.0;/o;0;1{ ;i―;*@ι;i―;*@ι;[o;;[I"content;	T;o;;I""\e087";	T;
+;;@;i ;;;[ ;i―;@;i―; T;@o;!;"[I".icon-email:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-email;	T;i°;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i°;*@;.0;/o;0;1{ ;i°;*@;i°;*@;[o;;[I"content;	T;o;;I""\e06c";	T;
+;;@;i ;;;[ ;i°;@;i°; T;@o;!;"[I".icon-instructure:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-instructure;	T;i±;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i±;*@;.0;/o;0;1{ ;i±;*@;i±;*@;[o;;[I"content;	T;o;;I""\e018";	T;
+;;@;i ;;;[ ;i±;@;i±; T;@o;!;"[I".icon-ms-word:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-ms-word;	T;i²;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i²;*@4;.0;/o;0;1{ ;i²;*@4;i²;*@4;[o;;[I"content;	T;o;;I""\e01e";	T;
+;;@;i ;;;[ ;i²;@;i²; T;@o;!;"[I".icon-ms-excel:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-ms-excel;	T;i³;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i³;*@M;.0;/o;0;1{ ;i³;*@M;i³;*@M;[o;;[I"content;	T;o;;I""\e01f";	T;
+;;@;i ;;;[ ;i³;@;i³; T;@o;!;"[I".icon-ms-ppt:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-ms-ppt;	T;i΄;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i΄;*@f;.0;/o;0;1{ ;i΄;*@f;i΄;*@f;[o;;[I"content;	T;o;;I""\e020";	T;
+;;@;i ;;;[ ;i΄;@;i΄; T;@o;!;"[I".icon-pdf:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-pdf;	T;iµ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iµ;*@;.0;/o;0;1{ ;iµ;*@;iµ;*@;[o;;[I"content;	T;o;;I""\e021";	T;
+;;@;i ;;;[ ;iµ;@;iµ; T;@o;!;"[I".icon-apple:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-apple;	T;i¶;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i¶;*@;.0;/o;0;1{ ;i¶;*@;i¶;*@;[o;;[I"content;	T;o;;I""\e02e";	T;
+;;@;i ;;;[ ;i¶;@;i¶; T;@o;!;"[I".icon-windows:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-windows;	T;i·;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i·;*@±;.0;/o;0;1{ ;i·;*@±;i·;*@±;[o;;[I"content;	T;o;;I""\e02d";	T;
+;;@;i ;;;[ ;i·;@;i·; T;@o;!;"[I".icon-android:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-android;	T;iΈ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΈ;*@Κ;.0;/o;0;1{ ;iΈ;*@Κ;iΈ;*@Κ;[o;;[I"content;	T;o;;I""\e02f";	T;
+;;@;i ;;;[ ;iΈ;@;iΈ; T;@o;!;"[I".icon-heart:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-heart;	T;iΉ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΉ;*@γ;.0;/o;0;1{ ;iΉ;*@γ;iΉ;*@γ;[o;;[I"content;	T;o;;I""\e023";	T;
+;;@;i ;;;[ ;iΉ;@;iΉ; T;@o;!;"[I".icon-upload:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-upload;	T;iΊ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΊ;*@ό;.0;/o;0;1{ ;iΊ;*@ό;iΊ;*@ό;[o;;[I"content;	T;o;;I""\e024";	T;
+;;@;i ;;;[ ;iΊ;@;iΊ; T;@o;!;"[I".icon-download:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-download;	T;i»;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i»;*@;.0;/o;0;1{ ;i»;*@;i»;*@;[o;;[I"content;	T;o;;I""\e02b";	T;
+;;@;i ;;;[ ;i»;@;i»; T;@o;!;"[I".icon-text-left:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-text-left;	T;iΌ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΌ;*@.;.0;/o;0;1{ ;iΌ;*@.;iΌ;*@.;[o;;[I"content;	T;o;;I""\e026";	T;
+;;@;i ;;;[ ;iΌ;@;iΌ; T;@o;!;"[I".icon-text-center:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-text-center;	T;i½;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;i½;*@G;.0;/o;0;1{ ;i½;*@G;i½;*@G;[o;;[I"content;	T;o;;I""\e027";	T;
+;;@;i ;;;[ ;i½;@;i½; T;@o;!;"[I".icon-text-right:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-text-right;	T;iΎ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΎ;*@`;.0;/o;0;1{ ;iΎ;*@`;iΎ;*@`;[o;;[I"content;	T;o;;I""\e028";	T;
+;;@;i ;;;[ ;iΎ;@;iΎ; T;@o;!;"[I".icon-mature:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-mature;	T;iΏ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΏ;*@y;.0;/o;0;1{ ;iΏ;*@y;iΏ;*@y;[o;;[I"content;	T;o;;I""\e035";	T;
+;;@;i ;;;[ ;iΏ;@;iΏ; T;@o;!;"[I".icon-prerequisite:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-prerequisite;	T;iΐ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΐ;*@’;.0;/o;0;1{ ;iΐ;*@’;iΐ;*@’;[o;;[I"content;	T;o;;I""\e037";	T;
+;;@;i ;;;[ ;iΐ;@;iΐ; T;@o;!;"[I".icon-educators:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-educators;	T;iΑ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΑ;*@«;.0;/o;0;1{ ;iΑ;*@«;iΑ;*@«;[o;;[I"content;	T;o;;I""\e039";	T;
+;;@;i ;;;[ ;iΑ;@;iΑ; T;@o;!;"[I".icon-calendar-days:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-calendar-days;	T;iΒ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΒ;*@Δ;.0;/o;0;1{ ;iΒ;*@Δ;iΒ;*@Δ;[o;;[I"content;	T;o;;I""\e055";	T;
+;;@;i ;;;[ ;iΒ;@;iΒ; T;@o;!;"[I"$.icon-materials-required:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-materials-required;	T;iΓ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΓ;*@έ;.0;/o;0;1{ ;iΓ;*@έ;iΓ;*@έ;[o;;[I"content;	T;o;;I""\e03b";	T;
+;;@;i ;;;[ ;iΓ;@;iΓ; T;@o;!;"[I".icon-not-graded:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-not-graded;	T;iΔ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΔ;*@φ;.0;/o;0;1{ ;iΔ;*@φ;iΔ;*@φ;[o;;[I"content;	T;o;;I""\e042";	T;
+;;@;i ;;;[ ;iΔ;@;iΔ; T;@o;!;"[I".icon-peer-graded:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-peer-graded;	T;iΕ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΕ;*@;.0;/o;0;1{ ;iΕ;*@;iΕ;*@;[o;;[I"content;	T;o;;I""\e043";	T;
+;;@;i ;;;[ ;iΕ;@;iΕ; T;@o;!;"[I".icon-bookmark:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-bookmark;	T;iΖ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΖ;*@(;.0;/o;0;1{ ;iΖ;*@(;iΖ;*@(;[o;;[I"content;	T;o;;I""\e04b";	T;
+;;@;i ;;;[ ;iΖ;@;iΖ; T;@o;!;"[I".icon-printer:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-printer;	T;iΗ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΗ;*@A;.0;/o;0;1{ ;iΗ;*@A;iΗ;*@A;[o;;[I"content;	T;o;;I""\e04a";	T;
+;;@;i ;;;[ ;iΗ;@;iΗ; T;@o;!;"[I".icon-image:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-image;	T;iΘ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΘ;*@Z;.0;/o;0;1{ ;iΘ;*@Z;iΘ;*@Z;[o;;[I"content;	T;o;;I""\e07e";	T;
+;;@;i ;;;[ ;iΘ;@;iΘ; T;@o;!;"[I".icon-expand:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-expand;	T;iΙ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΙ;*@s;.0;/o;0;1{ ;iΙ;*@s;iΙ;*@s;[o;;[I"content;	T;o;;I""\e050";	T;
+;;@;i ;;;[ ;iΙ;@;iΙ; T;@o;!;"[I".icon-collapse:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-collapse;	T;iΚ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΚ;*@;.0;/o;0;1{ ;iΚ;*@;iΚ;*@;[o;;[I"content;	T;o;;I""\e04f";	T;
+;;@;i ;;;[ ;iΚ;@;iΚ; T;@o;!;"[I".icon-invitation:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-invitation;	T;iΛ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΛ;*@¥;.0;/o;0;1{ ;iΛ;*@¥;iΛ;*@¥;[o;;[I"content;	T;o;;I""\e053";	T;
+;;@;i ;;;[ ;iΛ;@;iΛ; T;@o;!;"[I".icon-muted:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-muted;	T;iΜ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΜ;*@Ύ;.0;/o;0;1{ ;iΜ;*@Ύ;iΜ;*@Ύ;[o;;[I"content;	T;o;;I""\e051";	T;
+;;@;i ;;;[ ;iΜ;@;iΜ; T;@o;!;"[I".icon-unmuted:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-unmuted;	T;iΝ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΝ;*@Χ;.0;/o;0;1{ ;iΝ;*@Χ;iΝ;*@Χ;[o;;[I"content;	T;o;;I""\e052";	T;
+;;@;i ;;;[ ;iΝ;@;iΝ; T;@o;!;"[I".icon-plus:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-plus;	T;iΞ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΞ;*@π;.0;/o;0;1{ ;iΞ;*@π;iΞ;*@π;[o;;[I"content;	T;o;;I""\e078";	T;
+;;@;i ;;;[ ;iΞ;@;iΞ; T;@o;!;"[I".icon-zipped:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-zipped;	T;iΟ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΟ;*@	;.0;/o;0;1{ ;iΟ;*@	;iΟ;*@	;[o;;[I"content;	T;o;;I""\e089";	T;
+;;@;i ;;;[ ;iΟ;@;iΟ; T;@o;!;"[I".icon-publish:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-publish;	T;iΠ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΠ;*@";.0;/o;0;1{ ;iΠ;*@";iΠ;*@";[o;;[I"content;	T;o;;I""\e090";	T;
+;;@;i ;;;[ ;iΠ;@;iΠ; T;@o;
+;[I"2/* .icon-draft:before { content: "\e091" } */;	T;
+;;[ ;iΡ;@o;!;"[I".icon-unpublish:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-unpublish;	T;iÒ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iÒ;*@?;.0;/o;0;1{ ;iÒ;*@?;iÒ;*@?;[o;;[I"content;	T;o;;I""\e092";	T;
+;;@;i ;;;[ ;iÒ;@;iÒ; T;@o;!;"[I".icon-unpublished:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-unpublished;	T;iΣ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΣ;*@X;.0;/o;0;1{ ;iΣ;*@X;iΣ;*@X;[o;;[I"content;	T;o;;I""\e093";	T;
+;;@;i ;;;[ ;iΣ;@;iΣ; T;@o;!;"[I"".icon-discussion-check:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-discussion-check;	T;iΤ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΤ;*@q;.0;/o;0;1{ ;iΤ;*@q;iΤ;*@q;[o;;[I"content;	T;o;;I""\e095";	T;
+;;@;i ;;;[ ;iΤ;@;iΤ; T;@o;!;"[I"$.icon-discussion-reply-2:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-discussion-reply-2;	T;iΥ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΥ;*@;.0;/o;0;1{ ;iΥ;*@;iΥ;*@;[o;;[I"content;	T;o;;I""\e096";	T;
+;;@;i ;;;[ ;iΥ;@;iΥ; T;@o;!;"[I"#.icon-discussion-search:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-discussion-search;	T;iΦ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΦ;*@£;.0;/o;0;1{ ;iΦ;*@£;iΦ;*@£;[o;;[I"content;	T;o;;I""\e097";	T;
+;;@;i ;;;[ ;iΦ;@;iΦ; T;@o;!;"[I".icon-discussion-x:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-discussion-x;	T;iΧ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΧ;*@Ό;.0;/o;0;1{ ;iΧ;*@Ό;iΧ;*@Ό;[o;;[I"content;	T;o;;I""\e098";	T;
+;;@;i ;;;[ ;iΧ;@;iΧ; T;@o;!;"[I".icon-mark-as-read:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-mark-as-read;	T;iΨ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΨ;*@Υ;.0;/o;0;1{ ;iΨ;*@Υ;iΨ;*@Υ;[o;;[I"content;	T;o;;I""\e099";	T;
+;;@;i ;;;[ ;iΨ;@;iΨ; T;@o;!;"[I".icon-more:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-more;	T;iΩ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΩ;*@ξ;.0;/o;0;1{ ;iΩ;*@ξ;iΩ;*@ξ;[o;;[I"content;	T;o;;I""\e100";	T;
+;;@;i ;;;[ ;iΩ;@;iΩ; T;@o;!;"[I".icon-syllabus:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-syllabus;	T;iΪ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΪ;*@;.0;/o;0;1{ ;iΪ;*@;iΪ;*@;[o;;[I"content;	T;o;;I""\e101";	T;
+;;@;i ;;;[ ;iΪ;@;iΪ; T;@o;!;"[I".icon-settings-2:before;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;:;[I"icon-settings-2;	T;iΫ;*I" ;	Fo;3
+;
+;4;[I"before;	T;50;iΫ;*@ ;.0;/o;0;1{ ;iΫ;*@ ;iΫ;*@ ;[o;;[I"content;	T;o;;I""\e102";	T;
+;;@;i ;;;[ ;iΫ;@;iΫ; T;@o;
+;[I"Z/* deprecated in favor of .screenreader-only, which is meant to be usable anywhere */;	T;
+;;[ ;iέ;@o;!;"[I"span.screen-reader-text;	T;i ;#o;$;%[o;&;%[o;'
+;%[o;(	;[I"	span;	T;)0;iή;*I" ;	Fo;:;[I"screen-reader-text;	T;iή;*@=;.0;/o;0;1{ ;iή;*@=;iή;*@=;[	o;;[I"position;	T;o;;I"absolute;	T;
+;;@;i ;;;[ ;iί;@o;;[I"top;	T;o;6;iώρΨ;7[I"px;	T;8[ ;iΰ;9I"-9999px;	F;@;i ;;;[ ;iΰ;@o;;[I"	left;	T;o;6;iώρΨ;7[I"px;	T;8[ ;iα;9I"-9999px;	F;@;i ;;;[ ;iα;@o;;[I"font-size;	T;o;;I"4px;	T;
+;;@;i ;;;[ ;iβ;@;iή; T;@:@templateI"<S/* @styleguide Icons
+
+### Icons in links
+
+```html
+<a class="icon-add" href="whatever">Add Stuff</a>
+```
+
+### Icons in buttons links
+
+```html
+<p>
+  <a class="icon-edit btn btn-primary">Edit</a>
+</p>
+<p>
+  <button class="btn"><i class="icon-trash"></i>Delete</button>
+</p>
+```
+
+Either use `<a>` with icon desired icon class added or insert `<i>` inside `<button>` and set to desired icon class
+
+### All icons
+
+<div class="row-fluid">
+  <span class="span3"><i class="icon-stats"></i> icon-stats</span>
+  <span class="span3"><i class="icon-paperclip"></i> icon-paperclip</span>
+  <span class="span3"><i class="icon-media"></i> icon-media</span>
+  <span class="span3"><i class="icon-address-book"></i> icon-address-book</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-reset"></i> icon-reset</span>
+  <span class="span3"><i class="icon-announcement"></i> icon-announcement</span>
+  <span class="span3"><i class="icon-analytics"></i> icon-analytics</span>
+  <span class="span3"><i class="icon-student-view"></i> icon-student-view</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-calendar-day"></i> icon-calendar-day</span>
+  <span class="span3"><i class="icon-trash"></i> icon-trash</span>
+  <span class="span3"><i class="icon-speed-grader"></i> icon-speed-grader</span>
+  <span class="span3"><i class="icon-copy-course"></i> icon-copy-course</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-export-content"></i> icon-export-content</span>
+  <span class="span3"><i class="icon-import-content"></i> icon-import-content</span>
+  <span class="span3"><i class="icon-discussion"></i> icon-discussion</span>
+  <span class="span3"><i class="icon-discussion-reply"></i> icon-discussion-reply</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-peer-review"></i> icon-peer-review</span>
+  <span class="span3"><i class="icon-discussion-new"></i> icon-discussion-new</span>
+  <span class="span3"><i class="icon-edit"></i> icon-edit</span>
+  <span class="span3"><i class="icon-home"></i> icon-home</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-settings"></i> icon-settings</span>
+  <span class="span3"><i class="icon-compose"></i> icon-compose</span>
+  <span class="span3"><i class="icon-flag"></i> icon-flag</span>
+  <span class="span3"><i class="icon-video"></i> icon-video</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-audio"></i> icon-audio</span>
+  <span class="span3"><i class="icon-outdent"></i> icon-outdent</span>
+  <span class="span3"><i class="icon-indent"></i> icon-indent</span>
+  <span class="span3"><i class="icon-outdent2"></i> icon-outdent2</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-indent2"></i> icon-indent2</span>
+  <span class="span3"><i class="icon-forward"></i> icon-forward</span>
+  <span class="span3"><i class="icon-warning"></i> icon-warning</span>
+  <span class="span3"><i class="icon-filmstrip"></i> icon-filmstrip</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-rubric"></i> icon-rubric</span>
+  <span class="span3"><i class="icon-rubric-dark"></i> icon-rubric-dark</span>
+  <span class="span3"><i class="icon-check-plus"></i> icon-check-plus</span>
+  <span class="span3"><i class="icon-rss"></i> icon-rss</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-rss-add"></i> icon-rss-add</span>
+  <span class="span3"><i class="icon-quiz"></i> icon-quiz</span>
+  <span class="span3"><i class="icon-question"></i> icon-question</span>
+  <span class="span3"><i class="icon-drop-down"></i> icon-drop-down</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-minimize"></i> icon-minimize</span>
+  <span class="span3"><i class="icon-end"></i> icon-end</span>
+  <span class="span3"><i class="icon-add"></i> icon-add</span>
+  <span class="span3"><i class="icon-info"></i> icon-info</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-check"></i> icon-check</span>
+  <span class="span3"><i class="icon-clock"></i> icon-clock</span>
+  <span class="span3"><i class="icon-calendar-month"></i> icon-calendar-month</span>
+  <span class="span3"><i class="icon-x"></i> icon-x</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-refresh"></i> icon-refresh</span>
+  <span class="span3"><i class="icon-off"></i> icon-off</span>
+  <span class="span3"><i class="icon-updown"></i> icon-updown</span>
+  <span class="span3"><i class="icon-user-add"></i> icon-user-add</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-group"></i> icon-group</span>
+  <span class="span3"><i class="icon-star"></i> icon-star</span>
+  <span class="span3"><i class="icon-replied"></i> icon-replied</span>
+  <span class="span3"><i class="icon-hour-glass"></i> icon-hour-glass</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-assignment"></i> icon-assignment</span>
+  <span class="span3"><i class="icon-message"></i> icon-message</span>
+  <span class="span3"><i class="icon-note-dark"></i> icon-note-dark</span>
+  <span class="span3"><i class="icon-note-light"></i> icon-note-light</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-tag"></i> icon-tag</span>
+  <span class="span3"><i class="icon-next-unread"></i> icon-next-unread</span>
+  <span class="span3"><i class="icon-search"></i> icon-search</span>
+  <span class="span3"><i class="icon-lock"></i> icon-lock</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-unlock"></i> icon-unlock</span>
+  <span class="span3"><i class="icon-folder"></i> icon-folder</span>
+  <span class="span3"><i class="icon-toggle-right"></i> icon-toggle-right</span>
+  <span class="span3"><i class="icon-toggle-left"></i> icon-toggle-left</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-link"></i> icon-link</span>
+  <span class="span3"><i class="icon-lti"></i> icon-lti</span>
+  <span class="span3"><i class="icon-text"></i> icon-text</span>
+  <span class="span3"><i class="icon-timer"></i> icon-timer</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-pin"></i> icon-pin</span>
+  <span class="span3"><i class="icon-like"></i> icon-like</span>
+  <span class="span3"><i class="icon-collection-save"></i> icon-collection-save</span>
+  <span class="span3"><i class="icon-collection"></i> icon-collection</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-group-new"></i> icon-group-new</span>
+  <span class="span3"><i class="icon-group-new-dark"></i> icon-group-new-dark</span>
+  <span class="span3"><i class="icon-user"></i> icon-user</span>
+  <span class="span3"><i class="icon-standards"></i> icon-standards</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-search-address-book"></i> icon-search-address-book</span>
+  <span class="span3"><i class="icon-facebook"></i> icon-facebook</span>
+  <span class="span3"><i class="icon-facebook-boxed"></i> icon-facebook-boxed</span>
+  <span class="span3"><i class="icon-linkedin"></i> icon-linkedin</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-twitter"></i> icon-twitter</span>
+  <span class="span3"><i class="icon-twitter-boxed"></i> icon-twitter-boxed</span>
+  <span class="span3"><i class="icon-github"></i> icon-github</span>
+  <span class="span3"><i class="icon-skype"></i> icon-skype</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-wordpress"></i> icon-wordpress</span>
+  <span class="span3"><i class="icon-pinterest"></i> icon-pinterest</span>
+  <span class="span3"><i class="icon-gradebook"></i> icon-gradebook</span>
+  <span class="span3"><i class="icon-document"></i> icon-document</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-module"></i> icon-module</span>
+  <span class="span3"><i class="icon-mini-arrow-up"></i> icon-mini-arrow-up</span>
+  <span class="span3"><i class="icon-mini-arrow-down"></i> icon-mini-arrow-down</span>
+  <span class="span3"><i class="icon-mini-arrow-left"></i> icon-mini-arrow-left</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-mini-arrow-right"></i> icon-mini-arrow-right</span>
+  <span class="span3"><i class="icon-arrow-up"></i> icon-arrow-up</span>
+  <span class="span3"><i class="icon-arrow-down"></i> icon-arrow-down</span>
+  <span class="span3"><i class="icon-arrow-left"></i> icon-arrow-left</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-arrow-right"></i> icon-arrow-right</span>
+  <span class="span3"><i class="icon-email"></i> icon-email</span>
+  <span class="span3"><i class="icon-instructure"></i> icon-instructure</span>
+  <span class="span3"><i class="icon-ms-word"></i> icon-ms-word</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-ms-excel"></i> icon-ms-excel</span>
+  <span class="span3"><i class="icon-ms-ppt"></i> icon-ms-ppt</span>
+  <span class="span3"><i class="icon-pdf"></i> icon-pdf</span>
+  <span class="span3"><i class="icon-apple"></i> icon-apple</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-windows"></i> icon-windows</span>
+  <span class="span3"><i class="icon-android"></i> icon-android</span>
+  <span class="span3"><i class="icon-heart"></i> icon-heart</span>
+  <span class="span3"><i class="icon-upload"></i> icon-upload</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-download"></i> icon-download</span>
+  <span class="span3"><i class="icon-text-left"></i> icon-text-left</span>
+  <span class="span3"><i class="icon-text-center"></i> icon-text-center</span>
+  <span class="span3"><i class="icon-text-right"></i> icon-text-right</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-mature"></i> icon-mature</span>
+  <span class="span3"><i class="icon-prerequisite"></i> icon-prerequisite</span>
+  <span class="span3"><i class="icon-educators"></i> icon-educators</span>
+  <span class="span3"><i class="icon-calendar-days"></i> icon-calendar-days</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-materials-required"></i> icon-materials-required</span>
+  <span class="span3"><i class="icon-not-graded"></i> icon-not-graded</span>
+  <span class="span3"><i class="icon-peer-graded"></i> icon-peer-graded</span>
+  <span class="span3"><i class="icon-bookmark"></i> icon-bookmark</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-printer"></i> icon-printer</span>
+  <span class="span3"><i class="icon-image"></i> icon-image</span>
+  <span class="span3"><i class="icon-expand"></i> icon-expand</span>
+  <span class="span3"><i class="icon-collapse"></i> icon-collapse</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-invitation"></i> icon-invitation</span>
+  <span class="span3"><i class="icon-muted"></i> icon-muted</span>
+  <span class="span3"><i class="icon-unmuted"></i> icon-unmuted</span>
+  <span class="span3"><i class="icon-plus"></i> icon-plus</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-zipped"></i> icon-zipped</span>
+  <span class="span3"><i class="icon-publish"></i> icon-publish</span>
+  <span class="span3"><i class="icon-unpublish"></i> icon-unpublish</span>
+  <span class="span3"><i class="icon-unpublished"></i> icon-unpublished</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-discussion-check"></i> icon-discussion-check</span>
+  <span class="span3"><i class="icon-discussion-reply-2"></i> icon-discussion-reply-2</span>
+  <span class="span3"><i class="icon-discussion-search"></i> icon-discussion-search</span>
+  <span class="span3"><i class="icon-discussion-x"></i> icon-discussion-x</span>
+</div>
+<div class="row-fluid">
+  <span class="span3"><i class="icon-mark-as-read"></i> icon-mark-as-read</span>
+  <span class="span3"><i class="icon-more"></i> icon-more</span>
+  <span class="span3"><i class="icon-syllabus"></i> icon-syllabus</span>
+  <span class="span3"><i class="icon-settings-2"></i> icon-settings-2</span>
+</div>
+*/
+
+// add icon font
+@font-face {
+  font-family: 'canvasregular';
+  src: url('/font/canvas/canvas-webfont.eot');
+  src: url('/font/canvas/canvas-webfont.eot?#iefix') format('embedded-opentype'),
+    url('/font/canvas/canvas-webfont.woff') format('woff'),
+    url('/font/canvas/canvas-webfont.ttf') format('truetype'),
+    url('/font/canvas/canvas-webfont.svg#canvasregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// styles to ensure icons can only be applied through the <i> element, but also allowing
+// to be applied directly to text links
+
+i[class*=icon-], i[class^=icon-], a[class*=icon-], a[class^=icon-] {
+
+  &:before {
+    font-family: 'canvasregular';
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    text-rendering: optimizeLegibility;
+
+    // the specific reason for this being in the :before and not part of the <i> was to get
+    // .input-appends to work with .btns that had an <i> icon in them.
+    font-size: 16px;
+
+    // override any properties in the cascade that might make the font display incorrectly
+    text-transform: none !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+  }
+
+}
+
+i[class*=icon-], i[class^=icon-] {
+  display: inline-block;
+  font-style: normal !important;
+  width: 16px; height: 16px; line-height: 16px;
+
+  // adjust icon sizes to look good with our large-size button class
+  .btn-large & {
+    width: 18px; height: 18px; line-height: 18px;
+    &:before{ font-size: 18px }
+  }
+
+  // most icons do not look good this small, so use sparingly.
+  // this should only be used for things like: icon-settings and icon-mini-arrow-down
+  .btn-mini & {
+    width: 12px; height: 12px; line-height: 12px;
+    &:before{ font-size: 12px }
+  }
+
+}
+
+// when an icon is applied directly to a link, add a little left margin to make
+// things look nicer
+a[class*=icon-], a[class^=icon-] {
+  &:before { margin-right: 4px; }
+}
+
+
+// icons should be a little lighter than the text in a .btn,
+// we're aware and ok that this wont have any effect in ie8
+.btn:not(.btn-primary, .btn-warning, .btn-danger, .btn-success, .btn-info, .btn-inverse) {
+  i[class*=icon-], i[class^=icon-] {
+    color: lighten( $grayDark, 15% );
+  }
+}
+
+.standalone-icon {
+  // use to make standalone icons within links display as dark gray, not default link blue
+  &:before { color: #555; }
+}
+
+// change vertical alignment of icons used with common typographic elements to line them up better
+h1, h2, h3, h4, .h1, .h2, .h3, .h4, p {
+
+  i[class*=icon-]:before, i[class^=icon-]:before {
+    vertical-align: baseline;
+  }
+
+}
+
+
+// define specific icon classes, mapped to the "canvasregular" icon font above
+
+.icon-stats:before { content: "\e06a" }
+.icon-paperclip:before { content: "\e03d" }
+.icon-media:before { content: "\e062" }
+.icon-address-book:before { content: "\e064" }
+.icon-reset:before { content: "\e009" }
+.icon-announcement:before { content: "\e082" }
+.icon-analytics:before { content: "\e041" }
+.icon-student-view:before { content: "\e005" }
+.icon-calendar-day:before { content: "\e055" }
+.icon-trash:before { content: "\e04d" }
+.icon-speed-grader:before { content: "\e079" }
+.icon-copy-course:before { content: "\e056" }
+.icon-export-content:before { content: "\e083" }
+.icon-import-content:before { content: "\e084" }
+.icon-discussion:before { content: "\e072" }
+.icon-discussion-reply:before { content: "\e068" }
+.icon-peer-review:before { content: "\e034" }
+.icon-discussion-new:before { content: "\e067" }
+.icon-edit:before { content: "\e065" }
+.icon-home:before { content: "\e07b" }
+.icon-settings:before { content: "\e008" }
+.icon-compose:before { content: "\e057" }
+.icon-flag:before { content: "\e011"; }
+.icon-video:before { content: "\e059" }
+.icon-audio:before { content: "\e040" }
+.icon-outdent:before { content: "\e02a" }
+.icon-indent:before { content: "\e029" }
+.icon-outdent2:before { content: "\e06d" }
+.icon-indent2:before { content: "\e06e" }
+.icon-forward:before { content: "\e087" }
+.icon-warning:before { content: "\e070" }
+.icon-filmstrip:before { content: "\e03e" }
+.icon-rubric:before { content: "\e04c" }
+.icon-rubric-dark:before { content: "\e05c" }
+.icon-check-plus:before { content: "\e016" }
+.icon-rss:before { content: "\e025" }
+.icon-rss-add:before { content: "\e07c" }
+.icon-quiz:before { content: "\e00c" }
+.icon-question:before { content: "\e013" }
+.icon-drop-down:before { content: "\e012" }
+.icon-minimize:before { content: "\e080" }
+.icon-end:before { content: "\e081" }
+.icon-add:before { content: "\e07f" }
+.icon-info:before { content: "\e00e" }
+.icon-check:before { content: "\e015" }
+.icon-clock:before { content: "\e030" }
+.icon-calendar-month:before { content: "\e054" }
+.icon-x:before { content: "\e058" }
+.icon-refresh:before { content: "\e00b" }
+.icon-off:before { content: "\e069" }
+.icon-updown:before { content: "\e001" }
+.icon-user-add:before { content: "\e063" }
+.icon-group:before { content: "\e06b" }
+.icon-star:before { content: "\e006" }
+.icon-replied:before { content: "\e00a" }
+.icon-hour-glass:before { content: "\e07d" }
+.icon-assignment:before { content: "\e066" }
+.icon-message:before { content: "\e06c" }
+.icon-note-dark:before { content: "\e077" }
+.icon-note-light:before { content: "\e076" }
+.icon-tag:before { content: "\e004" }
+.icon-next-unread:before { content: "\e05f" }
+.icon-search:before { content: "\e07a" }
+.icon-lock:before { content: "\e045" }
+.icon-unlock:before { content: "\e044" }
+.icon-folder:before { content: "\e061" }
+.icon-toggle-right:before { content: "\e05e" }
+.icon-toggle-left:before { content: "\e05d" }
+.icon-link:before { content: "\e03f" }
+.icon-lti:before { content: "\e06f" }
+.icon-text:before { content: "\e003" }
+.icon-timer:before { content: "\e07d" }
+.icon-pin:before { content: "\e019" }
+.icon-like:before { content: "\e075" }
+.icon-collection-save:before { content: "\e05b" }
+.icon-collection:before { content: "\e073" }
+.icon-group-new:before { content: "\e06b" }
+.icon-group-new-dark:before { content: "\e06b" }
+.icon-user:before { content: "\e074" }
+.icon-standards:before { content: "\e007" }
+.icon-search-address-book:before { content: "\e060" }
+.icon-facebook:before { content: "\e00d" }
+.icon-facebook-boxed:before { content: "\e017" }
+.icon-linkedin:before { content: "\e00f" }
+.icon-twitter:before { content: "\e010" }
+.icon-twitter-boxed:before { content: "\e01a" }
+.icon-github:before { content: "\e01b" }
+.icon-skype:before { content: "\e01c" }
+.icon-wordpress:before { content: "\e01d" }
+.icon-pinterest:before { content: "\e022" }
+.icon-gradebook:before { content: "\e05a" }
+.icon-document:before { content: "\e04e" }
+.icon-module:before { content: "\e014" }
+.icon-mini-arrow-up:before { content: "\e047" }
+.icon-mini-arrow-down:before { content: "\e048" }
+.icon-mini-arrow-left:before { content: "\e049" }
+.icon-mini-arrow-right:before { content: "\e046" }
+.icon-arrow-up:before { content: "\e086" }
+.icon-arrow-down:before { content: "\e085" }
+.icon-arrow-left:before { content: "\e088" }
+.icon-arrow-right:before { content: "\e087" }
+.icon-email:before { content: "\e06c" }
+.icon-instructure:before { content: "\e018" }
+.icon-ms-word:before { content: "\e01e" }
+.icon-ms-excel:before { content: "\e01f" }
+.icon-ms-ppt:before { content: "\e020" }
+.icon-pdf:before { content: "\e021" }
+.icon-apple:before { content: "\e02e" }
+.icon-windows:before { content: "\e02d" }
+.icon-android:before { content: "\e02f" }
+.icon-heart:before { content: "\e023" }
+.icon-upload:before { content: "\e024" }
+.icon-download:before { content: "\e02b" }
+.icon-text-left:before { content: "\e026" }
+.icon-text-center:before { content: "\e027" }
+.icon-text-right:before { content: "\e028" }
+.icon-mature:before { content: "\e035" }
+.icon-prerequisite:before { content: "\e037" }
+.icon-educators:before { content: "\e039" }
+.icon-calendar-days:before { content: "\e055" }
+.icon-materials-required:before { content: "\e03b" }
+.icon-not-graded:before { content: "\e042" }
+.icon-peer-graded:before { content: "\e043" }
+.icon-bookmark:before { content: "\e04b" }
+.icon-printer:before { content: "\e04a" }
+.icon-image:before { content: "\e07e" }
+.icon-expand:before { content: "\e050" }
+.icon-collapse:before { content: "\e04f" }
+.icon-invitation:before { content: "\e053" }
+.icon-muted:before { content: "\e051" }
+.icon-unmuted:before { content: "\e052" }
+.icon-plus:before { content: "\e078" }
+.icon-zipped:before { content: "\e089" }
+.icon-publish:before { content: "\e090" }
+// .icon-draft:before { content: "\e091" }
+.icon-unpublish:before { content: "\e092" }
+.icon-unpublished:before { content: "\e093" }
+.icon-discussion-check:before { content: "\e095" }
+.icon-discussion-reply-2:before { content: "\e096" }
+.icon-discussion-search:before { content: "\e097" }
+.icon-discussion-x:before { content: "\e098" }
+.icon-mark-as-read:before { content: "\e099" }
+.icon-more:before { content: "\e100" }
+.icon-syllabus:before { content: "\e101" }
+.icon-settings-2:before { content: "\e102" }
+
+// deprecated in favor of .screenreader-only, which is meant to be usable anywhere
+span.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  font-size: 4px;
+}
+;	T; T;@;i

@@ -1,0 +1,59 @@
+/* line 4, ../../../app/stylesheets/grading_standards.sass */
+#standards .grading_standard {
+  border-bottom: 1px dotted #cccccc;
+  margin-bottom: 25px; }
+  /* line 7, ../../../app/stylesheets/grading_standards.sass */
+  #standards .grading_standard .links {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5; }
+  /* line 10, ../../../app/stylesheets/grading_standards.sass */
+  #standards .grading_standard:hover .links {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; }
+  /* line 12, ../../../app/stylesheets/grading_standards.sass */
+  #standards .grading_standard .standard_title {
+    font-weight: bold;
+    font-size: 1.2em; }
+  /* line 16, ../../../app/stylesheets/grading_standards.sass */
+  #standards .grading_standard .display_grading_standard .data_holder {
+    max-height: 175px;
+    margin-left: 20px; }
+
+/* line 21, ../../../app/stylesheets/grading_standards.sass */
+.grading_standard .data_holder {
+  max-height: 175px;
+  overflow: auto;
+  padding-bottom: 10px; }
+/* line 25, ../../../app/stylesheets/grading_standards.sass */
+.grading_standard .read_only {
+  display: none; }
+/* line 27, ../../../app/stylesheets/grading_standards.sass */
+.grading_standard .editing_box {
+  display: none; }
+/* line 29, ../../../app/stylesheets/grading_standards.sass */
+.grading_standard .editing_td {
+  display: none; }
+/* line 31, ../../../app/stylesheets/grading_standards.sass */
+.grading_standard .editing_tr {
+  display: none; }
+/* line 33, ../../../app/stylesheets/grading_standards.sass */
+.grading_standard .min_score, .grading_standard .max_score {
+  width: 100px; }
+/* line 36, ../../../app/stylesheets/grading_standards.sass */
+.grading_standard.editing .displaying {
+  display: none; }
+/* line 38, ../../../app/stylesheets/grading_standards.sass */
+.grading_standard.editing .editing_box {
+  display: block; }
+/* line 40, ../../../app/stylesheets/grading_standards.sass */
+.grading_standard.editing td.editing_box {
+  display: table-cell; }
+/* line 42, ../../../app/stylesheets/grading_standards.sass */
+.grading_standard.editing tr.editing_box {
+  display: table-row; }
+/* line 44, ../../../app/stylesheets/grading_standards.sass */
+.grading_standard.editing .data_holder {
+  max-height: 125px; }
+/* line 46, ../../../app/stylesheets/grading_standards.sass */
+.grading_standard.editing .standard_title div {
+  float: left; }

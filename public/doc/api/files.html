@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="Content-Type" content="text/html;charset=UTF-8">
+<meta charset="UTF-8">
+<title>Canvas LMS REST API Documentation</title>
+<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+<link href="css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+<script src="js/shCore.js" type="text/javascript"></script>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/shAutoloader.js" type="text/javascript"></script>
+<script src="js/shBrushJScript.js" type="text/javascript"></script>
+
+  </head>
+  <body>
+    <div id="header">
+      <h1>
+  <a href="index.html">Canvas LMS - REST API and Extensions Documentation</a>
+</h1>
+
+    </div>
+
+    <div id="sidebar">
+      <nav>
+  <h2 class='first'>Basics</h2>
+  <a href="file.oauth.html" class="">OAuth</a>
+  <a href="file.object_ids.html" class="">SIS IDs</a>
+  <a href="file.pagination.html" class="">Pagination</a>
+  <a href="file.file_uploads.html" class="">File Uploads</a>
+  <a href="file.endpoint_attributes.html" class="">API Endpoint Attributes</a>
+  <a href="file.masquerading.html" class="">Masquerading</a>
+  <h2>Resources</h2>
+  <a  href="all_resources.html">All Resources Reference</a>
+  
+    
+    <a class="" href="account_authentication_services.html">Account Authentication Services</a>
+  
+    
+    <a class="" href="account_reports.html">Account Reports</a>
+  
+    
+    <a class="" href="accounts.html">Accounts</a>
+  
+    
+    <a class="" href="admins.html">Admins</a>
+  
+    
+    <a class="" href="announcement_external_feeds.html">Announcement External Feeds</a>
+  
+    
+    <a class="" href="appointment_groups.html">Appointment Groups</a>
+  
+    
+    <a class="" href="assignment_groups.html">Assignment Groups</a>
+  
+    
+    <a class="" href="assignments.html">Assignments</a>
+  
+    
+    <a class="" href="calendar_events.html">Calendar Events</a>
+  
+    
+    <a class="" href="collaborations.html">Collaborations</a>
+  
+    
+    <a class="" href="collections.html">Collections</a>
+  
+    
+    <a class="" href="comm_messages.html">CommMessages</a>
+  
+    
+    <a class="" href="communication_channels.html">Communication Channels</a>
+  
+    
+    <a class="" href="content_migrations.html">Content Migrations</a>
+  
+    
+    <a class="" href="conversations.html">Conversations</a>
+  
+    
+    <a class="" href="courses.html">Courses</a>
+  
+    
+    <a class="" href="discussion_topics.html">Discussion Topics</a>
+  
+    
+    <a class="" href="enrollments.html">Enrollments</a>
+  
+    
+    <a class="" href="external_tools.html">External Tools</a>
+  
+    
+    <a class="" href="favorites.html">Favorites</a>
+  
+    
+    <a class="current" href="files.html">Files</a>
+  
+    
+    <a class="" href="gradebook_history.html">Gradebook History</a>
+  
+    
+    <a class="" href="group_categories.html">Group Categories</a>
+  
+    
+    <a class="" href="groups.html">Groups</a>
+  
+    
+    <a class="" href="logins.html">Logins</a>
+  
+    
+    <a class="" href="modules.html">Modules</a>
+  
+    
+    <a class="" href="outcome_groups.html">Outcome Groups</a>
+  
+    
+    <a class="" href="outcomes.html">Outcomes</a>
+  
+    
+    <a class="" href="pages.html">Pages</a>
+  
+    
+    <a class="" href="progress.html">Progress</a>
+  
+    
+    <a class="" href="quiz_reports.html">Quiz Reports</a>
+  
+    
+    <a class="" href="quizzes.html">Quizzes</a>
+  
+    
+    <a class="" href="roles.html">Roles</a>
+  
+    
+    <a class="" href="sis_imports.html">SIS Imports</a>
+  
+    
+    <a class="" href="search.html">Search</a>
+  
+    
+    <a class="" href="sections.html">Sections</a>
+  
+    
+    <a class="" href="services.html">Services</a>
+  
+    
+    <a class="" href="submissions.html">Submissions</a>
+  
+    
+    <a class="" href="tabs.html">Tabs</a>
+  
+    
+    <a class="" href="users.html">Users</a>
+  
+  <h2>SIS</h2>
+  <a href="file.sis_csv.html" class="">SIS CSV Format</a>
+  <h2>External Tools</h2>
+  <a href="file.tools_intro.html" class="">Introduction</a>
+  <a href="file.assignment_tools.html" class="">Grading</a>
+  <a href="file.navigation_tools.html" class="">Navigation</a>
+  <a href="file.editor_button_tools.html" class="">Rich Editor</a>
+  <a href="file.link_selection_tools.html" class="">Link Selection</a>
+  <a href="file.homework_submission_tools.html" class="">Homework Submission</a>
+  <a href="file.tools_xml.html" class="">Configuring</a>
+</nav>
+
+    </div>
+
+    <div id="content"><div class="service">
+  
+    <h1>Files API</h1>
+  
+  
+  <table id='quicklinks'>
+  </table>
+  <p>An API for managing files and folders
+See the File Upload Documentation for details on the file upload workflow.</p>
+
+
+
+<div class='object_definition'>
+  <h3><a name="File">A File object looks like:</a></h3>
+
+  <pre class="example code brush:js">
+{
+  &quot;size&quot;:4,
+  &quot;content-type&quot;:&quot;text/plain&quot;,
+  &quot;url&quot;:&quot;http://www.example.com/files/569/download?download_frd=1\u0026verifier=c6HdZmxOZa0Fiin2cbvZeI8I5ry7yqD7RChQzb6P&quot;,
+  &quot;id&quot;:569,
+  &quot;display_name&quot;:&quot;file.txt&quot;,
+  &quot;created_at':&quot;2012-07-06T14:58:50Z&quot;,
+  &quot;updated_at':&quot;2012-07-06T14:58:50Z&quot;,
+  &quot;unlock_at':null,
+  &quot;locked':false,
+  &quot;hidden':false,
+  &quot;lock_at':null,
+  &quot;locked_for_user&quot;:false,
+  &quot;lock_info&quot;:{
+    &quot;asset_string&quot;:&quot;file_569&quot;,
+    &quot;unlock_at&quot;:&quot;2013-01-01T00:00:00-06:00&quot;,
+    &quot;lock_at&quot;:&quot;2013-02-01T00:00:00-06:00&quot;,
+    &quot;context_module&quot;:{ ... },
+    &quot;manually_locked&quot;:true
+  },
+  &quot;lock_explanation&quot;:&quot;This assignment is locked until September 1 at 12:00am&quot;,
+  &quot;hidden_for_user&quot;:false,
+  &quot;thumbnail_url&quot;:null
+}
+  </pre>
+</div>
+
+<div class='object_definition'>
+  <h3><a name="Folder">A Folder object looks like:</a></h3>
+
+  <pre class="example code brush:js">
+{
+  &quot;context_type&quot;:&quot;Course&quot;,
+  &quot;context_id&quot;:1401,
+  &quot;files_count&quot;:0,
+  &quot;position&quot;:3,
+  &quot;updated_at&quot;:&quot;2012-07-06T14:58:50Z&quot;,
+  &quot;folders_url&quot;:&quot;https://www.example.com/api/v1/folders/2937/folders&quot;,
+  &quot;files_url&quot;:&quot;https://www.example.com/api/v1/folders/2937/files&quot;,
+  &quot;full_name&quot;:&quot;course files/11folder&quot;,
+  &quot;lock_at&quot;:null,
+  &quot;id&quot;:2937,
+  &quot;folders_count&quot;:0,
+  &quot;name&quot;:&quot;11folder&quot;,
+  &quot;parent_folder_id&quot;:2934,
+  &quot;created_at&quot;:&quot;2012-07-06T14:58:50Z&quot;,
+  &quot;unlock_at&quot;:null
+  &quot;hidden&quot;:null
+  &quot;hidden_for_user&quot;:false,
+  &quot;locked&quot;:true,
+  &quot;locked_for_user&quot;:false
+}
+  </pre>
+</div>
+
+<div id="Services" class="method_details_list">
+
+  <div class="method_details first">
+  <h2 class='api_method_name' name='method.files.api_index' data-subtopic='Files'>
+    <a name='method.files.api_index' href='#method.files.api_index'>
+      List files
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/files_controller.rb">FilesController#api_index</a></span>
+    
+  </h2>
+  
+  
+
+<h3 class='endpoint'>
+  GET /api/v1/folders/:id/files
+</h3>
+
+
+
+<p>Returns the paginated list of files for the folder.</p>
+
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl 'https://&lt;canvas&gt;/api/v1/folders/&lt;folder_id&gt;/files' \ 
+      -H 'Authorization: Bearer &lt;token&gt;'</pre>
+    
+  </div>
+
+
+
+  Returns a list of 
+
+<a href='files.html#File'>Files</a>
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.files.api_show' data-subtopic='Files'>
+    <a name='method.files.api_show' href='#method.files.api_show'>
+      Get file
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/files_controller.rb">FilesController#api_show</a></span>
+    
+  </h2>
+  
+  
+
+<h3 class='endpoint'>
+  GET /api/v1/files/:id
+</h3>
+
+
+
+<p>Returns the standard attachment json object</p>
+
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl 'https://&lt;canvas&gt;/api/v1/files/&lt;file_id&gt;' \ 
+      -H 'Authorization: Bearer &lt;token&gt;'</pre>
+    
+  </div>
+
+
+
+  Returns a 
+
+<a href='files.html#File'>File</a>
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.files.api_update' data-subtopic='Files'>
+    <a name='method.files.api_update' href='#method.files.api_update'>
+      Update file
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/files_controller.rb">FilesController#api_update</a></span>
+    
+  </h2>
+  
+  
+
+<h3 class='endpoint'>
+  PUT /api/v1/files/:id
+</h3>
+
+
+
+<p>Update some settings on the specified file</p>
+
+<h4>Request Parameters:</h4>
+<ul class="argument">
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>name</span>
+      
+      
+        <div class='inline'>
+<p>The new display name of the file</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>parent_folder_id</span>
+      
+      
+        <div class='inline'>
+<p>The id of the folder to move this file into.  The new folder must be in the
+same context as the original parent folder.  If the file is in a context
+without folders this does not apply.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>lock_at</span>
+      
+      
+        <div class='inline'>
+<p>The datetime to lock the file at</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>unlock_at</span>
+      
+      
+        <div class='inline'>
+<p>The datetime to unlock the file at</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>locked</span>
+      
+      
+        <div class='inline'>
+<p>Flag the file as locked</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>hidden</span>
+      
+      
+        <div class='inline'>
+<p>Flag the file as hidden</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl -XPUT 'https://&lt;canvas&gt;/api/v1/files/&lt;file_id&gt;' \ 
+     -F 'name=&lt;new_name&gt;' \ 
+     -F 'locked=true' \ 
+     -H 'Authorization: Bearer &lt;token&gt;'</pre>
+    
+  </div>
+
+
+
+  Returns a 
+
+<a href='files.html#File'>File</a>
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.files.destroy' data-subtopic='Files'>
+    <a name='method.files.destroy' href='#method.files.destroy'>
+      Delete file
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/files_controller.rb">FilesController#destroy</a></span>
+    
+  </h2>
+  
+  
+
+<h3 class='endpoint'>
+  DELETE /api/v1/files/:id
+</h3>
+
+
+
+<p>Remove the specified file</p>
+
+<pre class="code ruby"><code>curl -XDELETE 'https://&lt;canvas&gt;/api/v1/files/&lt;file_id&gt;' \ 
+     -H 'Authorization: Bearer &lt;token&gt;'</code></pre>
+
+
+
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.folders.api_index' data-subtopic='Folders'>
+    <a name='method.folders.api_index' href='#method.folders.api_index'>
+      List folders
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/folders_controller.rb">FoldersController#api_index</a></span>
+    
+  </h2>
+  
+  
+
+<h3 class='endpoint'>
+  GET /api/v1/folders/:id/folders
+</h3>
+
+
+
+<p>Returns the paginated list of folders in the folder.</p>
+
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl 'https://&lt;canvas&gt;/api/v1/folders/&lt;folder_id&gt;/folders' \ 
+     -H 'Authorization: Bearer &lt;token&gt;'</pre>
+    
+  </div>
+
+
+
+  Returns a list of 
+
+<a href='files.html#Folder'>Folders</a>
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.folders.show' data-subtopic='Folders'>
+    <a name='method.folders.show' href='#method.folders.show'>
+      Get folder
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/folders_controller.rb">FoldersController#show</a></span>
+    
+  </h2>
+  
+  
+
+<h3 class='endpoint'>
+  GET /api/v1/courses/:course_id/folders/:id
+</h3>
+
+
+
+<h3 class='endpoint'>
+  GET /api/v1/users/:user_id/folders/:id
+</h3>
+
+
+
+<h3 class='endpoint'>
+  GET /api/v1/groups/:group_id/folders/:id
+</h3>
+
+
+
+<h3 class='endpoint'>
+  GET /api/v1/folders/:id
+</h3>
+
+
+
+<p>Returns the details for a folder</p>
+
+<p>You can get the root folder from a context by using 'root' as the :id. For
+example, you could get the root folder for a course like:</p>
+
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl 'https://&lt;canvas&gt;/api/v1/courses/1337/folders/root' \ 
+     -H 'Authorization: Bearer &lt;token&gt;'</pre>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl 'https://&lt;canvas&gt;/api/v1/folders/&lt;folder_id&gt;' \ 
+     -H 'Authorization: Bearer &lt;token&gt;'</pre>
+    
+  </div>
+
+
+
+  Returns a 
+
+<a href='files.html#Folder'>Folder</a>
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.folders.update' data-subtopic='Folders'>
+    <a name='method.folders.update' href='#method.folders.update'>
+      Update folder
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/folders_controller.rb">FoldersController#update</a></span>
+    
+  </h2>
+  
+  
+
+<h3 class='endpoint'>
+  PUT /api/v1/folders/:id
+</h3>
+
+
+
+<p>Updates a folder</p>
+
+<h4>Request Parameters:</h4>
+<ul class="argument">
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>name</span>
+      
+      
+        <div class='inline'>
+<p>The new name of the folder</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>parent_folder_id</span>
+      
+      
+        <div class='inline'>
+<p>The id of the folder to move this folder into. The new folder must be in
+the same context as the original parent folder.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>lock_at</span>
+      
+      
+        <div class='inline'>
+<p>The datetime to lock the folder at</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>unlock_at</span>
+      
+      
+        <div class='inline'>
+<p>The datetime to unlock the folder at</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>locked</span>
+      
+      
+        <div class='inline'>
+<p>Flag the folder as locked</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>hidden</span>
+      
+      
+        <div class='inline'>
+<p>Flag the folder as hidden</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>position</span>
+      
+      
+        <div class='inline'>
+<p>Set an explicit sort position for the folder</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl -XPUT 'https://&lt;canvas&gt;/api/v1/folders/&lt;folder_id&gt;' \ 
+     -F 'name=&lt;new_name&gt;' \ 
+     -F 'locked=true' \ 
+     -H 'Authorization: Bearer &lt;token&gt;'</pre>
+    
+  </div>
+
+
+
+  Returns a 
+
+<a href='files.html#Folder'>Folder</a>
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.folders.create' data-subtopic='Folders'>
+    <a name='method.folders.create' href='#method.folders.create'>
+      Create folder
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/folders_controller.rb">FoldersController#create</a></span>
+    
+  </h2>
+  
+  
+
+<h3 class='endpoint'>
+  POST /api/v1/courses/:course_id/folders
+</h3>
+
+
+
+<h3 class='endpoint'>
+  POST /api/v1/users/:user_id/folders
+</h3>
+
+
+
+<h3 class='endpoint'>
+  POST /api/v1/groups/:group_id/folders
+</h3>
+
+
+
+<h3 class='endpoint'>
+  POST /api/v1/folders/:folder_id/folders
+</h3>
+
+
+
+<p>Creates a folder in the specified context</p>
+
+<h4>Request Parameters:</h4>
+<ul class="argument">
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>name</span>
+      
+      
+        <div class='inline'>
+<p>The name of the folder</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>parent_folder_id</span>
+      
+      
+        <div class='inline'>
+<p>The id of the folder to store the file in. If this and parent_folder_path
+are sent an error will be returned. If neither is given, a default folder
+will be used.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>parent_folder_path</span>
+      
+      
+        <div class='inline'>
+<p>The path of the folder to store the new folder in. The path separator is
+the forward slash `/`, never a back slash. The parent folder will be
+created if it does not already exist. This parameter only applies to new
+folders in a context that has folders, such as a user, a course, or a
+group. If this and parent_folder_id are sent an error will be returned. If
+neither is given, a default folder will be used.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>lock_at</span>
+      
+      
+        <div class='inline'>
+<p>The datetime to lock the folder at</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>unlock_at</span>
+      
+      
+        <div class='inline'>
+<p>The datetime to unlock the folder at</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>locked</span>
+      
+      
+        <div class='inline'>
+<p>Flag the folder as locked</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>hidden</span>
+      
+      
+        <div class='inline'>
+<p>Flag the folder as hidden</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>position</span>
+      
+      
+        <div class='inline'>
+<p>Set an explicit sort position for the folder</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl 'https://&lt;canvas&gt;/api/v1/folders/&lt;folder_id&gt;/folders' \
+     -F 'name=&lt;new_name&gt;' \
+     -F 'locked=true' \
+     -H 'Authorization: Bearer &lt;token&gt;'</pre>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl 'https://&lt;canvas&gt;/api/v1/courses/&lt;course_id&gt;/folders' \
+     -F 'name=&lt;new_name&gt;' \
+     -F 'locked=true' \
+     -H 'Authorization: Bearer &lt;token&gt;'</pre>
+    
+  </div>
+
+
+
+  Returns a 
+
+<a href='files.html#Folder'>Folder</a>
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.folders.api_destroy' data-subtopic='Folders'>
+    <a name='method.folders.api_destroy' href='#method.folders.api_destroy'>
+      Delete folder
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/folders_controller.rb">FoldersController#api_destroy</a></span>
+    
+  </h2>
+  
+  
+
+<h3 class='endpoint'>
+  DELETE /api/v1/folders/:id
+</h3>
+
+
+
+<p>Remove the specified folder. You can only delete empty folders unless you
+set the 'force' flag</p>
+
+<h4>Request Parameters:</h4>
+<ul class="argument">
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>force</span>
+      
+      
+        <div class='inline'>
+<p>Set to 'true' to allow deleting a non-empty folder</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl -XDELETE 'https://&lt;canvas&gt;/api/v1/folders/&lt;folder_id&gt;' \ 
+     -H 'Authorization: Bearer &lt;token&gt;'</pre>
+    
+  </div>
+
+
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.folders.create_file' data-subtopic='Folders'>
+    <a name='method.folders.create_file' href='#method.folders.create_file'>
+      Upload a file
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/folders_controller.rb">FoldersController#create_file</a></span>
+    
+  </h2>
+  
+  
+
+<h3 class='endpoint'>
+  POST /api/v1/folders/:folder_id/files
+</h3>
+
+
+
+<p>Upload a file to a folder.</p>
+
+<p>This API endpoint is the first step in uploading a file. See the
+<a href="../file.file_uploads.html" title="File Upload Documentation">File Upload Documentation</a> for details on the file
+upload workflow.</p>
+
+<p>Only those with the "Manage Files" permission on a course or group can
+upload files to a folder in that course or group.</p>
+
+
+
+
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+    <script type="text/javascript">
+  $('h2.api_method_name').each(function(i, el) {
+    var subtopic = $(el).data('subtopic');
+    var $a = $(el).find('a');
+    if ($.trim($a[0].innerHTML) == '')
+      return;
+    var $row = $('table#quicklinks tr').filter(function() { return $(this).data('subtopic') == subtopic; });
+    if ($row.length == 0) {
+      $row = $('<tr/>').appendTo($('table#quicklinks'));
+      $row.data('subtopic', subtopic);
+      $('<th/>').append(subtopic).appendTo($row);
+      $('<td/>').appendTo($row);
+    }
+    var link = $('<a/>').attr('href', '#'+$(el).attr('name')).append($.trim($a[0].innerHTML));
+    $row.find('td').append(link);
+  });
+
+  SyntaxHighlighter.defaults['gutter'] = false;
+  SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.defaults['auto-links'] = false;
+  $('#content pre.code.javascript code').each(function(i, el) {
+    $(el).parent().addClass('brush: js');
+    $(el).replaceWith(el.innerHTML);
+  });
+  SyntaxHighlighter.all();
+</script>
+<div id="footer">
+  &copy; Instructure, Inc. Generated on Wed Aug  7 15:04:51 2013<br>
+  This documentation is generated directly from the Canvas LMS source code, available <a href="https://github.com/instructure/canvas-lms">on Github</a>.
+</div>
+
+  </body>
+</html>

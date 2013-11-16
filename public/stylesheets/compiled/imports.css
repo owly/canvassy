@@ -1,0 +1,28 @@
+/* line 3, ../../../app/stylesheets/imports.scss */
+#import_subset_options {
+  margin: 10px 20px;
+  font-size: 9px; }
+
+/* line 8, ../../../app/stylesheets/imports.scss */
+#file_upload #export_file_input {
+  display: block; }
+/* line 11, ../../../app/stylesheets/imports.scss */
+#file_upload span.zip_error {
+  font-size: 12px;
+  padding: 4px 6px; }
+
+/* line 17, ../../../app/stylesheets/imports.scss */
+.action-buttons {
+  padding-top: 15px; }
+
+/* line 23, ../../../app/stylesheets/imports.scss */
+#config_options legend {
+  margin-bottom: 0 !important;
+  border-bottom: none !important; }
+/* line 27, ../../../app/stylesheets/imports.scss */
+#config_options legend:after {
+  display: block;
+  height: 20px;
+  /* @baseLineHeight; */
+  border-top: 1px solid #e5e5e5;
+  content: ""; }

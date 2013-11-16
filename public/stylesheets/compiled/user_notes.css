@@ -1,0 +1,47 @@
+/* line 3, ../../../app/stylesheets/user_notes.scss */
+.page-header {
+  margin-bottom: 15px; }
+
+/* line 7, ../../../app/stylesheets/user_notes.scss */
+.communication_message {
+  margin-left: 0px;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 0px; }
+  /* line 13, ../../../app/stylesheets/user_notes.scss */
+  .communication_message:first-child {
+    margin-top: 0px; }
+  /* line 17, ../../../app/stylesheets/user_notes.scss */
+  .communication_message .header {
+    margin-left: 0px;
+    background-color: #efefef;
+    padding: 25px;
+    line-height: 20px; }
+    /* line 23, ../../../app/stylesheets/user_notes.scss */
+    .communication_message .header .header_title {
+      float: none;
+      padding: 5px;
+      line-height: 1.8em; }
+      /* line 28, ../../../app/stylesheets/user_notes.scss */
+      .communication_message .header .header_title .title {
+        margin-left: 0px;
+        padding-left: 0px; }
+      /* line 32, ../../../app/stylesheets/user_notes.scss */
+      .communication_message .header .header_title .sub_title {
+        margin-left: 0px;
+        padding: 0 0 5px 0;
+        color: #888888; }
+    /* line 39, ../../../app/stylesheets/user_notes.scss */
+    .communication_message .header .delete_user_note_link {
+      position: relative;
+      top: 3px;
+      color: #777; }
+    /* line 45, ../../../app/stylesheets/user_notes.scss */
+    .communication_message .header .delete_user_note_link:hover {
+      color: #06a9ee; }
+  /* line 50, ../../../app/stylesheets/user_notes.scss */
+  .communication_message .content {
+    padding: 10px !important; }
+    /* line 53, ../../../app/stylesheets/user_notes.scss */
+    .communication_message .content .inner-content {
+      position: static; }

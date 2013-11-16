@@ -1,0 +1,1 @@
+(function(){define(["jquery"],function(a){return a.fn.offsetFrom=function(b){var c,d;return d=a(this).offset(),c=b.offset(),{top:d.top-c.top,left:d.left-c.left}}})}).call(this)

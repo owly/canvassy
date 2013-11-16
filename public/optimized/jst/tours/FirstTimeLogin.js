@@ -1,0 +1,1 @@
+define("jst/tours/FirstTimeLogin",["compiled/handlebars_helpers"],function(a){var b=a.template,c=a.templates=a.templates||{};return c["tours/FirstTimeLogin"]=b(function(a,b,c,d,e){c=c||a.helpers;var f,g=this;return'<div id="tour-start" style="color: red; z-index: 10">\n  AMAZING TOUR\n</div>\n\n'}),c["tours/FirstTimeLogin"]})

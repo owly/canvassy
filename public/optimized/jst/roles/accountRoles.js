@@ -1,0 +1,1 @@
+define("jst/roles/accountRoles",["compiled/handlebars_helpers"],function(a){var b=a.template,c=a.templates=a.templates||{};return c["roles/accountRoles"]=b(function(a,b,c,d,e){c=c||a.helpers;var f,g=this;return'<div class="new-role"></div>\n<table id="account_roles" class=\'table table-striped table-hover table-condensed\'></table>\n'}),c["roles/accountRoles"]})

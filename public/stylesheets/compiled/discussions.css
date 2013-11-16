@@ -1,0 +1,596 @@
+/* line 6, ../../../app/stylesheets/discussions.scss */
+body.with-right-side.with-left-side {
+  min-width: 1110px; }
+
+/* line 11, ../../../app/stylesheets/discussions.scss */
+.hidden {
+  display: none !important; }
+
+/* line 15, ../../../app/stylesheets/discussions.scss */
+.right-align {
+  text-align: right; }
+
+/* line 19, ../../../app/stylesheets/discussions.scss */
+.pull-right {
+  float: right; }
+
+/* line 23, ../../../app/stylesheets/discussions.scss */
+.show-if-collapsed {
+  display: none !important; }
+
+/* line 28, ../../../app/stylesheets/discussions.scss */
+.collapsed .hide-if-collapsed {
+  display: none !important; }
+/* line 31, ../../../app/stylesheets/discussions.scss */
+.collapsed .show-if-collapsed {
+  display: block !important; }
+
+/* line 36, ../../../app/stylesheets/discussions.scss */
+.discussion-entries {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  /* line 41, ../../../app/stylesheets/discussions.scss */
+  .discussion-entries .entry {
+    background: white;
+    border: 1px solid #b6babf;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 3px 0 0 0;
+    margin: 16px 0 16px 18px; }
+    /* line 49, ../../../app/stylesheets/discussions.scss */
+    .discussion-entries .entry.collapsed, .discussion-entries .entry .entry {
+      margin: 16px 0 16px 18px; }
+    /* line 53, ../../../app/stylesheets/discussions.scss */
+    .discussion-entries .entry .deleted-discussion-entry {
+      padding-bottom: 3px; }
+      /* line 56, ../../../app/stylesheets/discussions.scss */
+      .discussion-entries .entry .deleted-discussion-entry.reply-box-container {
+        padding: 10px 0; }
+    /* line 61, ../../../app/stylesheets/discussions.scss */
+    .discussion-entries .entry .discussion-header-content {
+      padding-top: 10px; }
+    /* line 65, ../../../app/stylesheets/discussions.scss */
+    .discussion-entries .entry.collapsed .discussion-header-content {
+      padding-top: 0; }
+    /* line 69, ../../../app/stylesheets/discussions.scss */
+    .discussion-entries .entry .deleted-discussion-entry .right-of-avatar {
+      padding-top: 0 !important; }
+    /* line 73, ../../../app/stylesheets/discussions.scss */
+    .discussion-entries .entry .entry .right-of-avatar {
+      padding-top: 0; }
+    /* line 77, ../../../app/stylesheets/discussions.scss */
+    .discussion-entries .entry .avatar img {
+      height: 32px;
+      width: 32px; }
+    /* line 82, ../../../app/stylesheets/discussions.scss */
+    .discussion-entries .entry .entry {
+      box-shadow: none;
+      margin: 0 !important;
+      border: none;
+      border-radius: 0;
+      border-top: solid 1px #b6babf; }
+      /* line 89, ../../../app/stylesheets/discussions.scss */
+      .discussion-entries .entry .entry .discussion_entry {
+        margin: 0;
+        border-bottom: none; }
+      /* line 94, ../../../app/stylesheets/discussions.scss */
+      .discussion-entries .entry .entry .avatar img {
+        height: 16px;
+        width: 16px; }
+
+/* line 102, ../../../app/stylesheets/discussions.scss */
+.side_comment_discussion .entry .entry .replies {
+  display: none; }
+
+/* line 106, ../../../app/stylesheets/discussions.scss */
+.discussion_entry {
+  position: relative;
+  margin: 0;
+  background: white; }
+  /* line 110, ../../../app/stylesheets/discussions.scss */
+  .discussion_entry .al-trigger {
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 0px; }
+  /* line 115, ../../../app/stylesheets/discussions.scss */
+  .discussion_entry .ellipsis {
+    padding-right: 70px; }
+
+/* line 120, ../../../app/stylesheets/discussions.scss */
+.new-and-total-badge {
+  float: right; }
+
+/* line 124, ../../../app/stylesheets/discussions.scss */
+.discussion-section {
+  padding: 4px 10px 3px 10px;
+  position: relative; }
+  /* line 127, ../../../app/stylesheets/discussions.scss */
+  .discussion-section a {
+    color: #396eb2; }
+
+/* line 132, ../../../app/stylesheets/discussions.scss */
+.reply-textarea {
+  border-radius: 5px 5px 0 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  min-height: 155px;
+  width: 100%; }
+  @media screen and (min-width: 1100px) {
+    /* line 132, ../../../app/stylesheets/discussions.scss */
+    .reply-textarea {
+      min-height: 129px; } }
+
+/* line 144, ../../../app/stylesheets/discussions.scss */
+.toggle-wrapper {
+  margin-bottom: 11px;
+  text-align: right; }
+
+/* line 149, ../../../app/stylesheets/discussions.scss */
+.due_date_wrapper {
+  color: #777777; }
+
+/* line 154, ../../../app/stylesheets/discussions.scss */
+.topic h1.discussion-title {
+  font-size: 19px; }
+/* line 157, ../../../app/stylesheets/discussions.scss */
+.topic h2.discussion-title {
+  font-size: 16px; }
+/* line 160, ../../../app/stylesheets/discussions.scss */
+.topic .discussion-title {
+  font-size: 19px; }
+
+/* line 165, ../../../app/stylesheets/discussions.scss */
+.discussion-title {
+  font-size: 13px;
+  margin: 0;
+  line-height: 23px; }
+
+/* line 171, ../../../app/stylesheets/discussions.scss */
+.discussion-subtitle {
+  font-size: 11px;
+  margin: 0; }
+
+/* line 176, ../../../app/stylesheets/discussions.scss */
+.discussion-points {
+  color: #777777; }
+
+/* line 180, ../../../app/stylesheets/discussions.scss */
+.discussion-pubdate {
+  font-size: 11px;
+  color: #777777;
+  line-height: 23px; }
+
+/* line 186, ../../../app/stylesheets/discussions.scss */
+.discussion-assignment-section .discussion-title {
+  font-size: 14px !important; }
+
+/* line 190, ../../../app/stylesheets/discussions.scss */
+.discussion-fyi {
+  font-style: italic;
+  font-size: 12px;
+  color: #777777; }
+
+/* line 196, ../../../app/stylesheets/discussions.scss */
+.discussion-read-state-btn {
+  position: absolute;
+  top: 4px;
+  left: -32px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  padding: 12px;
+  display: block; }
+
+/* line 207, ../../../app/stylesheets/discussions.scss */
+.discussion-read-state {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #2e89cc;
+  border-radius: 5px;
+  width: 10px;
+  height: 10px;
+  background: #46aaf9;
+  background: -moz-linear-gradient(top, #73d6fc, #2489f7);
+  background: -ms-linear-gradient(top, #73d6fc, #2489f7);
+  background: -o-linear-gradient(top, #73d6fc, #2489f7);
+  background: -webkit-linear-gradient(top, #73d6fc, #2489f7);
+  background: linear-gradient(top, #73d6fc, #2489f7); }
+
+/* line 222, ../../../app/stylesheets/discussions.scss */
+.read .discussion-read-state {
+  background: #fff;
+  border: 1px solid #8c8d8d; }
+
+/* line 227, ../../../app/stylesheets/discussions.scss */
+.discussion-read-state-btn {
+  left: -32px; }
+
+/* line 232, ../../../app/stylesheets/discussions.scss */
+.no-touch .entry-control {
+  visibility: hidden; }
+
+/* line 237, ../../../app/stylesheets/discussions.scss */
+.touch .entry-control {
+  visibility: visible; }
+
+/* line 244, ../../../app/stylesheets/discussions.scss */
+.discussion_entry:hover .entry-control {
+  visibility: visible; }
+
+/* line 252, ../../../app/stylesheets/discussions.scss */
+.entry .show-if-replying, .discussion_entry .show-if-replying {
+  display: none; }
+/* line 256, ../../../app/stylesheets/discussions.scss */
+.entry.replying .hide-if-replying, .discussion_entry.replying .hide-if-replying {
+  display: none; }
+/* line 259, ../../../app/stylesheets/discussions.scss */
+.entry.replying .show-if-replying, .discussion_entry.replying .show-if-replying {
+  display: block; }
+
+/* line 265, ../../../app/stylesheets/discussions.scss */
+.discussion-entry-reply-area {
+  background: #f4f5f7;
+  padding: 0 0.8em;
+  border-top: 1px solid #b6babf; }
+
+/* line 272, ../../../app/stylesheets/discussions.scss */
+.topic .discussion-entry-reply-area {
+  padding: 0 20px;
+  border-top: 1px solid #d4d5d7;
+  border-bottom: 1px solid #b6babf; }
+
+/* line 279, ../../../app/stylesheets/discussions.scss */
+.discussion_entry > .discussion-entry-reply-area {
+  padding: 0 0.8em;
+  border-top: 1px solid #d4d5d7; }
+
+/* line 285, ../../../app/stylesheets/discussions.scss */
+.entry > .bottom-reply-with-box .discussion-entry-reply-area {
+  padding: 0 0.8em;
+  border-top: 1px solid #d4d5d7; }
+  /* line 289, ../../../app/stylesheets/discussions.scss */
+  .entry > .bottom-reply-with-box .discussion-entry-reply-area.reply-box-container {
+    padding: 15px 0.8em;
+    margin: 0; }
+    /* line 293, ../../../app/stylesheets/discussions.scss */
+    .entry > .bottom-reply-with-box .discussion-entry-reply-area.reply-box-container .discussion-reply-box {
+      margin: 0; }
+
+/* line 301, ../../../app/stylesheets/discussions.scss */
+.discussion-reply-form {
+  margin: 0;
+  padding-bottom: 1em; }
+
+/* line 307, ../../../app/stylesheets/discussions.scss */
+.entry .cancel_button {
+  font-size: 11px; }
+
+/* line 313, ../../../app/stylesheets/discussions.scss */
+.avatar {
+  float: left;
+  margin: 3px 8px 0 0; }
+  /* line 316, ../../../app/stylesheets/discussions.scss */
+  .avatar img {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    background: white; }
+
+/* line 324, ../../../app/stylesheets/discussions.scss */
+.topic .avatar img {
+  width: 50px;
+  height: 50px; }
+
+/* line 330, ../../../app/stylesheets/discussions.scss */
+.discussion-header-content .author.unknown {
+  font-style: italic; }
+
+/* line 335, ../../../app/stylesheets/discussions.scss */
+.discussion-reply-attachments {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  /* line 339, ../../../app/stylesheets/discussions.scss */
+  .discussion-reply-attachments li {
+    padding: 0 0 0 20px;
+    margin: 0;
+    background: transparent url(/images/messages/attach-gray.png) left center no-repeat; }
+  /* line 344, ../../../app/stylesheets/discussions.scss */
+  .discussion-reply-attachments a {
+    display: inline-block;
+    text-indent: -1000em;
+    width: 16px;
+    height: 16px;
+    background: transparent url(/images/delete_circle.png) left center no-repeat; }
+
+/* line 353, ../../../app/stylesheets/discussions.scss */
+.discussion-reply-add-attachment {
+  display: inline-block; }
+
+/* line 357, ../../../app/stylesheets/discussions.scss */
+.discussion-reply-attachments-container {
+  float: left; }
+
+/* line 361, ../../../app/stylesheets/discussions.scss */
+.discussion-reply-buttons {
+  float: right; }
+
+/* line 365, ../../../app/stylesheets/discussions.scss */
+.message-notification, .notification {
+  background: #ffffcc; }
+
+/* line 370, ../../../app/stylesheets/discussions.scss */
+.deleted-discussion-entry .discussion-header-content {
+  min-height: 0; }
+/* line 373, ../../../app/stylesheets/discussions.scss */
+.deleted-discussion-entry .discussion-title {
+  font-size: 12px;
+  font-style: italic; }
+
+/* line 379, ../../../app/stylesheets/discussions.scss */
+.add_root_reply {
+  display: inline-block;
+  margin-top: 20px; }
+
+/* line 384, ../../../app/stylesheets/discussions.scss */
+.showMore {
+  margin: 0;
+  border-top: 1px solid #b6babf;
+  background: white;
+  padding: 10px 10px 13px 10px;
+  font-size: 10px;
+  font-weight: bold;
+  overflow: hidden;
+  *zoom: 1; }
+  /* line 392, ../../../app/stylesheets/discussions.scss */
+  .showMore a {
+    float: left;
+    text-transform: uppercase; }
+    /* line 395, ../../../app/stylesheets/discussions.scss */
+    .showMore a:after {
+      content: "";
+      display: inline-block;
+      position: relative;
+      left: 4px;
+      top: 2px;
+      bottom: 2px;
+      height: 0px;
+      width: 0px;
+      border-style: solid;
+      border-color: #396eb2 transparent transparent transparent;
+      border-width: 5px;
+      vertical-align: middle; }
+  /* line 410, ../../../app/stylesheets/discussions.scss */
+  .showMore .new-and-total-badge {
+    margin-top: 0;
+    float: right; }
+
+/* line 416, ../../../app/stylesheets/discussions.scss */
+.showMore:hover {
+  background: #f3f4f5;
+  cursor: pointer; }
+  /* line 419, ../../../app/stylesheets/discussions.scss */
+  .showMore:hover a {
+    text-decoration: underline; }
+
+/* line 424, ../../../app/stylesheets/discussions.scss */
+.entry-controls {
+  overflow: auto;
+  padding: 0 10px 2px 10px;
+  font-size: 12px; }
+  /* line 429, ../../../app/stylesheets/discussions.scss */
+  .entry-controls .new-and-total-badge {
+    float: left;
+    margin: 0; }
+
+/* line 435, ../../../app/stylesheets/discussions.scss */
+.side_comment_discussion .entry-controls {
+  display: none; }
+
+/* line 439, ../../../app/stylesheets/discussions.scss */
+.topic {
+  margin: 0;
+  overflow: auto; }
+  /* line 443, ../../../app/stylesheets/discussions.scss */
+  .topic .entry_content {
+    padding: 10px 10px 0 10px; }
+
+/* line 448, ../../../app/stylesheets/discussions.scss */
+.entry-header {
+  border-bottom: none; }
+
+/* line 452, ../../../app/stylesheets/discussions.scss */
+#content {
+  padding: 0; }
+
+/* line 456, ../../../app/stylesheets/discussions.scss */
+#main {
+  background: #dfe9f0; }
+
+/* line 460, ../../../app/stylesheets/discussions.scss */
+.discussion_subentries {
+  padding: 10px; }
+
+/* line 465, ../../../app/stylesheets/discussions.scss */
+.discussion-page-nav ul {
+  font-size: 12px;
+  margin: 0;
+  padding-bottom: 20px;
+  list-style: none;
+  text-align: right;
+  height: 1em; }
+/* line 473, ../../../app/stylesheets/discussions.scss */
+.discussion-page-nav li {
+  display: inline-block; }
+/* line 476, ../../../app/stylesheets/discussions.scss */
+.discussion-page-nav .item {
+  display: block;
+  padding: 4px 12px 4px 8px;
+  border-right: 1px solid #b6babf; }
+/* line 481, ../../../app/stylesheets/discussions.scss */
+.discussion-page-nav li:last-child .item {
+  border-right: none; }
+
+/* line 487, ../../../app/stylesheets/discussions.scss */
+.new-and-total-badge .new-items, .new-and-total-badge .total-items {
+  font-weight: normal;
+  font-size: 10px; }
+
+/* line 493, ../../../app/stylesheets/discussions.scss */
+.highlight .entry_content {
+  outline: 3px solid #06a9ee; }
+
+/* line 497, ../../../app/stylesheets/discussions.scss */
+.highlight .entry .entry_content {
+  outline: none; }
+
+/* line 501, ../../../app/stylesheets/discussions.scss */
+.discussion-reply-box {
+  display: block;
+  background-color: #fdfdfd;
+  font-size: 11px;
+  color: #636363 !important;
+  padding: 3px 10px;
+  cursor: text;
+  border: 1px solid #d4d5d7;
+  margin: 15px 0; }
+  /* line 510, ../../../app/stylesheets/discussions.scss */
+  .discussion-reply-box:hover {
+    text-decoration: none; }
+
+/* line 515, ../../../app/stylesheets/discussions.scss */
+.add-side-comment-wrap {
+  padding: 10px 10px 10px 41px;
+  border-top: solid 1px #e4e5e7; }
+
+/* line 520, ../../../app/stylesheets/discussions.scss */
+.message *:last-child {
+  margin-bottom: 0; }
+
+/* line 524, ../../../app/stylesheets/discussions.scss */
+.message_wrapper {
+  padding-top: 2px;
+  padding-bottom: 2px; }
+
+/* line 530, ../../../app/stylesheets/discussions.scss */
+#discussion_container .al-trigger {
+  background: none;
+  border-color: white; }
+/* line 534, ../../../app/stylesheets/discussions.scss */
+#discussion_container .al-trigger:hover, #discussion_container .al-trigger.ui-state-active {
+  border-color: #c2c2c2;
+  border-bottom-color: #bfbfbf; }
+
+/* line 540, ../../../app/stylesheets/discussions.scss */
+.collapsable {
+  border-bottom: 1px solid white; }
+
+/* line 544, ../../../app/stylesheets/discussions.scss */
+.collapsable:hover {
+  cursor: pointer;
+  border-color: #e4e5e7; }
+  /* line 547, ../../../app/stylesheets/discussions.scss */
+  .collapsable:hover:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    height: 0px;
+    width: 0px;
+    border-style: solid;
+    border-color: transparent transparent #396eb2 transparent;
+    border-width: 8px; }
+
+/* line 561, ../../../app/stylesheets/discussions.scss */
+.collapsed .collapsable:hover {
+  border-color: white; }
+
+/* line 565, ../../../app/stylesheets/discussions.scss */
+.collapsed .collapsable:before {
+  top: 10px;
+  border-color: #396eb2 transparent transparent transparent; }
+
+/* line 570, ../../../app/stylesheets/discussions.scss */
+.bootstrap-form {
+  margin: 0; }
+
+/* line 574, ../../../app/stylesheets/discussions.scss */
+.headerBar {
+  overflow: hidden;
+  *zoom: 1; }
+
+/* line 578, ../../../app/stylesheets/discussions.scss */
+.headerBar-left {
+  float: left; }
+
+/* line 582, ../../../app/stylesheets/discussions.scss */
+.headerBar-right {
+  float: right; }
+
+/* line 587, ../../../app/stylesheets/discussions.scss */
+#filterResults .entry {
+  margin-top: 0;
+  margin-bottom: 5px; }
+/* line 591, ../../../app/stylesheets/discussions.scss */
+#filterResults .entry-controls {
+  display: block !important; }
+/* line 595, ../../../app/stylesheets/discussions.scss */
+#filterResults .entry:hover .discussion_entry {
+  cursor: pointer; }
+  /* line 597, ../../../app/stylesheets/discussions.scss */
+  #filterResults .entry:hover .discussion_entry .viewInDiscussion {
+    text-decoration: underline; }
+
+/* line 604, ../../../app/stylesheets/discussions.scss */
+.toolbarView {
+  background: white;
+  min-height: 50px; }
+  /* line 607, ../../../app/stylesheets/discussions.scss */
+  .toolbarView .al-trigger {
+    margin-left: 4px; }
+  /* line 610, ../../../app/stylesheets/discussions.scss */
+  .toolbarView .headerBar {
+    padding: 10px 10px 6px 14px;
+    border-bottom: solid 1px #b6babf;
+    min-height: 33px; }
+  /* line 615, ../../../app/stylesheets/discussions.scss */
+  .toolbarView .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: 176px;
+    margin-right: 287px;
+    z-index: 3;
+    background: white;
+    height: 33px;
+    min-width: 623px;
+    border-color: #cccccc; }
+  /* line 628, ../../../app/stylesheets/discussions.scss */
+  .toolbarView [disabled] {
+    display: none; }
+
+/* line 633, ../../../app/stylesheets/discussions.scss */
+.discussion-topic-due-dates {
+  color: #777777;
+  margin: 16px 0;
+  width: 100%; }
+  /* line 637, ../../../app/stylesheets/discussions.scss */
+  .discussion-topic-due-dates th {
+    font-weight: bold;
+    text-align: left; }
+
+/* line 644, ../../../app/stylesheets/discussions.scss */
+#discussion-toolbar .topic-subscribe-button {
+  display: none; }
+/* line 645, ../../../app/stylesheets/discussions.scss */
+#discussion-toolbar .topic-unsubscribe-button {
+  display: none; }
+/* line 648, ../../../app/stylesheets/discussions.scss */
+#discussion-toolbar.unsubscribed .topic-subscribe-button {
+  display: inline-block; }
+/* line 651, ../../../app/stylesheets/discussions.scss */
+#discussion-toolbar.subscribed .topic-unsubscribe-button {
+  display: inline-block; }

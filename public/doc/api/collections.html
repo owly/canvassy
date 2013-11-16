@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="Content-Type" content="text/html;charset=UTF-8">
+<meta charset="UTF-8">
+<title>Canvas LMS REST API Documentation</title>
+<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+<link href="css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+<script src="js/shCore.js" type="text/javascript"></script>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/shAutoloader.js" type="text/javascript"></script>
+<script src="js/shBrushJScript.js" type="text/javascript"></script>
+
+  </head>
+  <body>
+    <div id="header">
+      <h1>
+  <a href="index.html">Canvas LMS - REST API and Extensions Documentation</a>
+</h1>
+
+    </div>
+
+    <div id="sidebar">
+      <nav>
+  <h2 class='first'>Basics</h2>
+  <a href="file.oauth.html" class="">OAuth</a>
+  <a href="file.object_ids.html" class="">SIS IDs</a>
+  <a href="file.pagination.html" class="">Pagination</a>
+  <a href="file.file_uploads.html" class="">File Uploads</a>
+  <a href="file.endpoint_attributes.html" class="">API Endpoint Attributes</a>
+  <a href="file.masquerading.html" class="">Masquerading</a>
+  <h2>Resources</h2>
+  <a  href="all_resources.html">All Resources Reference</a>
+  
+    
+    <a class="" href="account_authentication_services.html">Account Authentication Services</a>
+  
+    
+    <a class="" href="account_reports.html">Account Reports</a>
+  
+    
+    <a class="" href="accounts.html">Accounts</a>
+  
+    
+    <a class="" href="admins.html">Admins</a>
+  
+    
+    <a class="" href="announcement_external_feeds.html">Announcement External Feeds</a>
+  
+    
+    <a class="" href="appointment_groups.html">Appointment Groups</a>
+  
+    
+    <a class="" href="assignment_groups.html">Assignment Groups</a>
+  
+    
+    <a class="" href="assignments.html">Assignments</a>
+  
+    
+    <a class="" href="calendar_events.html">Calendar Events</a>
+  
+    
+    <a class="" href="collaborations.html">Collaborations</a>
+  
+    
+    <a class="current" href="collections.html">Collections</a>
+  
+    
+    <a class="" href="comm_messages.html">CommMessages</a>
+  
+    
+    <a class="" href="communication_channels.html">Communication Channels</a>
+  
+    
+    <a class="" href="content_migrations.html">Content Migrations</a>
+  
+    
+    <a class="" href="conversations.html">Conversations</a>
+  
+    
+    <a class="" href="courses.html">Courses</a>
+  
+    
+    <a class="" href="discussion_topics.html">Discussion Topics</a>
+  
+    
+    <a class="" href="enrollments.html">Enrollments</a>
+  
+    
+    <a class="" href="external_tools.html">External Tools</a>
+  
+    
+    <a class="" href="favorites.html">Favorites</a>
+  
+    
+    <a class="" href="files.html">Files</a>
+  
+    
+    <a class="" href="gradebook_history.html">Gradebook History</a>
+  
+    
+    <a class="" href="group_categories.html">Group Categories</a>
+  
+    
+    <a class="" href="groups.html">Groups</a>
+  
+    
+    <a class="" href="logins.html">Logins</a>
+  
+    
+    <a class="" href="modules.html">Modules</a>
+  
+    
+    <a class="" href="outcome_groups.html">Outcome Groups</a>
+  
+    
+    <a class="" href="outcomes.html">Outcomes</a>
+  
+    
+    <a class="" href="pages.html">Pages</a>
+  
+    
+    <a class="" href="progress.html">Progress</a>
+  
+    
+    <a class="" href="quiz_reports.html">Quiz Reports</a>
+  
+    
+    <a class="" href="quizzes.html">Quizzes</a>
+  
+    
+    <a class="" href="roles.html">Roles</a>
+  
+    
+    <a class="" href="sis_imports.html">SIS Imports</a>
+  
+    
+    <a class="" href="search.html">Search</a>
+  
+    
+    <a class="" href="sections.html">Sections</a>
+  
+    
+    <a class="" href="services.html">Services</a>
+  
+    
+    <a class="" href="submissions.html">Submissions</a>
+  
+    
+    <a class="" href="tabs.html">Tabs</a>
+  
+    
+    <a class="" href="users.html">Users</a>
+  
+  <h2>SIS</h2>
+  <a href="file.sis_csv.html" class="">SIS CSV Format</a>
+  <h2>External Tools</h2>
+  <a href="file.tools_intro.html" class="">Introduction</a>
+  <a href="file.assignment_tools.html" class="">Grading</a>
+  <a href="file.navigation_tools.html" class="">Navigation</a>
+  <a href="file.editor_button_tools.html" class="">Rich Editor</a>
+  <a href="file.link_selection_tools.html" class="">Link Selection</a>
+  <a href="file.homework_submission_tools.html" class="">Homework Submission</a>
+  <a href="file.tools_xml.html" class="">Configuring</a>
+</nav>
+
+    </div>
+
+    <div id="content"><div class="service">
+  
+    <h1>Collections API</h1>
+  
+  
+    <h3 class='beta'>BETA: This API resource is not finalized, and there could be breaking changes before its final release.</h3>
+  
+  <table id='quicklinks'>
+  </table>
+  <p>Collections are buckets of content that can be used to organize links to
+helpful resources. For instance, a user could create a collection storing a
+set of links to various web sites containing potential discussion questions,
+or members of a group could all contribute to a collection focused on
+potential assessment questions.</p>
+
+<p>A user/group can have multiple collections, and each can be marked as private
+(viewable only to the user/group) or public (viewable by the world).</p>
+
+<p>Group collections can only be created, updated, or deleted by group
+moderators.</p>
+
+<p>Collections contain Collection Items, which are links to content. There are
+different types of items for links to different types of data.</p>
+
+<p>Collection items can be cloned from other collection items. This way the
+original source of the item can be tracked, and a count of &quot;re-posts&quot; can be
+kept on each item to track popularity. Note that depending on where the
+original item came from, a user may be able to view the cloned item but not
+the original item.</p>
+
+<p>A collection item also has a Discussion Topic associated with it, which can be
+used for comments on the item. See the Discussion Topic API for details on
+querying and adding to a discussion. The scope for the discussion topic will
+be the collection item, and the id of the topic is &quot;self&quot;. For example, the
+DiscussionTopicsApiController#view endpoint looks like this:</p>
+
+<pre class="code"><code>/api/v1/collection_items/&lt;id&gt;/discussion_topics/self/view
+</code></pre>
+
+
+
+<div class='object_definition'>
+  <h3><a name="Collection">A Collection object looks like:</a></h3>
+
+  <pre class="example code brush:js">
+{
+  // The ID of the collection.
+  id: 5,
+
+  // The display name of the collection, set by the collection creator.
+  name: &quot;My Collection&quot;,
+
+  // The visibility of the collection. If &quot;public&quot;, the collection is
+  // visible to everybody, and can be followed.  If &quot;private&quot;, the
+  // collection is visible only to the creating user.
+  // The default is &quot;private&quot;.
+  visibility: &quot;public&quot;,
+
+  // Boolean indicating whether this user is following this collection.
+  followed_by_user: false,
+
+  // The number of people following this collection.
+  followers_count: 10,
+
+  // The number of items in this collection.
+  items_count: 7
+}
+  </pre>
+</div>
+
+<div class='object_definition'>
+  <h3><a name="Collection Item">A Collection Item object looks like:</a></h3>
+
+  <pre class="example code brush:js">
+{
+  // The ID of the collection item.
+  id: 7,
+
+  // The ID of the collection that this item belongs to.
+  collection_id: 2,
+
+  // The type of the item.
+  // Currently defined types are: &quot;url&quot;, &quot;image&quot;, &quot;audio&quot;, and &quot;video&quot;.
+  //
+  // Canvas may define new item types at any time. &quot;url&quot; is the most
+  // generic type, and just means any sort of web link. If an api consumer
+  // sees an item_type that it doesn't yet know how to handle, treating it
+  // as a &quot;url&quot; is a safe bet.
+  //
+  // &quot;image&quot;, &quot;audio&quot; and &quot;video&quot; are URLs either directly to a file of that mime type, or
+  // to a web page that was determined to contain that type as its main content.
+  item_type: &quot;url&quot;,
+
+  // The link to the item. For item type of &quot;url&quot;, this is the entire
+  // contents of the collection item. For other item types, this may be a
+  // web preview or other representation of the item data.
+  link_url: &quot;https://example.com/some/path&quot;,
+
+  // The number of posts of this item, including the original. This count
+  // is shared between the original item and all clones.
+  post_count: 2,
+
+  // The number of users who have voted up this item. This count is
+  // shared between the original item and all clones.
+  upvote_count: 3,
+
+  // Boolean indicating whether this user has upvoted this item (or any of its clones)
+  upvoted_by_user: false,
+
+  // If this item was cloned from another item, this will be the ID of
+  // the first, original item that all clones are derived from.
+  // In other words, if item 7 was cloned from item 5, and
+  // 5 was cloned from item 3, and 3 is the original, then the
+  // root_item_id of items 7, 5 and 3 will all be 3.
+  root_item_id: 3,
+
+  // An image representation of the collection item. This will be in a
+  // common web format such as png or jpeg. The resolution and geometry may depend on
+  // the item, but Canvas will attempt to make it 640 pixels wide
+  // when possible.
+  image_url: &quot;https://&lt;canvas&gt;/files/item_image.png&quot;,
+
+  // If true, the image for this item is still being processed and
+  // image_url will be null. Check back later.
+  // If image_url is null but image_pending is false, the item has no image.
+  image_pending: false,
+
+  // The title of the item.
+  title: &quot;My Image&quot;,
+
+  // The description of the item. This is plain text.
+  description: &quot;some block of plain text&quot;,
+
+  // Any user-provided comments on the item. A user can add their own
+  // comments when cloning an existing item. This is plain text.
+  user_comment: &quot;some block of plain text&quot;,
+
+  // A snippet of HTML that can be used as an in-line preview of the
+  // item. For example, a link to a youtube page may have an iframe inline
+  // embed of the video.
+  // If no preview is available, this field will be null.
+  html_preview: &quot;&lt;iframe&gt;...&lt;/iframe&gt;&quot;,
+
+  // The API URL for this item. Used to clone the collection item.
+  url: &quot;https://&lt;canvas&gt;/api/v1/collections/items/7&quot;
+
+  // The timestamp of when the item was posted by the user
+  created_at: &quot;2012-05-30T17:45:25Z&quot;,
+
+  // Information on the user that created the collection item.
+  user : {
+    // The ID of the user.
+    id: 37,
+
+    // The display name of the user.
+    display_name: &quot;John Doe&quot;,
+
+    // The URL of the user's avatar image, or a fallback image if the user has not given one.
+    avatar_image_url: &quot;http://...&quot;,
+
+    // The URL to the HTML page in Canvas of this user's public profile.
+    html_url: &quot;http://&lt;canvas&gt;/users/37&quot;
+  },
+}
+  </pre>
+</div>
+
+<div id="Services" class="method_details_list">
+
+  <div class="method_details first">
+  <h2 class='api_method_name' name='method.collections.index' data-subtopic='Collections'>
+    <a name='method.collections.index' href='#method.collections.index'>
+      List user/group collections
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/collections_controller.rb">CollectionsController#index</a></span>
+    
+  </h2>
+  
+    <h3 class='beta'>BETA: This API endpoint is not finalized, and there could be breaking changes before its final release.</h3>
+  
+  
+
+<h3 class='endpoint'>
+  GET /api/v1/users/:user_id/collections
+</h3>
+
+
+
+<h3 class='endpoint'>
+  GET /api/v1/groups/:group_id/collections
+</h3>
+
+
+
+<p>Returns the visible collections for the given group or user, returned
+most-recently-created first.  If the given context is the current user or a
+group to which the current user belongs, then all collections will be
+returned, otherwise only public collections will be returned. In the former
+case, if no collections exist for the context, a default, private
+collection will be created and returned.</p>
+
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl -H 'Authorization: Bearer &lt;token&gt;' \ 
+     https://&lt;canvas&gt;/api/v1/users/self/collections</pre>
+    
+  </div>
+
+
+
+  Returns a list of 
+
+<a href='collections.html#Collection'>Collections</a>
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.collections.list' data-subtopic='Collections'>
+    <a name='method.collections.list' href='#method.collections.list'>
+      List pinnable collections
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/collections_controller.rb">CollectionsController#list</a></span>
+    
+  </h2>
+  
+    <h3 class='beta'>BETA: This API endpoint is not finalized, and there could be breaking changes before its final release.</h3>
+  
+  
+
+<h3 class='endpoint'>
+  GET /api/v1/collections
+</h3>
+
+
+
+<p>Returns the list of collections to which the current user has permission to
+post.  For each possible collection context (the current user and each
+community she belongs to) if no collections exist for the context, a
+default, private collection will be created and included in the returned
+list.</p>
+
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl -H 'Authorization: Bearer &lt;token&gt;' \ 
+     https://&lt;canvas&gt;/api/v1/collections</pre>
+    
+  </div>
+
+
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.collections.show' data-subtopic='Collections'>
+    <a name='method.collections.show' href='#method.collections.show'>
+      Get a single collection
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/collections_controller.rb">CollectionsController#show</a></span>
+    
+  </h2>
+  
+    <h3 class='beta'>BETA: This API endpoint is not finalized, and there could be breaking changes before its final release.</h3>
+  
+  
+
+<h3 class='endpoint'>
+  GET /api/v1/collections/:collection_id
+</h3>
+
+
+
+<p>Returns information on an individual collection. If the collection is
+private and the caller doesn't have read access, a 401 is returned.</p>
+
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl -H 'Authorization: Bearer &lt;token&gt;' \ 
+     https://&lt;canvas&gt;/api/v1/collections/&lt;collection_id&gt;</pre>
+    
+  </div>
+
+
+
+  Returns a 
+
+<a href='collections.html#Collection'>Collection</a>
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.collections.create' data-subtopic='Collections'>
+    <a name='method.collections.create' href='#method.collections.create'>
+      Create a collection
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/collections_controller.rb">CollectionsController#create</a></span>
+    
+  </h2>
+  
+    <h3 class='beta'>BETA: This API endpoint is not finalized, and there could be breaking changes before its final release.</h3>
+  
+  
+
+<h3 class='endpoint'>
+  POST /api/v1/users/:user_id/collections
+</h3>
+
+
+
+<h3 class='endpoint'>
+  POST /api/v1/groups/:group_id/collections
+</h3>
+
+
+
+<p>Creates a new collection. You can only create collections on your own user,
+or on a group to which you belong.</p>
+
+<h4>Request Parameters:</h4>
+<ul class="argument">
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>name</span>
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>visibility</span>
+      
+      
+    </li>
+  
+</ul>
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl -H 'Authorization: Bearer &lt;token&gt;' \ 
+     -F name='My Collection' \ 
+     -F visibility=public \ 
+     https://&lt;canvas&gt;/api/v1/users/self/collections</pre>
+    
+  </div>
+
+
+
+  Returns a 
+
+<a href='collections.html#Collection'>Collection</a>
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.collections.update' data-subtopic='Collections'>
+    <a name='method.collections.update' href='#method.collections.update'>
+      Edit a collection
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/collections_controller.rb">CollectionsController#update</a></span>
+    
+  </h2>
+  
+    <h3 class='beta'>BETA: This API endpoint is not finalized, and there could be breaking changes before its final release.</h3>
+  
+  
+
+<h3 class='endpoint'>
+  PUT /api/v1/collections/:collection_id
+</h3>
+
+
+
+<p>Modify an existing collection. You must have write access to the
+collection.</p>
+
+<p>Collection visibility cannot be modified once the collection is created.</p>
+
+<h4>Request Parameters:</h4>
+<ul class="argument">
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>name</span>
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>visibility</span>
+      
+      
+        <div class='inline'>
+<p>Be advised that setting a public collection to private will permanantly
+remove all of its followers.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl -H 'Authorization: Bearer &lt;token&gt;' \ 
+     -X PUT \ 
+     -F name='My Edited Collection' \ 
+     https://&lt;canvas&gt;/api/v1/collections/&lt;collection_id&gt;</pre>
+    
+  </div>
+
+
+
+  Returns a 
+
+<a href='collections.html#Collection'>Collection</a>
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.collections.destroy' data-subtopic='Collections'>
+    <a name='method.collections.destroy' href='#method.collections.destroy'>
+      Delete a collection
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/collections_controller.rb">CollectionsController#destroy</a></span>
+    
+  </h2>
+  
+    <h3 class='beta'>BETA: This API endpoint is not finalized, and there could be breaking changes before its final release.</h3>
+  
+  
+
+<h3 class='endpoint'>
+  DELETE /api/v1/collections/:collection_id
+</h3>
+
+
+
+<p>Deletes a collection and all contained collection items. You must have
+write access to the collection.</p>
+
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl -H 'Authorization: Bearer &lt;token&gt;' \ 
+     -X DELETE \ 
+     https://&lt;canvas&gt;/api/v1/collections/&lt;collection_id&gt;</pre>
+    
+  </div>
+
+
+
+  Returns a 
+
+<a href='collections.html#Collection'>Collection</a>
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.collections.follow' data-subtopic='Collections'>
+    <a name='method.collections.follow' href='#method.collections.follow'>
+      Follow a collection
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/collections_controller.rb">CollectionsController#follow</a></span>
+    
+  </h2>
+  
+    <h3 class='beta'>BETA: This API endpoint is not finalized, and there could be breaking changes before its final release.</h3>
+  
+  
+
+<h3 class='endpoint'>
+  PUT /api/v1/collections/:collection_id/followers/self
+</h3>
+
+
+
+<p>Follow this collection. If the current user is already following the
+collection, nothing happens. The user must have permissions to view the
+collection in order to follow it.</p>
+
+<p>Responds with a 401 if the user doesn't have permission to follow the
+collection, or a 400 if the user can't follow the collection (if it's the
+user's own collection, for example).</p>
+
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl https://&lt;canvas&gt;/api/v1/collections/&lt;collection_id&gt;/followers/self \ 
+     -X PUT \ 
+     -H 'Content-Length: 0' \ 
+     -H 'Authorization: Bearer &lt;token&gt;'</pre>
+    
+  </div>
+
+
+  <div class="examples example_response">
+    <h4>Example Response:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code brush:js">{
+  following_user_id: 5,
+  followed_collection_id: 6,
+  created_at: &lt;timestamp&gt;
+}</pre>
+    
+  </div>
+
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.collections.unfollow' data-subtopic='Collections'>
+    <a name='method.collections.unfollow' href='#method.collections.unfollow'>
+      Un-follow a collection
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/collections_controller.rb">CollectionsController#unfollow</a></span>
+    
+  </h2>
+  
+    <h3 class='beta'>BETA: This API endpoint is not finalized, and there could be breaking changes before its final release.</h3>
+  
+  
+
+<h3 class='endpoint'>
+  DELETE /api/v1/collections/:collection_id/followers/self
+</h3>
+
+
+
+<p>Stop following this collection. If the current user is not already
+following the collection, nothing happens.</p>
+
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl https://&lt;canvas&gt;/api/v1/collections/&lt;collection_id&gt;/followers/self \ 
+     -X DELETE \ 
+     -H 'Authorization: Bearer &lt;token&gt;'</pre>
+    
+  </div>
+
+
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.collection_items.index' data-subtopic='Collections'>
+    <a name='method.collection_items.index' href='#method.collection_items.index'>
+      List collection items
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/collection_items_controller.rb">CollectionItemsController#index</a></span>
+    
+  </h2>
+  
+    <h3 class='beta'>BETA: This API endpoint is not finalized, and there could be breaking changes before its final release.</h3>
+  
+  
+
+<h3 class='endpoint'>
+  GET /api/v1/collections/:collection_id/items
+</h3>
+
+
+
+<h3 class='endpoint'>
+  GET /api/v1/collections/:collection_id/items
+</h3>
+
+
+
+<p>Returns the collection items in a collection, most-recently-created first.
+The user must have read access to the collection.</p>
+
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl https://&lt;canvas&gt;/api/v1/collections/&lt;collection_id&gt;/items \ 
+     -H 'Authorization: Bearer &lt;token&gt;'</pre>
+    
+  </div>
+
+
+
+  Returns a list of 
+
+<a href='collections.html#Collection Item'>Collection Items</a>
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.collection_items.show' data-subtopic='Collections'>
+    <a name='method.collection_items.show' href='#method.collection_items.show'>
+      Get an individual collection item
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/collection_items_controller.rb">CollectionItemsController#show</a></span>
+    
+  </h2>
+  
+    <h3 class='beta'>BETA: This API endpoint is not finalized, and there could be breaking changes before its final release.</h3>
+  
+  
+
+<h3 class='endpoint'>
+  GET /api/v1/collections/items/:item_id
+</h3>
+
+
+
+<p>Returns an individual collection item. The user must have read access to
+the collection.</p>
+
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl https://&lt;canvas&gt;/api/v1/collections/items/&lt;item_id&gt; \ 
+-H 'Authorization: Bearer &lt;token&gt;'</pre>
+    
+  </div>
+
+
+
+  Returns a 
+
+<a href='collections.html#Collection Item'>Collection Item</a>
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.collection_items.create' data-subtopic='Collections'>
+    <a name='method.collection_items.create' href='#method.collection_items.create'>
+      Create or clone a collection item
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/collection_items_controller.rb">CollectionItemsController#create</a></span>
+    
+  </h2>
+  
+    <h3 class='beta'>BETA: This API endpoint is not finalized, and there could be breaking changes before its final release.</h3>
+  
+  
+
+<h3 class='endpoint'>
+  POST /api/v1/collections/:collection_id/items
+</h3>
+
+
+
+<p>Create a new item in this collection. You can also clone an existing item
+from another collection.</p>
+
+<h4>Request Parameters:</h4>
+<ul class="argument">
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>link_url</span>
+      
+      
+        <div class='inline'>
+<p>The URL of the item to add. This can be any HTTP or HTTPS address. The
+item_type will be determined by the link_url that is passed in.</p>
+
+<p>To clone an existing item, pass in the url to that item as returned in the
+JSON response in the "url" field.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>title</span>
+      
+      
+        <div class='inline'>
+<p>The title of the item. If no title  is provided, Canvas will try to
+automatically add a relevant title based on the linked content.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>description</span>
+      
+      
+        <div class='inline'>
+<p>The plain-text description of the item. If no description is provided,
+Canvas will try to automatically add a relevant description based on the
+linked content.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>image_url</span>
+      
+      
+        <div class='inline'>
+<p>The URL of the image to use for this item. If no image url is provided,
+Canvas will try to automatically determine an image representation for the
+link. This parameter is ignored if the new item is a clone of an existing
+item.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>user_comment</span>
+      
+      
+        <div class='inline'>
+<p>The user's comments on the item. This can be set when cloning an existing
+item, as well.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl https://&lt;canvas&gt;/api/v1/collections/&lt;collection_id&gt;/items \ 
+     -F link_url=&quot;http://www.google.com/&quot; \ 
+     -F user_comment=&quot;lmgtfy&quot; \ 
+     -H 'Authorization: Bearer &lt;token&gt;'</pre>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl https://&lt;canvas&gt;/api/v1/collections/&lt;collection_id&gt;/items \ 
+     -F link_url=&quot;https://&lt;canvas&gt;/api/v1/collections/items/3&quot; \ 
+     -F user_comment=&quot;clone of some other item&quot; \ 
+     -H 'Authorization: Bearer &lt;token&gt;'</pre>
+    
+  </div>
+
+
+
+  Returns a 
+
+<a href='collections.html#Collection Item'>Collection Item</a>
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.collection_items.update' data-subtopic='Collections'>
+    <a name='method.collection_items.update' href='#method.collection_items.update'>
+      Edit a collection item
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/collection_items_controller.rb">CollectionItemsController#update</a></span>
+    
+  </h2>
+  
+    <h3 class='beta'>BETA: This API endpoint is not finalized, and there could be breaking changes before its final release.</h3>
+  
+  
+
+<h3 class='endpoint'>
+  PUT /api/v1/collections/items/:item_id
+</h3>
+
+
+
+<p>Change a collection item's mutable attributes.</p>
+
+<h4>Request Parameters:</h4>
+<ul class="argument">
+  
+    <li>
+      
+        <span class='type'></span>
+      
+      
+      
+        <span class='name'>user_comment</span>
+      
+      
+    </li>
+  
+</ul>
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl https://&lt;canvas&gt;/api/v1/collections/items/&lt;item_id&gt; \ 
+     -X PUT \ 
+     -F user_comment='edited comment' \ 
+     -H 'Authorization: Bearer &lt;token&gt;'</pre>
+    
+  </div>
+
+
+
+  Returns a 
+
+<a href='collections.html#Collection Item'>Collection Item</a>
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.collection_items.destroy' data-subtopic='Collections'>
+    <a name='method.collection_items.destroy' href='#method.collection_items.destroy'>
+      Delete a collection item
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/collection_items_controller.rb">CollectionItemsController#destroy</a></span>
+    
+  </h2>
+  
+    <h3 class='beta'>BETA: This API endpoint is not finalized, and there could be breaking changes before its final release.</h3>
+  
+  
+
+<h3 class='endpoint'>
+  DELETE /api/v1/collections/items/:item_id
+</h3>
+
+
+
+<p>Delete a collection item from the collection. This will not delete any
+clones of the item in other collections.</p>
+
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl https://&lt;canvas&gt;/api/v1/collections/items/&lt;item_id&gt; \ 
+     -X DELETE \ 
+     -H 'Authorization: Bearer &lt;token&gt;'</pre>
+    
+  </div>
+
+
+
+  Returns a 
+
+<a href='collections.html#Collection Item'>Collection Item</a>
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.collection_items.upvote' data-subtopic='Collections'>
+    <a name='method.collection_items.upvote' href='#method.collection_items.upvote'>
+      Upvote an item
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/collection_items_controller.rb">CollectionItemsController#upvote</a></span>
+    
+  </h2>
+  
+    <h3 class='beta'>BETA: This API endpoint is not finalized, and there could be breaking changes before its final release.</h3>
+  
+  
+
+<h3 class='endpoint'>
+  PUT /api/v1/collections/items/:item_id/upvotes/self
+</h3>
+
+
+
+<p>Upvote a collection item. If the current user has already upvoted the item,
+nothing happens and the existing upvote data is returned. Upvotes are
+shared between the root item and all clones, so if the user has already
+upvoted another clone of the item, nothing happens.</p>
+
+<p>The upvoted_by_user field on the CollectionItem response data can be used
+to determine if the user has already upvoted the item.</p>
+
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl https://&lt;canvas&gt;/api/v1/collections/items/&lt;item_id&gt;/upvotes/self \ 
+     -X PUT \ 
+     -H 'Content-Length: 0' \ 
+     -H 'Authorization: Bearer &lt;token&gt;'</pre>
+    
+  </div>
+
+
+  <div class="examples example_response">
+    <h4>Example Response:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code brush:js">{
+  item_id: 7,
+  root_item_id: 3,
+  user_id: 2,
+  created_at: &quot;2012-05-03T18:12:18Z&quot;,
+}</pre>
+    
+  </div>
+
+
+</div>
+
+
+  <div class="method_details ">
+  <h2 class='api_method_name' name='method.collection_items.remove_upvote' data-subtopic='Collections'>
+    <a name='method.collection_items.remove_upvote' href='#method.collection_items.remove_upvote'>
+      De-upvote an item
+    </a>
+    
+      <span class='defined-in'><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/collection_items_controller.rb">CollectionItemsController#remove_upvote</a></span>
+    
+  </h2>
+  
+    <h3 class='beta'>BETA: This API endpoint is not finalized, and there could be breaking changes before its final release.</h3>
+  
+  
+
+<h3 class='endpoint'>
+  DELETE /api/v1/collections/items/:item_id/upvotes/self
+</h3>
+
+
+
+<p>Remove the current user's upvote of an item. This is a no-op if the user
+has not upvoted this item.</p>
+
+
+  <div class="examples">
+    <h4>Example Request:</h4>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">curl https://&lt;canvas&gt;/api/v1/collections/items/&lt;item_id&gt;/upvotes/self \ 
+     -X DELETE \ 
+     -H 'Authorization: Bearer &lt;token&gt;'</pre>
+    
+  </div>
+
+
+
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+    <script type="text/javascript">
+  $('h2.api_method_name').each(function(i, el) {
+    var subtopic = $(el).data('subtopic');
+    var $a = $(el).find('a');
+    if ($.trim($a[0].innerHTML) == '')
+      return;
+    var $row = $('table#quicklinks tr').filter(function() { return $(this).data('subtopic') == subtopic; });
+    if ($row.length == 0) {
+      $row = $('<tr/>').appendTo($('table#quicklinks'));
+      $row.data('subtopic', subtopic);
+      $('<th/>').append(subtopic).appendTo($row);
+      $('<td/>').appendTo($row);
+    }
+    var link = $('<a/>').attr('href', '#'+$(el).attr('name')).append($.trim($a[0].innerHTML));
+    $row.find('td').append(link);
+  });
+
+  SyntaxHighlighter.defaults['gutter'] = false;
+  SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.defaults['auto-links'] = false;
+  $('#content pre.code.javascript code').each(function(i, el) {
+    $(el).parent().addClass('brush: js');
+    $(el).replaceWith(el.innerHTML);
+  });
+  SyntaxHighlighter.all();
+</script>
+<div id="footer">
+  &copy; Instructure, Inc. Generated on Wed Aug  7 15:04:49 2013<br>
+  This documentation is generated directly from the Canvas LMS source code, available <a href="https://github.com/instructure/canvas-lms">on Github</a>.
+</div>
+
+  </body>
+</html>

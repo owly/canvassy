@@ -1,0 +1,1 @@
+define("jst/searchView",["compiled/handlebars_helpers"],function(a){var b=a.template,c=a.templates=a.templates||{};return c.searchView=b(function(a,b,c,d,e){c=c||a.helpers;var f,g=this;return'<input type="text" name="inputFilter" class="inputFilterView" />\n\n<div class="collectionView"></div>\n\n'}),c.searchView})

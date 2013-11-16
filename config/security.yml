@@ -1,0 +1,10 @@
+---
+production:
+  encryption_key: 12345
+development:
+  encryption_key: !binary |-
+    NjJmMDgzOTlmNDE1ZTM3MmE4MTYxMmEzYjAzMzgxYzA4YjNmNzdhZmJhNjg5
+    NDkyMDE0MDhiYzBlOTRmYWRmZTQ0N2JiYTM5NjFmMWZiZTU5OWI4OWYwODU0
+    NTg3NTI0NjlkYWZhNWNiMmY5NTUwZjM5MTE5N2Q3NWVhZGY1OTI=
+test:
+  encryption_key: 12345
